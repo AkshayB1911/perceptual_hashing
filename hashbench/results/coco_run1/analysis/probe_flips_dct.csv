@@ -1,0 +1,5 @@
+algorithm,flip,mean_norm_distance,min,max
+phash,flip_horizontal,0.490625,0.4375,0.5625
+phash,flip_vertical,0.48125,0.375,0.5625
+pdq,flip_horizontal,0.4978125,0.4609375,0.546875
+pdq,flip_vertical,0.49953125,0.46875,0.5390625

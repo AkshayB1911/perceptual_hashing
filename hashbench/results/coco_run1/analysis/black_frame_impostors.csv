@@ -1,0 +1,11 @@
+algorithm,share_pairs_both_framed,share_of_100_closest_both_framed,paper_threshold_false_matches,of_which_both_framed
+certphash,0.0001,0.0,0,0
+certphash_adv,0.0001,0.0,0,0
+certphash_base,0.0001,0.11,0,0
+certphash_ep2,0.0001,0.12,7,2
+certphash_ep4,0.0001,0.11,4,2
+certphash_ep8,0.0001,0.0,6,0
+neuralhash,0.0001,0.0,0,0
+pdq,0.0001,0.0,0,0
+pdq_dihedral,0.0001,0.0,0,0
+phash,0.0001,0.0,0,0

@@ -1,0 +1,15 @@
+closest_under,hash,pairs,median_percentile,share_in_closest_1pct
+dinohash,dinohash,100,0.025500000000000002,1.0
+dinohash,dinohash_untrained,100,0.17174999999999999,0.97
+dinohash,neuralhash,100,25.816,0.05
+dinohash,certphash,100,25.4245,0.06
+dinohash,certphash_adv,100,35.16875,0.09
+dinohash,phash,100,55.182750000000006,0.01
+dinohash,pdq,100,40.305,0.0
+dinohash_untrained,dinohash,100,0.11725,0.96
+dinohash_untrained,dinohash_untrained,100,0.029750000000000002,1.0
+dinohash_untrained,neuralhash,100,44.6665,0.05
+dinohash_untrained,certphash,100,30.776749999999996,0.08
+dinohash_untrained,certphash_adv,100,34.161874999999995,0.07
+dinohash_untrained,phash,100,55.182750000000006,0.03
+dinohash_untrained,pdq,100,49.9505,0.02
