@@ -1,0 +1,12 @@
+[submodule "neuralHash"]
+	path = neuralHash
+	url = https://github.com/ml-research/Learning-to-Break-Deep-Perceptual-Hashing.git
+[submodule "HASH_IMPLEMENTATIONS/CertPhash"]
+	path = HASH_IMPLEMENTATIONS/CertPhash
+	url = https://github.com/Yuchen413/CertPhash.git
+[submodule "HASH_IMPLEMENTATIONS/imagehash"]
+	path = HASH_IMPLEMENTATIONS/imagehash
+	url = https://github.com/JohannesBuchner/imagehash.git
+[submodule "HASH_IMPLEMENTATIONS/pdqhash-python"]
+	path = HASH_IMPLEMENTATIONS/pdqhash-python
+	url = https://github.com/faustomorales/pdqhash-python

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hashbench"
+version = "0.1.0"
+description = "Benchmarking perceptual image hashes (pHash, PDQ, ...) against image transformations"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pillow",
+    "opencv-python",
+    "pandas",
+    "matplotlib",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+# Reference implementations, used only to validate our own implementations.
+reference = ["imagehash", "pdqhash"]
+# Learned hashes (DinoHash, ...). For CPU-only torch on Windows/Linux use
+# --extra-index-url https://download.pytorch.org/whl/cpu
+neural = ["torch", "torchvision", "onnx", "onnxruntime", "pyliblzfse", "gdown"]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["hashbench*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,19 @@
+numpy
+scipy
+pillow
+opencv-python
+pandas
+matplotlib
+tqdm
+# learned hashes (CPU build: pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu)
+torch
+torchvision
+onnx
+onnxruntime
+# reference implementations (validation only)
+imagehash
+pdqhash
+# tests
+pytest
+pyliblzfse
+gdown

@@ -1,0 +1,102 @@
++ python --version
+Python 3.12.3
++ uname -a
+Linux sushanth-HP-Pro-Tower-280-G9-PCI-Desktop-PC 6.8.0-52-generic #53~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jan 15 19:18:46 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
++ lscpu
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        46 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               20
+On-line CPU(s) list:                  0-19
+Vendor ID:                            GenuineIntel
+Model name:                           12th Gen Intel(R) Core(TM) i7-12700
+CPU family:                           6
+Model:                                151
+Thread(s) per core:                   2
+Core(s) per socket:                   12
+Socket(s):                            1
+Stepping:                             2
+CPU max MHz:                          4900.0000
+CPU min MHz:                          800.0000
+BogoMIPS:                             4224.00
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq tme rdpid movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities
+Virtualization:                       VT-x
+L1d cache:                            512 KiB (12 instances)
+L1i cache:                            512 KiB (12 instances)
+L2 cache:                             12 MiB (9 instances)
+L3 cache:                             25 MiB (1 instance)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0-19
+Vulnerability Gather data sampling:   Not affected
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Mitigation; Clear Register File
+Vulnerability Retbleed:               Not affected
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
++ free -h
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       3.5Gi       1.9Gi       646Mi       9.9Gi        11Gi
+Swap:          2.0Gi       0.0Ki       2.0Gi
++ pip freeze
+beautifulsoup4==4.15.0
+certifi==2026.10.23
+charset-normalizer==3.5.2
+colorama==0.4.6
+contourpy==1.4.0
+cycler==0.12.1
+filelock==3.32.3
+flatbuffers==25.12.19
+fonttools==4.67.0
+fsspec==2026.7.0
+gdown==6.4.2
+# Editable install with no version control (hashbench==0.1.0)
+-e /home/sushanth/hashbench_run/hashbench
+idna==3.20
+ImageHash==4.3.2
+iniconfig==2.3.1
+Jinja2==3.1.6
+kiwisolver==1.5.1
+MarkupSafe==3.0.3
+matplotlib==3.11.2
+ml_dtypes==0.6.0
+mpmath==1.3.0
+networkx==3.6.1
+numpy==2.5.4
+onnx==1.23.2
+onnxruntime==1.31.0
+opencv-python==5.0.0.93
+packaging==26.3
+pandas==3.1.0
+pdqhash @ file:///home/sushanth/hashbench_run/pkgs/built/pdqhash-0.2.8-cp312-cp312-linux_x86_64.whl#sha256=06e5cdd438972ec07410e956167bec47a78caa08f6e6a112e0cb03a139b3fcdd
+pillow==13.0.0
+pluggy==1.7.0
+protobuf==7.36.2
+Pygments==2.21.0
+pyliblzfse==0.4.1
+pyparsing==3.3.3
+pypdf==6.21.2
+PySocks==1.7.1
+pytest==9.1.1
+python-dateutil==3.0.0
+PyWavelets==1.10.0
+requests==2.34.2
+scipy==1.18.1
+setuptools==78.1.0
+six==1.17.0
+soupsieve==3.0.4
+sympy==1.14.0
+torch==2.14.1+cpu
+torchvision==0.29.1+cpu
+tqdm==4.70.1
+typing_extensions==4.16.0
+tzdata==2026.5
+urllib3==2.8.0

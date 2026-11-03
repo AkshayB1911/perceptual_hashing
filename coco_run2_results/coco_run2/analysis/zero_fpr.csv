@@ -1,0 +1,3 @@
+algorithm,min_impostor_distance,match_rate_below_min_impostor
+dinohash,0.0625,0.44230681818181816
+dinohash_untrained,0.09375,0.5881022727272728

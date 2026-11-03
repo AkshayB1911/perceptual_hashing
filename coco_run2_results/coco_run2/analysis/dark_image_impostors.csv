@@ -1,0 +1,3 @@
+algorithm,mean_luma_100_closest,share_100_closest_both_darkest10pct
+dinohash,118.14666059494019,0.01
+dinohash_untrained,118.37774984359741,0.01
