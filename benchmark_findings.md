@@ -658,17 +658,20 @@ PDQ quality can't be studied on COCO: only 4 of the 1,000 attacked images have q
 
 ## 7. Next
 
-1. **Separate head from backbone (F17):** rerun with the two mixed DinoHash models. No download
-   needed. This decides how F16 should be stated in the thesis.
-2. **Phase C, adversarial evaluation:** the test of what DinoHash's fine-tuning is for. Trained vs
-   untrained on the benign results here, set against attacks, is the core trade-off.
-3. **Test F18 with labels:** do close pairs share COCO categories? Needs the annotations download
+1. **Phase C, adversarial evaluation:** the test of what DinoHash's fine-tuning is for. Trained vs
+   untrained on the benign results here, set against attacks, is the core trade-off. Build
+   `hashbench/adversarial.py` (model-agnostic PGD/APGD evasion and collision); run the full sweep on
+   a free Kaggle GPU, since the laptop has no CUDA.
+2. **Test F18 with labels:** do close pairs share COCO categories? Needs the annotations download
    (ask first).
-4. **Paper's combined pipeline:** run crop + JPEG + one edit + erase + text, to compare with the paper
+3. **Paper's combined pipeline:** run crop + JPEG + one edit + erase + text, to compare with the paper
    directly.
-5. **Optional Run 3:** ViT-B at 512 bits on V200 only.
-6. **Follow-ups from Run 1:**
+4. **Optional Run 3:** ViT-B at 512 bits on V200 only.
+5. **Follow-ups from Run 1:**
    - Does real PhotoDNA react to black frames? (Use `coco-val.csv`.)
    - Probe NeuralHash's sensitivity to the position of the occluding square.
-7. **Ideas raised here:** sub-patch shift averaging (F15), and a held-out test of combined hashes
+6. **Ideas raised here:** sub-patch shift averaging (F15), and a held-out test of combined hashes
    under attack (F22, Idea 4).
+7. **Deferred — separate head from backbone (F17):** rerun with the two mixed DinoHash models. No
+   download needed. It refines how F16 is stated but doesn't block the adversarial work, so it is
+   parked until after Phase C.

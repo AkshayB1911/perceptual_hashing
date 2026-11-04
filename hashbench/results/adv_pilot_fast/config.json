@@ -1,0 +1,42 @@
+{
+  "list": "data\\splits\\V200.txt",
+  "limit": 10,
+  "n_images": 10,
+  "norm": "linf",
+  "steps": 100,
+  "method": "apgd",
+  "step_size": null,
+  "random_start": true,
+  "margin": 0.0,
+  "fpr": 0.001,
+  "max_side": 512,
+  "seed": 0,
+  "thresholds_from": [
+    "results\\coco_run1",
+    "results\\coco_run2"
+  ],
+  "hashes": [
+    "neuralhash",
+    "certphash",
+    "certphash_ep2",
+    "certphash_ep4",
+    "certphash_ep8",
+    "certphash_base",
+    "certphash_adv"
+  ],
+  "eps_255": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "modes": [
+    "evasion",
+    "collision"
+  ],
+  "collision_targets": "image i -> image (i + n//2) mod n of the sorted list",
+  "device": "cpu",
+  "torch": "2.14.1+cpu",
+  "gpu": null,
+  "started": "2026-11-04 11:42:47"
+}
