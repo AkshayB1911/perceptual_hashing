@@ -1,0 +1,272 @@
+200 images, 1 hashes, eps [1.0, 2.0, 4.0, 8.0], modes ['evasion', 'collision', 'collision_closest'], device cpu; 0 rows already done
+[    114s] neuralhash         evasion   eps=1/255   16/200  success 0/16  6.94 s/img
+[    225s] neuralhash         evasion   eps=1/255   32/200  success 0/16  6.92 s/img
+[    334s] neuralhash         evasion   eps=1/255   48/200  success 0/16  6.84 s/img
+[    443s] neuralhash         evasion   eps=1/255   64/200  success 0/16  6.83 s/img
+[    554s] neuralhash         evasion   eps=1/255   80/200  success 1/16  6.94 s/img
+[    665s] neuralhash         evasion   eps=1/255   96/200  success 0/16  6.95 s/img
+[    776s] neuralhash         evasion   eps=1/255  112/200  success 0/16  6.90 s/img
+[    887s] neuralhash         evasion   eps=1/255  128/200  success 0/16  6.94 s/img
+[    998s] neuralhash         evasion   eps=1/255  144/200  success 0/16  6.92 s/img
+[   1110s] neuralhash         evasion   eps=1/255  160/200  success 0/16  7.00 s/img
+[   1219s] neuralhash         evasion   eps=1/255  176/200  success 0/16  6.86 s/img
+[   1330s] neuralhash         evasion   eps=1/255  192/200  success 0/16  6.92 s/img
+[   1374s] neuralhash         evasion   eps=1/255  200/200  success 0/8  5.54 s/img
+[   1487s] neuralhash         collision eps=1/255   16/200  success 0/16  7.03 s/img
+[   1598s] neuralhash         collision eps=1/255   32/200  success 0/16  6.95 s/img
+[   1710s] neuralhash         collision eps=1/255   48/200  success 0/16  6.99 s/img
+[   1821s] neuralhash         collision eps=1/255   64/200  success 0/16  6.93 s/img
+[   1934s] neuralhash         collision eps=1/255   80/200  success 0/16  7.10 s/img
+[   2050s] neuralhash         collision eps=1/255   96/200  success 0/16  7.25 s/img
+[   2161s] neuralhash         collision eps=1/255  112/200  success 0/16  6.94 s/img
+[   2273s] neuralhash         collision eps=1/255  128/200  success 0/16  6.98 s/img
+[   2385s] neuralhash         collision eps=1/255  144/200  success 0/16  6.98 s/img
+[   2497s] neuralhash         collision eps=1/255  160/200  success 0/16  7.01 s/img
+[   2608s] neuralhash         collision eps=1/255  176/200  success 0/16  6.97 s/img
+[   2721s] neuralhash         collision eps=1/255  192/200  success 0/16  7.04 s/img
+[   2765s] neuralhash         collision eps=1/255  200/200  success 0/8  5.53 s/img
+[   2876s] neuralhash         collision_closest eps=1/255   16/200  success 9/16  6.93 s/img
+[   2988s] neuralhash         collision_closest eps=1/255   32/200  success 3/16  6.98 s/img
+[   3099s] neuralhash         collision_closest eps=1/255   48/200  success 5/16  6.96 s/img
+[   3211s] neuralhash         collision_closest eps=1/255   64/200  success 6/16  6.97 s/img
+[   3323s] neuralhash         collision_closest eps=1/255   80/200  success 6/16  7.03 s/img
+[   3436s] neuralhash         collision_closest eps=1/255   96/200  success 6/16  7.05 s/img
+[   3547s] neuralhash         collision_closest eps=1/255  112/200  success 4/16  6.97 s/img
+[   3659s] neuralhash         collision_closest eps=1/255  128/200  success 7/16  6.98 s/img
+[   3771s] neuralhash         collision_closest eps=1/255  144/200  success 8/16  6.97 s/img
+[   3882s] neuralhash         collision_closest eps=1/255  160/200  success 11/16  6.94 s/img
+[   3993s] neuralhash         collision_closest eps=1/255  176/200  success 5/16  6.95 s/img
+[   4105s] neuralhash         collision_closest eps=1/255  192/200  success 4/16  7.01 s/img
+[   4149s] neuralhash         collision_closest eps=1/255  200/200  success 2/8  5.51 s/img
+[   4261s] neuralhash         evasion   eps=2/255   16/200  success 0/16  6.97 s/img
+[   4372s] neuralhash         evasion   eps=2/255   32/200  success 0/16  6.93 s/img
+[   4488s] neuralhash         evasion   eps=2/255   48/200  success 0/16  7.25 s/img
+[   4604s] neuralhash         evasion   eps=2/255   64/200  success 0/16  7.28 s/img
+[   4721s] neuralhash         evasion   eps=2/255   80/200  success 1/16  7.30 s/img
+[   4833s] neuralhash         evasion   eps=2/255   96/200  success 0/16  7.01 s/img
+[   4945s] neuralhash         evasion   eps=2/255  112/200  success 0/16  6.97 s/img
+[   5056s] neuralhash         evasion   eps=2/255  128/200  success 0/16  6.99 s/img
+[   5173s] neuralhash         evasion   eps=2/255  144/200  success 0/16  7.26 s/img
+[   5285s] neuralhash         evasion   eps=2/255  160/200  success 0/16  7.00 s/img
+[   5395s] neuralhash         evasion   eps=2/255  176/200  success 0/16  6.92 s/img
+[   5506s] neuralhash         evasion   eps=2/255  192/200  success 0/16  6.94 s/img
+[   5550s] neuralhash         evasion   eps=2/255  200/200  success 0/8  5.45 s/img
+[   5662s] neuralhash         collision eps=2/255   16/200  success 0/16  7.00 s/img
+[   5773s] neuralhash         collision eps=2/255   32/200  success 0/16  6.95 s/img
+[   5885s] neuralhash         collision eps=2/255   48/200  success 0/16  6.96 s/img
+[   5998s] neuralhash         collision eps=2/255   64/200  success 0/16  7.07 s/img
+[   6109s] neuralhash         collision eps=2/255   80/200  success 0/16  6.93 s/img
+[   6221s] neuralhash         collision eps=2/255   96/200  success 0/16  7.00 s/img
+[   6333s] neuralhash         collision eps=2/255  112/200  success 0/16  7.00 s/img
+[   6443s] neuralhash         collision eps=2/255  128/200  success 0/16  6.90 s/img
+[   6554s] neuralhash         collision eps=2/255  144/200  success 0/16  6.97 s/img
+[   6667s] neuralhash         collision eps=2/255  160/200  success 0/16  7.01 s/img
+[   6777s] neuralhash         collision eps=2/255  176/200  success 0/16  6.90 s/img
+[   6888s] neuralhash         collision eps=2/255  192/200  success 0/16  6.95 s/img
+[   6932s] neuralhash         collision eps=2/255  200/200  success 0/8  5.43 s/img
+[   7043s] neuralhash         collision_closest eps=2/255   16/200  success 12/16  6.95 s/img
+[   7153s] neuralhash         collision_closest eps=2/255   32/200  success 7/16  6.91 s/img
+[   7268s] neuralhash         collision_closest eps=2/255   48/200  success 10/16  7.21 s/img
+[   7381s] neuralhash         collision_closest eps=2/255   64/200  success 13/16  7.03 s/img
+[   7492s] neuralhash         collision_closest eps=2/255   80/200  success 13/16  6.94 s/img
+[   7608s] neuralhash         collision_closest eps=2/255   96/200  success 8/16  7.23 s/img
+[   7719s] neuralhash         collision_closest eps=2/255  112/200  success 7/16  6.96 s/img
+[   7831s] neuralhash         collision_closest eps=2/255  128/200  success 10/16  6.98 s/img
+[   7943s] neuralhash         collision_closest eps=2/255  144/200  success 11/16  7.04 s/img
+[   8055s] neuralhash         collision_closest eps=2/255  160/200  success 14/16  6.99 s/img
+[   8165s] neuralhash         collision_closest eps=2/255  176/200  success 9/16  6.89 s/img
+[   8276s] neuralhash         collision_closest eps=2/255  192/200  success 10/16  6.94 s/img
+[   8320s] neuralhash         collision_closest eps=2/255  200/200  success 3/8  5.49 s/img
+[   8431s] neuralhash         evasion   eps=4/255   16/200  success 3/16  6.90 s/img
+[   8542s] neuralhash         evasion   eps=4/255   32/200  success 2/16  6.97 s/img
+[   8653s] neuralhash         evasion   eps=4/255   48/200  success 0/16  6.95 s/img
+[   8764s] neuralhash         evasion   eps=4/255   64/200  success 3/16  6.90 s/img
+[   8877s] neuralhash         evasion   eps=4/255   80/200  success 6/16  7.04 s/img
+[   8989s] neuralhash         evasion   eps=4/255   96/200  success 1/16  7.02 s/img
+[   9100s] neuralhash         evasion   eps=4/255  112/200  success 7/16  6.96 s/img
+[   9212s] neuralhash         evasion   eps=4/255  128/200  success 4/16  6.96 s/img
+[   9321s] neuralhash         evasion   eps=4/255  144/200  success 1/16  6.84 s/img
+[   9432s] neuralhash         evasion   eps=4/255  160/200  success 2/16  6.97 s/img
+[   9543s] neuralhash         evasion   eps=4/255  176/200  success 3/16  6.90 s/img
+[   9657s] neuralhash         evasion   eps=4/255  192/200  success 3/16  7.12 s/img
+[   9700s] neuralhash         evasion   eps=4/255  200/200  success 1/8  5.47 s/img
+[   9813s] neuralhash         collision eps=4/255   16/200  success 1/16  7.03 s/img
+[   9924s] neuralhash         collision eps=4/255   32/200  success 0/16  6.95 s/img
+[  10039s] neuralhash         collision eps=4/255   48/200  success 1/16  7.18 s/img
+[  10150s] neuralhash         collision eps=4/255   64/200  success 0/16  6.95 s/img
+[  10260s] neuralhash         collision eps=4/255   80/200  success 1/16  6.88 s/img
+[  10370s] neuralhash         collision eps=4/255   96/200  success 0/16  6.88 s/img
+[  10481s] neuralhash         collision eps=4/255  112/200  success 1/16  6.94 s/img
+[  10591s] neuralhash         collision eps=4/255  128/200  success 0/16  6.86 s/img
+[  10701s] neuralhash         collision eps=4/255  144/200  success 1/16  6.89 s/img
+[  10813s] neuralhash         collision eps=4/255  160/200  success 0/16  6.94 s/img
+[  10924s] neuralhash         collision eps=4/255  176/200  success 1/16  6.95 s/img
+[  11035s] neuralhash         collision eps=4/255  192/200  success 0/16  6.95 s/img
+[  11081s] neuralhash         collision eps=4/255  200/200  success 0/8  5.78 s/img
+[  11192s] neuralhash         collision_closest eps=4/255   16/200  success 12/16  6.92 s/img
+[  11302s] neuralhash         collision_closest eps=4/255   32/200  success 11/16  6.91 s/img
+[  11412s] neuralhash         collision_closest eps=4/255   48/200  success 15/16  6.86 s/img
+[  11523s] neuralhash         collision_closest eps=4/255   64/200  success 14/16  6.92 s/img
+[  11634s] neuralhash         collision_closest eps=4/255   80/200  success 14/16  6.94 s/img
+[  11750s] neuralhash         collision_closest eps=4/255   96/200  success 12/16  7.23 s/img
+[  11860s] neuralhash         collision_closest eps=4/255  112/200  success 13/16  6.90 s/img
+[  11972s] neuralhash         collision_closest eps=4/255  128/200  success 13/16  7.00 s/img
+[  12083s] neuralhash         collision_closest eps=4/255  144/200  success 12/16  6.93 s/img
+[  12194s] neuralhash         collision_closest eps=4/255  160/200  success 15/16  6.92 s/img
+[  12310s] neuralhash         collision_closest eps=4/255  176/200  success 12/16  7.26 s/img
+[  12421s] neuralhash         collision_closest eps=4/255  192/200  success 14/16  6.94 s/img
+[  12465s] neuralhash         collision_closest eps=4/255  200/200  success 4/8  5.48 s/img
+[  12575s] neuralhash         evasion   eps=8/255   16/200  success 14/16  6.93 s/img
+[  12687s] neuralhash         evasion   eps=8/255   32/200  success 15/16  7.00 s/img
+[  12803s] neuralhash         evasion   eps=8/255   48/200  success 15/16  7.20 s/img
+[  12913s] neuralhash         evasion   eps=8/255   64/200  success 15/16  6.89 s/img
+[  13028s] neuralhash         evasion   eps=8/255   80/200  success 15/16  7.19 s/img
+[  13140s] neuralhash         evasion   eps=8/255   96/200  success 16/16  6.98 s/img
+[  13249s] neuralhash         evasion   eps=8/255  112/200  success 16/16  6.86 s/img
+[  13360s] neuralhash         evasion   eps=8/255  128/200  success 15/16  6.93 s/img
+[  13470s] neuralhash         evasion   eps=8/255  144/200  success 15/16  6.85 s/img
+[  13581s] neuralhash         evasion   eps=8/255  160/200  success 15/16  6.93 s/img
+[  13691s] neuralhash         evasion   eps=8/255  176/200  success 15/16  6.88 s/img
+[  13806s] neuralhash         evasion   eps=8/255  192/200  success 15/16  7.20 s/img
+[  13850s] neuralhash         evasion   eps=8/255  200/200  success 8/8  5.45 s/img
+[  13960s] neuralhash         collision eps=8/255   16/200  success 4/16  6.86 s/img
+[  14071s] neuralhash         collision eps=8/255   32/200  success 1/16  6.93 s/img
+[  14182s] neuralhash         collision eps=8/255   48/200  success 4/16  6.95 s/img
+[  14291s] neuralhash         collision eps=8/255   64/200  success 1/16  6.86 s/img
+[  14402s] neuralhash         collision eps=8/255   80/200  success 3/16  6.89 s/img
+[  14512s] neuralhash         collision eps=8/255   96/200  success 3/16  6.92 s/img
+[  14623s] neuralhash         collision eps=8/255  112/200  success 2/16  6.94 s/img
+[  14735s] neuralhash         collision eps=8/255  128/200  success 3/16  6.96 s/img
+[  14851s] neuralhash         collision eps=8/255  144/200  success 5/16  7.24 s/img
+[  14961s] neuralhash         collision eps=8/255  160/200  success 4/16  6.88 s/img
+[  15071s] neuralhash         collision eps=8/255  176/200  success 2/16  6.92 s/img
+[  15182s] neuralhash         collision eps=8/255  192/200  success 1/16  6.90 s/img
+[  15226s] neuralhash         collision eps=8/255  200/200  success 0/8  5.48 s/img
+[  15340s] neuralhash         collision_closest eps=8/255   16/200  success 14/16  7.15 s/img
+[  15450s] neuralhash         collision_closest eps=8/255   32/200  success 13/16  6.90 s/img
+[  15560s] neuralhash         collision_closest eps=8/255   48/200  success 15/16  6.88 s/img
+[  15671s] neuralhash         collision_closest eps=8/255   64/200  success 16/16  6.91 s/img
+[  15783s] neuralhash         collision_closest eps=8/255   80/200  success 15/16  6.97 s/img
+[  15898s] neuralhash         collision_closest eps=8/255   96/200  success 16/16  7.19 s/img
+[  16009s] neuralhash         collision_closest eps=8/255  112/200  success 15/16  6.93 s/img
+[  16121s] neuralhash         collision_closest eps=8/255  128/200  success 15/16  7.05 s/img
+[  16234s] neuralhash         collision_closest eps=8/255  144/200  success 14/16  7.01 s/img
+[  16344s] neuralhash         collision_closest eps=8/255  160/200  success 15/16  6.93 s/img
+[  16456s] neuralhash         collision_closest eps=8/255  176/200  success 16/16  6.98 s/img
+[  16568s] neuralhash         collision_closest eps=8/255  192/200  success 15/16  7.00 s/img
+[  16614s] neuralhash         collision_closest eps=8/255  200/200  success 8/8  5.75 s/img
+[  16725s] neuralhash         collision eps=16/255   16/200  success 11/16  6.92 s/img
+[  16836s] neuralhash         collision eps=16/255   32/200  success 10/16  6.96 s/img
+[  16947s] neuralhash         collision eps=16/255   48/200  success 9/16  6.91 s/img
+[  17057s] neuralhash         collision eps=16/255   64/200  success 6/16  6.90 s/img
+[  17167s] neuralhash         collision eps=16/255   80/200  success 10/16  6.89 s/img
+[  17278s] neuralhash         collision eps=16/255   96/200  success 5/16  6.93 s/img
+[  17389s] neuralhash         collision eps=16/255  112/200  success 7/16  6.92 s/img
+[  17500s] neuralhash         collision eps=16/255  128/200  success 9/16  6.95 s/img
+[  17611s] neuralhash         collision eps=16/255  144/200  success 8/16  6.93 s/img
+[  17722s] neuralhash         collision eps=16/255  160/200  success 13/16  6.91 s/img
+[  17833s] neuralhash         collision eps=16/255  176/200  success 8/16  6.96 s/img
+[  17943s] neuralhash         collision eps=16/255  192/200  success 10/16  6.88 s/img
+[  17992s] neuralhash         collision eps=16/255  200/200  success 7/8  6.10 s/img
+[  18103s] neuralhash         collision_closest eps=16/255   16/200  success 15/16  6.96 s/img
+[  18215s] neuralhash         collision_closest eps=16/255   32/200  success 14/16  6.96 s/img
+[  18326s] neuralhash         collision_closest eps=16/255   48/200  success 15/16  6.93 s/img
+[  18436s] neuralhash         collision_closest eps=16/255   64/200  success 16/16  6.89 s/img
+[  18548s] neuralhash         collision_closest eps=16/255   80/200  success 15/16  7.00 s/img
+[  18659s] neuralhash         collision_closest eps=16/255   96/200  success 16/16  6.92 s/img
+[  18769s] neuralhash         collision_closest eps=16/255  112/200  success 15/16  6.90 s/img
+[  18880s] neuralhash         collision_closest eps=16/255  128/200  success 16/16  6.92 s/img
+[  18991s] neuralhash         collision_closest eps=16/255  144/200  success 16/16  6.94 s/img
+[  19102s] neuralhash         collision_closest eps=16/255  160/200  success 16/16  6.96 s/img
+[  19213s] neuralhash         collision_closest eps=16/255  176/200  success 16/16  6.95 s/img
+[  19329s] neuralhash         collision_closest eps=16/255  192/200  success 16/16  7.25 s/img
+[  19373s] neuralhash         collision_closest eps=16/255  200/200  success 8/8  5.48 s/img
+[  19484s] neuralhash         collision eps=32/255   16/200  success 15/16  6.92 s/img
+[  19595s] neuralhash         collision eps=32/255   32/200  success 13/16  6.97 s/img
+[  19706s] neuralhash         collision eps=32/255   48/200  success 15/16  6.91 s/img
+[  19816s] neuralhash         collision eps=32/255   64/200  success 13/16  6.87 s/img
+[  19927s] neuralhash         collision eps=32/255   80/200  success 14/16  6.91 s/img
+[  20037s] neuralhash         collision eps=32/255   96/200  success 13/16  6.89 s/img
+[  20147s] neuralhash         collision eps=32/255  112/200  success 15/16  6.89 s/img
+[  20258s] neuralhash         collision eps=32/255  128/200  success 16/16  6.96 s/img
+[  20368s] neuralhash         collision eps=32/255  144/200  success 14/16  6.87 s/img
+[  20479s] neuralhash         collision eps=32/255  160/200  success 15/16  6.91 s/img
+[  20591s] neuralhash         collision eps=32/255  176/200  success 14/16  7.01 s/img
+[  20702s] neuralhash         collision eps=32/255  192/200  success 14/16  6.97 s/img
+[  20751s] neuralhash         collision eps=32/255  200/200  success 8/8  6.10 s/img
+[  20863s] neuralhash         collision_closest eps=32/255   16/200  success 15/16  6.97 s/img
+[  20974s] neuralhash         collision_closest eps=32/255   32/200  success 15/16  6.93 s/img
+[  21084s] neuralhash         collision_closest eps=32/255   48/200  success 16/16  6.91 s/img
+[  21195s] neuralhash         collision_closest eps=32/255   64/200  success 16/16  6.90 s/img
+[  21310s] neuralhash         collision_closest eps=32/255   80/200  success 15/16  7.22 s/img
+[  21421s] neuralhash         collision_closest eps=32/255   96/200  success 16/16  6.94 s/img
+[  21532s] neuralhash         collision_closest eps=32/255  112/200  success 15/16  6.92 s/img
+[  21643s] neuralhash         collision_closest eps=32/255  128/200  success 16/16  6.92 s/img
+[  21756s] neuralhash         collision_closest eps=32/255  144/200  success 16/16  7.10 s/img
+[  21868s] neuralhash         collision_closest eps=32/255  160/200  success 16/16  6.99 s/img
+[  21979s] neuralhash         collision_closest eps=32/255  176/200  success 16/16  6.94 s/img
+[  22089s] neuralhash         collision_closest eps=32/255  192/200  success 16/16  6.88 s/img
+[  22133s] neuralhash         collision_closest eps=32/255  200/200  success 8/8  5.53 s/img
+monotonicity: OK (no drops as eps grows)
+done in 22133s; wrote results/adv_v200_neuralhash/summary.md
+# Adversarial sweep summary
+
+Success rate (%) at the benign FPR threshold, with 95% Wilson interval. Evasion: the attacked copy is no longer matched. Collision: a false match is forced (random pairs, or the closest other image for `collision_closest`).
+
+## Evasion
+
+| Hash | n | ε=1/255 | ε=2/255 | ε=4/255 | ε=8/255 |
+|---|---|---|---|---|---|
+| neuralhash | 200 | 0.5 (0–3) | 0.5 (0–3) | 18.0 (13–24) | 94.5 (90–97) |
+
+Bit accuracy (%, bits still equal to the original; DinoHash paper metric):
+
+| Hash | n | ε=1/255 | ε=2/255 | ε=4/255 | ε=8/255 |
+|---|---|---|---|---|---|
+| neuralhash | 200 | 94.4 | 88.9 | 78.4 | 59.2 |
+
+Mean SSIM of the attacked images:
+
+| Hash | n | ε=1/255 | ε=2/255 | ε=4/255 | ε=8/255 |
+|---|---|---|---|---|---|
+| neuralhash | 200 | 0.996 | 0.985 | 0.950 | 0.859 |
+
+## Collision (random pairs)
+
+| Hash | n | ε=1/255 | ε=2/255 | ε=4/255 | ε=8/255 | ε=16/255 | ε=32/255 |
+|---|---|---|---|---|---|---|---|
+| neuralhash | 200 | 0.0 (0–2) | 0.0 (0–2) | 3.0 (1–6) | 16.5 (12–22) | 56.5 (50–63) | 89.5 (84–93) |
+
+Bit accuracy (%, bits equal to the target; DinoHash paper metric):
+
+| Hash | n | ε=1/255 | ε=2/255 | ε=4/255 | ε=8/255 | ε=16/255 | ε=32/255 |
+|---|---|---|---|---|---|---|---|
+| neuralhash | 200 | 53.1 | 55.2 | 59.1 | 65.5 | 75.2 | 84.4 |
+
+Mean SSIM of the attacked images:
+
+| Hash | n | ε=1/255 | ε=2/255 | ε=4/255 | ε=8/255 | ε=16/255 | ε=32/255 |
+|---|---|---|---|---|---|---|---|
+| neuralhash | 200 | 0.996 | 0.986 | 0.957 | 0.876 | 0.735 | 0.580 |
+
+## Collision (closest target)
+
+| Hash | n | ε=1/255 | ε=2/255 | ε=4/255 | ε=8/255 | ε=16/255 | ε=32/255 |
+|---|---|---|---|---|---|---|---|
+| neuralhash | 200 | 38.0 (32–45) | 63.5 (57–70) | 80.5 (74–85) | 93.5 (89–96) | 97.0 (94–99) | 98.0 (95–99) |
+
+Bit accuracy (%, bits equal to the target; DinoHash paper metric):
+
+| Hash | n | ε=1/255 | ε=2/255 | ε=4/255 | ε=8/255 | ε=16/255 | ε=32/255 |
+|---|---|---|---|---|---|---|---|
+| neuralhash | 200 | 71.8 | 74.1 | 78.0 | 84.0 | 91.4 | 95.2 |
+
+Mean SSIM of the attacked images:
+
+| Hash | n | ε=1/255 | ε=2/255 | ε=4/255 | ε=8/255 | ε=16/255 | ε=32/255 |
+|---|---|---|---|---|---|---|---|
+| neuralhash | 200 | 0.996 | 0.986 | 0.955 | 0.882 | 0.763 | 0.684 |
+
+## ε-monotonicity check
+
+No drops: success and per-image progress never fell as ε grew.

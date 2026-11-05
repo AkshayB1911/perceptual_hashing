@@ -1,0 +1,13 @@
+{
+  "id": "sushanthmb/hashbench-loss-diag",
+  "title": "hashbench loss diag",
+  "code_file": "loss_diag.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": ["sushanthmb/hashbench-adv"],
+  "competition_sources": [],
+  "kernel_sources": []
+}

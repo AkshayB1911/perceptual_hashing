@@ -1,0 +1,50 @@
+{
+  "list": "data/splits/V200.txt",
+  "limit": 3,
+  "n_images": 3,
+  "norm": "linf",
+  "steps": 100,
+  "method": "apgd",
+  "step_size": null,
+  "random_start": true,
+  "margin": 0.0,
+  "fpr": 0.001,
+  "max_side": 512,
+  "seed": 0,
+  "thresholds_from": [
+    "results/coco_run1",
+    "results/coco_run2"
+  ],
+  "hashes": [
+    "dinohash",
+    "dinohash_untrained"
+  ],
+  "eps_255": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "modes": [
+    "evasion",
+    "collision"
+  ],
+  "eps_255_evasion": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "eps_255_collision": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "collision_targets": "collision: image i -> image (i + n//2) mod n of the list; collision_closest: the other list image with the closest clean hash",
+  "best_iterate": "by hash distance on the 8-bit image, loss breaks ties",
+  "device": "mps",
+  "torch": "2.11.0",
+  "gpu": null,
+  "started": "2026-11-04 19:41:33"
+}

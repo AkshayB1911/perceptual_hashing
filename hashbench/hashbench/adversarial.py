@@ -10,8 +10,10 @@ Threat model and conventions
 * The attacker perturbs the *model input* (the preprocessed [0, 1] tensor) inside an
   l_inf or l_2 budget ``eps`` measured in [0, 1] **pixel space**. Every network here applies
   its ImageNet / [-1, 1] normalisation *inside* ``forward``, so attacking the [0, 1] input
-  is attacking pixel space directly -- unlike the CertPHash authors' own code, which applies
-  eps *after* normalisation (see hashes/certphash.py and the README).
+  is attacking pixel space directly. This is the same convention as the CertPHash authors'
+  certified training (``certified.py`` divides eps by the ImageNet std before adding it to
+  the normalised input) and their PGD attack (``adv2_evasion_attack.py`` perturbs [0, 1]
+  pixels), so their eps = k/255 and ours are the same box.
 * **Evasion**: make an image stop matching its own hash (push the hash away).
 * **Collision**: make an image match a chosen target hash (pull the hash onto the target).
 * The attack optimises a continuous perturbation; the returned image is then **quantised to
@@ -64,8 +66,14 @@ class AttackConfig:
     eps          perturbation budget in [0, 1] pixel space (l_inf max per pixel, or l_2 norm
                  over the whole image). Report it next to the model input size.
     steps        optimisation iterations.
-    method       "pgd" (fixed step) or "apgd" (Croce & Hein 2020, auto step size).
-    step_size    PGD step size; default eps/4 (l_inf) or eps/2 (l_2). APGD ignores it.
+    method       "pgd" (fixed step), "apgd" (Croce & Hein 2020, auto step size), or
+                 "ensemble": APGD *and* small-step PGD from the same start, keeping the better
+                 result per sample. Trained DinoHash's loss surface is so rough that APGD's
+                 large initial steps (2 eps) stall at ~20 flipped bits while PGD with a step of
+                 a fraction of 1/255 flips ~90 (Kaggle diagnostic, 2026-11-04); smoother models
+                 (CertPHash) favour APGD. The ensemble covers both.
+    step_size    PGD step size; default eps/4 (l_inf) or eps/2 (l_2) for "pgd", and
+                 min(eps/10, 0.25/255) for the PGD half of "ensemble". APGD ignores it.
     random_start begin from a random point in the budget ball.
     margin       confidence margin in logit units for the bit-hash hinge losses (0 = only
                  flip the sign). Logit scales differ by model (DinoHash ~+-500,
@@ -101,6 +109,8 @@ class AttackConfig:
     def default_step_size(self) -> float:
         if self.step_size is not None:
             return self.step_size
+        if self.method == "ensemble":
+            return min(self.eps / 10.0, 0.25 / 255.0) if self.norm == "linf" else self.eps / 10.0
         return self.eps / 4.0 if self.norm == "linf" else self.eps / 2.0
 
 
@@ -158,6 +168,10 @@ class _Adapter:
 
     def _reference(self, out: torch.Tensor) -> torch.Tensor: ...
 
+    # --- the same discrete hash + distance on torch tensors (used to pick the best iterate) ---
+    def hash_t(self, out: torch.Tensor) -> torch.Tensor: ...
+    def dist_t(self, a: torch.Tensor, b: torch.Tensor) -> torch.Tensor: ...
+
 
 class _BitAdapter(_Adapter):
     """DinoHash / NeuralHash: outputs are per-bit logits; bit = logit >= 0; Hamming distance."""
@@ -172,6 +186,12 @@ class _BitAdapter(_Adapter):
 
     def distance(self, a: np.ndarray, b: np.ndarray) -> np.ndarray:
         return np.count_nonzero(a != b, axis=-1).astype(np.int64)
+
+    def hash_t(self, out):
+        return out >= 0
+
+    def dist_t(self, a, b):
+        return (a != b).sum(dim=1).float()
 
     def _reference(self, out: torch.Tensor) -> torch.Tensor:
         # signs in {-1, +1}; treat exactly-zero logits as +1 so they still get a gradient.
@@ -200,6 +220,12 @@ class _CertAdapter(_Adapter):
 
     def distance(self, a: np.ndarray, b: np.ndarray) -> np.ndarray:
         return np.abs(a.astype(np.int64) - b.astype(np.int64)).sum(axis=-1)
+
+    def hash_t(self, out):
+        return out.round().clamp(0, 255)
+
+    def dist_t(self, a, b):
+        return (a - b).abs().sum(dim=1)
 
     def _reference(self, out: torch.Tensor) -> torch.Tensor:
         # continuous target = the clean rounded hash, as float (the quantity L1 is measured to).
@@ -328,20 +354,45 @@ def _loss_vec(adapter: _Adapter, x: torch.Tensor, loss_fn: Callable[[torch.Tenso
     return total / cfg.eot_samples
 
 
-def _pgd(adapter, x0, loss_fn, cfg, gen):
+def _better(obj, lv, best_obj, best_lv):
+    """Per-sample: is (obj, loss) better than the best so far? Objective first, loss breaks ties."""
+    return (obj < best_obj) | ((obj == best_obj) & (lv < best_lv))
+
+
+def _start(x0, cfg, gen, init):
+    """Starting point: ``init`` (a warm start, projected into this budget) if given, else a
+    random point in the ball (``random_start``) or the clean image."""
+    if init is not None:
+        return (x0 + _project(init.to(x0) - x0, cfg.eps, cfg.norm)).clamp(0, 1)
+    if cfg.random_start:
+        return (x0 + _random_start(x0, cfg.eps, cfg.norm, gen)).clamp(0, 1)
+    return x0.clone()
+
+
+def _pgd(adapter, x0, loss_fn, cfg, gen, objective=None, init=None):
+    """Fixed-step PGD. Returns the iterate that is best by ``objective`` (lower = better for
+    the attacker, e.g. minus the Hamming distance for evasion); the loss only breaks ties.
+    Without an objective the loss itself is used (the pre-fix behaviour)."""
     eps, norm, alpha = cfg.eps, cfg.norm, cfg.default_step_size()
-    delta = _random_start(x0, eps, norm, gen) if cfg.random_start else torch.zeros_like(x0)
-    delta = (( x0 + delta).clamp(0, 1) - x0).detach().requires_grad_(True)
+    objective = objective or (lambda x: _loss_vec(adapter, x, loss_fn, cfg).detach())
+    delta = (_start(x0, cfg, gen, init) - x0).detach().requires_grad_(True)
     best = x0.detach().clone()
+    with torch.no_grad():
+        best_obj = objective(best)
     best_loss = torch.full((x0.shape[0],), float("inf"), device=x0.device)
-    for _ in range(cfg.steps):
-        lv = _loss_vec(adapter, (x0 + delta).clamp(0, 1), loss_fn, cfg)
+    for it in range(cfg.steps + 1):         # the extra pass scores the final iterate
+        x_cur = (x0 + delta).clamp(0, 1)
+        lv = _loss_vec(adapter, x_cur, loss_fn, cfg)
         grad, = torch.autograd.grad(lv.sum(), delta)
         with torch.no_grad():
-            improved = lv < best_loss
+            x_cur = x_cur.detach()
+            obj = objective(x_cur)
+            improved = _better(obj, lv.detach(), best_obj, best_loss)
+            best_obj = torch.where(improved, obj, best_obj)
             best_loss = torch.where(improved, lv.detach(), best_loss)
-            x_cur = (x0 + delta).clamp(0, 1)
             best[improved] = x_cur[improved]
+            if it == cfg.steps:
+                break
             if norm == "linf":
                 delta -= alpha * grad.sign()
             else:
@@ -354,7 +405,7 @@ def _pgd(adapter, x0, loss_fn, cfg, gen):
     return best.detach()
 
 
-def _apgd(adapter, x0, loss_fn, cfg, gen):
+def _apgd(adapter, x0, loss_fn, cfg, gen, objective=None, init=None):
     """Auto-PGD (Croce & Hein, ICML 2020), minimisation form with momentum + step halving.
 
     Simplified relative to the reference AutoAttack code: the step size is halved at a
@@ -362,6 +413,12 @@ def _apgd(adapter, x0, loss_fn, cfg, gen):
     the best loss (the paper's condition 1); condition 2 (step size and best loss both
     unchanged since the last checkpoint) is not checked. On halving, the iterate and its
     gradient restart from the best point, as in the reference code.
+
+    Two "bests" are tracked. The step-size schedule counts improvements of the *loss*, as in
+    the paper. The iterate that is returned (and restarted from) is the best by ``objective``
+    -- the hash distance the attack is judged on -- with the loss breaking ties. Picking by
+    loss alone returned iterates that flipped fewer bits than earlier ones on trained
+    DinoHash, whose ~+-500 logits let a few bits dominate the hinge loss.
     """
     eps, norm = cfg.eps, cfg.norm
     n = cfg.steps
@@ -377,12 +434,20 @@ def _apgd(adapter, x0, loss_fn, cfg, gen):
     def clip(x):
         return (x0 + _project(x - x0, eps, norm)).clamp(0, 1)
 
-    x = clip(x0 + _random_start(x0, eps, norm, gen)) if cfg.random_start else x0.clone()
-    x = x.detach().requires_grad_(True)
+    x = clip(_start(x0, cfg, gen, init)).detach().requires_grad_(True)
     lv = _loss_vec(adapter, x, loss_fn, cfg)
     grad, = torch.autograd.grad(lv.sum(), x)
     x = x.detach()
-    best, best_loss, best_grad = x.clone(), lv.detach().clone(), grad.clone()
+    objective = objective or (lambda z: _loss_vec(adapter, z, loss_fn, cfg).detach())
+    with torch.no_grad():
+        best_loss = lv.detach().clone()                       # for the step-size schedule
+        best, best_grad = x.clone(), grad.clone()             # best by objective
+        best_obj, best_sel_loss = objective(x), lv.detach().clone()
+        clean_obj = objective(x0)
+        use_clean = clean_obj < best_obj                      # never return worse than no attack
+        best_obj = torch.where(use_clean, clean_obj, best_obj)
+        best[use_clean] = x0[use_clean]
+        best_sel_loss = torch.where(use_clean, torch.full_like(best_sel_loss, float("inf")), best_sel_loss)
     x_prev = x.clone()
     momentum = 0.75
     succ_since = torch.zeros(x0.shape[0], device=x0.device)
@@ -404,11 +469,16 @@ def _apgd(adapter, x0, loss_fn, cfg, gen):
         grad, = torch.autograd.grad(lv.sum(), x)
         x = x.detach()
         with torch.no_grad():
+            lv = lv.detach()
             improved = lv < best_loss
             succ_since += improved.float()
             best_loss = torch.where(improved, lv, best_loss)
-            best[improved] = x[improved]
-            best_grad[improved] = grad[improved]
+            obj = objective(x)
+            better = _better(obj, lv, best_obj, best_sel_loss)
+            best_obj = torch.where(better, obj, best_obj)
+            best_sel_loss = torch.where(better, lv, best_sel_loss)
+            best[better] = x[better]
+            best_grad[better] = grad[better]
             if ci < len(checkpoints) and k == checkpoints[ci]:
                 period = checkpoints[ci] - (checkpoints[ci - 1] if ci else 0)
                 halve = succ_since < 0.75 * period
@@ -424,8 +494,29 @@ def _apgd(adapter, x0, loss_fn, cfg, gen):
 # high-level API
 # --------------------------------------------------------------------------------------
 
-def _run(adapter, x0, loss_fn, cfg, gen):
-    return (_apgd if cfg.method == "apgd" else _pgd)(adapter, x0, loss_fn, cfg, gen)
+def _run(adapter, x0, loss_fn, cfg, gen, objective=None, init=None):
+    if cfg.method != "ensemble":
+        return (_apgd if cfg.method == "apgd" else _pgd)(adapter, x0, loss_fn, cfg, gen, objective, init)
+    objective = objective or (lambda x: _loss_vec(adapter, x, loss_fn, cfg).detach())
+    if init is None:   # both halves start from the same random point
+        init = _start(x0, cfg, gen, None).detach()
+    a = _apgd(adapter, x0, loss_fn, cfg, gen, objective, init)
+    b = _pgd(adapter, x0, loss_fn, cfg, gen, objective, init)
+    with torch.no_grad():
+        take_b = objective(b) < objective(a)
+    return torch.where(take_b.view(-1, *[1] * (x0.dim() - 1)), b, a)
+
+
+def _make_objective(adapter, ref_hash: torch.Tensor, mode: str, quantize: bool):
+    """Per-sample attack objective, lower = better: minus the distance to the clean hash
+    (evasion) or the distance to the target hash (collision), on the image that will
+    actually be reported -- the 8-bit quantised one when ``quantize``."""
+    sign = -1.0 if mode == "evasion" else 1.0
+
+    def objective(x):
+        xq = _quantize(x) if quantize else x
+        return sign * adapter.dist_t(adapter.hash_t(adapter.outputs(xq)), ref_hash)
+    return objective
 
 
 def _results(mode, adapter, clean, adv, threshold, cfg, target_hash=None,
@@ -455,7 +546,8 @@ def _results(mode, adapter, clean, adv, threshold, cfg, target_hash=None,
 
 def attack_batch(hasher: PerceptualHash, images: Sequence[Image.Image], cfg: AttackConfig | None = None,
                  threshold: float | None = None, targets: Sequence[Image.Image] | None = None,
-                 adapter: _Adapter | None = None, keep_images: bool = True) -> list[AttackResult]:
+                 adapter: _Adapter | None = None, keep_images: bool = True,
+                 init: Sequence[torch.Tensor] | torch.Tensor | None = None) -> list[AttackResult]:
     """Attack a batch of images in one optimisation (the GPU-efficient entry point).
 
     ``targets=None`` runs evasion; otherwise ``targets[i]`` is the collision target of
@@ -464,7 +556,9 @@ def attack_batch(hasher: PerceptualHash, images: Sequence[Image.Image], cfg: Att
     ``build_adapter(h).to(device)``) to avoid moving the model for every batch, and
     ``keep_images=False`` to drop the adversarial tensors when only the numbers are needed.
     Samples are optimised independently: the summed loss has per-sample gradients, and APGD
-    keeps a per-sample step size.
+    keeps a per-sample step size. ``init`` (one model-input tensor per image, e.g. the
+    adversarial images of a smaller budget) warm-starts the attack instead of a random start;
+    since the start is a candidate for the best iterate, the result is never worse than it.
     """
     cfg = cfg or AttackConfig()
     thr = threshold if threshold is not None else default_threshold(hasher)
@@ -478,6 +572,8 @@ def attack_batch(hasher: PerceptualHash, images: Sequence[Image.Image], cfg: Att
         mode, target_hash = "evasion", None
         ref = adapter.reference(x0)
         loss_fn = lambda out: adapter.evasion_loss(out, ref, cfg.margin)
+        with torch.no_grad():
+            ref_hash_t = adapter.hash_t(adapter.outputs(x0))
     else:
         if len(targets) != len(images):
             raise ValueError("need exactly one target per image")
@@ -486,7 +582,12 @@ def attack_batch(hasher: PerceptualHash, images: Sequence[Image.Image], cfg: Att
         ref = adapter.reference(xt)                     # signs / rounded hash of each target
         target_hash = adapter.hash(xt)
         loss_fn = lambda out: adapter.collision_loss(out, ref, cfg.margin)
-    adv = _run(adapter, x0, loss_fn, cfg, gen)
+        with torch.no_grad():
+            ref_hash_t = adapter.hash_t(adapter.outputs(xt))
+    objective = _make_objective(adapter, ref_hash_t, mode, cfg.quantize)
+    if init is not None and not torch.is_tensor(init):
+        init = torch.stack(list(init))
+    adv = _run(adapter, x0, loss_fn, cfg, gen, objective, None if init is None else init.to(device))
     return _results(mode, adapter, x0, adv, thr, cfg, target_hash, keep_images)
 
 

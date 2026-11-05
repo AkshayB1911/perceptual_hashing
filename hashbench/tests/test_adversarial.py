@@ -12,7 +12,7 @@ import pytest
 torch = pytest.importorskip("torch")
 
 from hashbench.adversarial import (  # noqa: E402
-    AttackConfig, _BitAdapter, _CertAdapter, _pgd, _apgd, _project, evade, collide,
+    AttackConfig, _BitAdapter, _CertAdapter, _pgd, _apgd, _project, _make_objective, evade, collide,
 )
 
 
@@ -92,6 +92,54 @@ def test_collision_reduces_distance(method):
     assert after.mean() < before.mean()                          # moved toward the target
 
 
+class _SkewedBitModel(_TinyBitModel):
+    """Like _TinyBitModel, but half the bits have ~1000x larger logits (as trained DinoHash's
+    +-500 logits do), so the lowest hinge loss is not the iterate with the most flipped bits."""
+
+    def __init__(self, seed=0):
+        super().__init__(seed=seed)
+        scale = torch.ones(self.w.shape[0], 1)
+        scale[::2] = 1000.0
+        self.w.data *= scale
+
+
+@pytest.mark.parametrize("mode", ["evasion", "collision"])
+def test_objective_selection_never_worse_than_loss_selection(mode):
+    """PGD's trajectory does not depend on the selection rule, so picking the iterate by hash
+    distance must give a distance at least as good as picking it by loss, for every sample."""
+    adapter = _BitAdapter(_SkewedBitModel(), _pre_8, input_size=8)
+    x0 = _rand_batch(b=6)
+    if mode == "evasion":
+        ref = adapter.reference(x0)
+        ref_h = adapter.hash_t(adapter.outputs(x0))
+        loss_fn = lambda out: adapter.evasion_loss(out, ref, 0.0)
+    else:
+        xt = _rand_batch(b=6, gen_seed=7)
+        ref = adapter.reference(xt)
+        ref_h = adapter.hash_t(adapter.outputs(xt))
+        loss_fn = lambda out: adapter.collision_loss(out, ref, 0.0)
+    obj = _make_objective(adapter, ref_h, mode, quantize=False)
+    cfg = AttackConfig(norm="linf", eps=0.05, steps=40, method="pgd", device="cpu", seed=0)
+    by_loss = _pgd(adapter, x0, loss_fn, cfg, torch.Generator().manual_seed(0))
+    by_obj = _pgd(adapter, x0, loss_fn, cfg, torch.Generator().manual_seed(0), objective=obj)
+    with torch.no_grad():
+        assert (obj(by_obj) <= obj(by_loss)).all()
+
+
+@pytest.mark.parametrize("method", ["pgd", "apgd"])
+def test_evasion_never_worse_than_clean(method):
+    adapter = _BitAdapter(_SkewedBitModel(), _pre_8, input_size=8)
+    x0 = _rand_batch()
+    ref = adapter.reference(x0)
+    ref_h = adapter.hash_t(adapter.outputs(x0))
+    obj = _make_objective(adapter, ref_h, "evasion", quantize=True)
+    cfg = AttackConfig(norm="linf", eps=0.02, steps=20, method=method, device="cpu", seed=0)
+    adv = (_apgd if method == "apgd" else _pgd)(adapter, x0, lambda o: adapter.evasion_loss(o, ref, 0.0),
+                                                 cfg, torch.Generator().manual_seed(0), objective=obj)
+    with torch.no_grad():
+        assert (obj(adv) <= obj(x0)).all()
+
+
 def test_project_l2_shrinks_only_when_outside():
     inside = torch.full((2, 3, 4, 4), 0.001)
     out = _project(inside, eps=1.0, norm="l2")
@@ -143,3 +191,33 @@ def test_real_evasion_smoke(name):
     assert res.linf <= 8 / 255 + 0.5 / 255 + 1e-4
     assert res.distance >= res.orig_distance                      # evasion never gets closer
     assert 0.0 <= res.ssim <= 1.0 + 1e-6
+
+
+@pytest.mark.parametrize("mode", ["evasion", "collision"])
+def test_warm_start_is_monotone_in_eps(mode):
+    """Warm-starting eps_k from the eps_{k-1} result can never do worse (the start is a candidate)."""
+    from hashbench.adversarial import _run
+    adapter = _BitAdapter(_SkewedBitModel(), _pre_8, input_size=8)
+    x0 = _rand_batch(b=6)
+    src = x0 if mode == "evasion" else _rand_batch(b=6, gen_seed=7)
+    ref = adapter.reference(src)
+    ref_h = adapter.hash_t(adapter.outputs(src))
+    lf = (lambda o: adapter.evasion_loss(o, ref, 0.0)) if mode == "evasion" else \
+         (lambda o: adapter.collision_loss(o, ref, 0.0))
+    obj = _make_objective(adapter, ref_h, mode, quantize=True)
+    prev, prev_obj = None, None
+    for eps in [0.01, 0.02, 0.04, 0.08]:
+        cfg = AttackConfig(norm="linf", eps=eps, steps=15, method="ensemble", device="cpu", seed=0)
+        adv = _run(adapter, x0, lf, cfg, torch.Generator().manual_seed(0), obj, prev)
+        adv = adv.mul(255).round().div(255)          # what the sweep carries forward
+        with torch.no_grad():
+            o = obj(adv)
+        assert (adv - x0).abs().max() <= eps + 0.5 / 255 + 1e-6
+        if prev_obj is not None:
+            assert (o <= prev_obj).all()
+        prev, prev_obj = adv, o
+
+
+def test_ensemble_default_step_is_small():
+    assert AttackConfig(eps=8 / 255, method="ensemble").default_step_size() == pytest.approx(0.25 / 255)
+    assert AttackConfig(eps=1 / 255, method="ensemble").default_step_size() == pytest.approx(0.1 / 255)

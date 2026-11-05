@@ -1,0 +1,62 @@
+{
+  "list": "data/splits/V200.txt",
+  "limit": null,
+  "n_images": 200,
+  "norm": "linf",
+  "steps": 100,
+  "method": "ensemble",
+  "step_size": null,
+  "random_start": true,
+  "margin": 0.0,
+  "fpr": 0.001,
+  "max_side": 512,
+  "seed": 0,
+  "warm_start": true,
+  "thresholds_from": [
+    "results/coco_run1",
+    "results/coco_run2"
+  ],
+  "hashes": [
+    "dinohash",
+    "dinohash_untrained",
+    "certphash",
+    "certphash_ep2",
+    "certphash_ep4",
+    "certphash_ep8",
+    "certphash_base",
+    "certphash_adv"
+  ],
+  "eps_255": [
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    16.0,
+    32.0
+  ],
+  "modes": [
+    "evasion",
+    "collision",
+    "collision_closest"
+  ],
+  "eps_255_evasion": [
+    1.0,
+    2.0,
+    4.0,
+    8.0
+  ],
+  "eps_255_collision": [
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    16.0,
+    32.0
+  ],
+  "collision_targets": "collision: image i -> image (i + n//2) mod n of the list; collision_closest: the other list image with the closest clean hash",
+  "best_iterate": "by hash distance on the 8-bit image, loss breaks ties",
+  "device": "cuda",
+  "torch": "2.11.0+cu130",
+  "gpu": "Tesla T4",
+  "started": "2026-11-04 14:59:48"
+}

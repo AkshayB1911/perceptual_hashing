@@ -25,9 +25,10 @@ The released MNIST / PDQ models use a different network on 28x28 digits and are 
 wrapped here.
 
 ``load_certphash_model`` returns a differentiable ``nn.Module`` on [0, 1] images, like the
-other neural hashes. Note: the authors apply perturbation budgets eps *after* ImageNet
-normalisation, i.e. eps / std per channel in pixel space (about 4.4x larger than in our
-[0, 1] convention).
+other neural hashes. Budgets: the authors' certified training adds ``eps / std`` to the
+ImageNet-normalised input, which is exactly eps in [0, 1] pixel space, so their eps = k/255
+is the same box as ours. (Their CNER script ``verify_evasion.py`` is the exception: it
+certifies a one-value L0 change with PDQ bits and threshold 90; see the README.)
 """
 
 from __future__ import annotations

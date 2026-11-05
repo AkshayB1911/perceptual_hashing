@@ -135,8 +135,17 @@ Planned: SSCD (add a `PerceptualHash` subclass in
     (`post_photodna`, threshold 1800). It counts an evasion when
     `max(L1(lb), L1(ub)) >= threshold`, which is smaller than the worst-case L1 over the
     output box.
-  * Perturbation budgets ε are applied after ImageNet normalization, i.e. ε/std per channel
-    in pixel space (about 4.4x larger than ε on [0, 1] images).
+    Its `PerturbationL0Norm` bounds changing ceil(ε) = **one** input value anywhere in
+    [0, 1] (the class assumes un-normalised inputs, but receives ImageNet-normalised ones);
+    it is not the ℓ∞ ε-ball the paper describes. The script has used L0 since its first
+    commit (2025-01-20); the 2025-03-08 edit only dropped an unused `norm` argument. The
+    paper's CNER can therefore not be reproduced from the released script as described.
+  * ε itself is consistent with ours: certified training (`certified.py`, `cert()`) adds
+    `eps / std` to the normalized input, which is exactly ε in [0, 1] pixel space, and the
+    PGD attack (`attack/adv2_evasion_attack.py`) perturbs [0, 1] pixels before normalizing.
+    (An earlier version of this note said the budgets were 4.4x larger; that was wrong.)
+  * The released collision verification (`verify_preimage.py`, CNCR) is wired to MNIST only;
+    the COCO/PhotoDNA collision certification is not in the repository.
 
 ## Setup
 

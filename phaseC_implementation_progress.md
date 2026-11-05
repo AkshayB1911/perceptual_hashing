@@ -89,9 +89,12 @@ Both match the benchmark's rule that two hashes match when `distance <= threshol
 ### 2.4 Budget conventions
 - ε is measured in **[0, 1] pixel space** of the model input, ℓ∞ or ℓ2.
 - Every network applies its own normalisation (ImageNet, or [−1, 1] for NeuralHash) inside
-  `forward`, so attacking its [0, 1] input is attacking pixel space directly. This avoids
-  the problem in the CertPHash authors' code, where ε is applied *after* ImageNet
-  normalisation (about 4.4× larger in pixel space).
+  `forward`, so attacking its [0, 1] input is attacking pixel space directly. This is the
+  same convention as CertPHash's certified training (ε/std added to the normalised input)
+  and its PGD attack, so their ε = k/255 and ours match. (Corrected 2026-11-04: an earlier
+  note claimed the authors' ε was 4.4× larger in pixel space. The real problem is in their
+  CNER script `verify_evasion.py`, which certifies a one-value L0 change with PDQ bits and
+  threshold 90, not an ℓ∞ ball with PhotoDNA's 1800; see hashbench/README.md.)
 - Attacks run at each model's **input resolution** (DinoHash 224², NeuralHash 360²,
   CertPHash 64²). Originals are first downscaled to 512 px, as in the benign benchmark.
 
