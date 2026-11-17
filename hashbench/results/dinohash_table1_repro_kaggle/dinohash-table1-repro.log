@@ -1,0 +1,21 @@
+[{"stream_name":"stdout","time":22.238899427,"data":"/usr/bin/python3 scripts/reproduce_dinohash_table1.py --list /kaggle/working/hashbench/data/splits/V200_first50.txt --out /kaggle/working/hashbench/results/dinohash_table1_repro_kaggle --models dinohash dinohash_untrained_paper --eps 4 8 --steps 100 --batch 25 --device cuda\n"}
+,{"stream_name":"stdout","time":72.904222627,"data":"dinohash eps=4/255 [25/50] bitacc 70.3% (40s)\n"}
+,{"stream_name":"stdout","time":110.892603604,"data":"dinohash eps=4/255 [50/50] bitacc 67.5% (38s)\n"}
+,{"stream_name":"stdout","time":150.48454852,"data":"dinohash eps=8/255 [25/50] bitacc 56.3% (40s)\n"}
+,{"stream_name":"stdout","time":188.625904659,"data":"dinohash eps=8/255 [50/50] bitacc 56.0% (38s)\n"}
+,{"stream_name":"stdout","time":228.389720714,"data":"dinohash_untrained_paper eps=4/255 [25/50] bitacc 0.0% (39s)\n"}
+,{"stream_name":"stdout","time":267.158600581,"data":"dinohash_untrained_paper eps=4/255 [50/50] bitacc 0.0% (39s)\n"}
+,{"stream_name":"stdout","time":306.164583568,"data":"dinohash_untrained_paper eps=8/255 [25/50] bitacc 0.0% (39s)\n"}
+,{"stream_name":"stdout","time":345.323803831,"data":"dinohash_untrained_paper eps=8/255 [50/50] bitacc 0.0% (39s)\n"}
+,{"stream_name":"stdout","time":345.377485463,"data":"                   model  eps_255  n    bitacc  bitacc_8bit  bitacc_median  linf_255  paper\n"}
+,{"stream_name":"stdout","time":345.377517102,"data":"                dinohash        4 50 68.854169    69.125002      69.270834  4.000007   72.2\n"}
+,{"stream_name":"stdout","time":345.37752274,"data":"                dinohash        8 50 56.125002    56.187502      55.729169  8.000007   64.8\n"}
+,{"stream_name":"stdout","time":345.37752766,"data":"dinohash_untrained_paper        4 50  0.000000     0.000000       0.000000  4.000007    0.3\n"}
+,{"stream_name":"stdout","time":345.377532907,"data":"dinohash_untrained_paper        8 50  0.000000     0.000000       0.000000  8.000007    0.0\n"}
+,{"stream_name":"stderr","time":352.376638891,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":352.376668729,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":352.663375084,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":352.663403823,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":353.440437131,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":354.480295453,"data":"[NbConvertApp] Writing 280040 bytes to __results__.html\n"}
+]

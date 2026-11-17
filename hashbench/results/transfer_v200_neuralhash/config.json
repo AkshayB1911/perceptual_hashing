@@ -1,0 +1,39 @@
+{
+  "list": "data\\splits\\V200.txt",
+  "limit": null,
+  "n_images": 200,
+  "norm": "linf",
+  "steps": 100,
+  "method": "ensemble",
+  "random_start": true,
+  "margin": 0.0,
+  "fpr": 0.001,
+  "max_side": 512,
+  "seed": 0,
+  "thresholds_from": [
+    "results\\coco_run1",
+    "results\\coco_run2"
+  ],
+  "eps_evasion": [
+    2.0,
+    4.0,
+    8.0
+  ],
+  "eps_collision": [
+    8.0,
+    16.0
+  ],
+  "hashes": [
+    "neuralhash"
+  ],
+  "modes": [
+    "evasion",
+    "collision"
+  ],
+  "collision_targets": "image i -> image (i + n//2) mod n of the list",
+  "warm_start": "from the saved 8-bit PNG of the previous budget of the same mode",
+  "device": "cpu",
+  "torch": "2.14.1+cpu",
+  "gpu": null,
+  "started": "2026-11-17 02:13:32"
+}

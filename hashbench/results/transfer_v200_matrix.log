@@ -1,0 +1,333 @@
+[   194s] dinohash           -> dinohash           thr    17  evasion transfer 100.0%  (1600 images)
+[   387s] dinohash_untrained -> dinohash           thr    17  evasion transfer   9.0%  (1600 images)
+[   573s] certphash          -> dinohash           thr    17  evasion transfer   7.8%  (1600 images)
+[   757s] certphash_ep2      -> dinohash           thr    17  evasion transfer   7.2%  (1600 images)
+[   942s] certphash_ep4      -> dinohash           thr    17  evasion transfer   7.7%  (1600 images)
+[  1128s] certphash_ep8      -> dinohash           thr    17  evasion transfer   7.8%  (1600 images)
+[  1313s] certphash_base     -> dinohash           thr    17  evasion transfer   6.0%  (1600 images)
+[  1498s] certphash_adv      -> dinohash           thr    17  evasion transfer   5.5%  (1600 images)
+[  1680s] dinohash           -> dinohash_untrained thr    21  evasion transfer  46.2%  (1600 images)
+[  1861s] dinohash_untrained -> dinohash_untrained thr    21  evasion transfer 100.0%  (1600 images)
+[  2033s] certphash          -> dinohash_untrained thr    21  evasion transfer   2.5%  (1600 images)
+[  2206s] certphash_ep2      -> dinohash_untrained thr    21  evasion transfer   2.3%  (1600 images)
+[  2380s] certphash_ep4      -> dinohash_untrained thr    21  evasion transfer   2.2%  (1600 images)
+[  2554s] certphash_ep8      -> dinohash_untrained thr    21  evasion transfer   2.2%  (1600 images)
+[  2727s] certphash_base     -> dinohash_untrained thr    21  evasion transfer   2.7%  (1600 images)
+[  2901s] certphash_adv      -> dinohash_untrained thr    21  evasion transfer   3.8%  (1600 images)
+[  2971s] dinohash           -> neuralhash         thr    26  evasion transfer   0.0%  (1600 images)
+[  3040s] dinohash_untrained -> neuralhash         thr    26  evasion transfer   0.0%  (1600 images)
+[  3101s] certphash          -> neuralhash         thr    26  evasion transfer   1.3%  (1600 images)
+[  3162s] certphash_ep2      -> neuralhash         thr    26  evasion transfer   0.8%  (1600 images)
+[  3223s] certphash_ep4      -> neuralhash         thr    26  evasion transfer   1.0%  (1600 images)
+[  3284s] certphash_ep8      -> neuralhash         thr    26  evasion transfer   0.3%  (1600 images)
+[  3345s] certphash_base     -> neuralhash         thr    26  evasion transfer   0.5%  (1600 images)
+[  3405s] certphash_adv      -> neuralhash         thr    26  evasion transfer   1.3%  (1600 images)
+[  3420s] dinohash           -> certphash_base     thr  4936  evasion transfer   0.0%  (1600 images)
+[  3429s] dinohash_untrained -> certphash_base     thr  4936  evasion transfer   0.0%  (1600 images)
+[  3433s] certphash          -> certphash_base     thr  4936  evasion transfer   0.0%  (1600 images)
+[  3437s] certphash_ep2      -> certphash_base     thr  4936  evasion transfer   0.0%  (1600 images)
+[  3440s] certphash_ep4      -> certphash_base     thr  4936  evasion transfer   0.0%  (1600 images)
+[  3444s] certphash_ep8      -> certphash_base     thr  4936  evasion transfer   0.0%  (1600 images)
+[  3448s] certphash_base     -> certphash_base     thr  4936  evasion transfer   5.0%  (1600 images)
+[  3451s] certphash_adv      -> certphash_base     thr  4936  evasion transfer   0.0%  (1600 images)
+[  3461s] dinohash           -> certphash_adv      thr  5435  evasion transfer   0.0%  (1600 images)
+[  3470s] dinohash_untrained -> certphash_adv      thr  5435  evasion transfer   0.0%  (1600 images)
+[  3474s] certphash          -> certphash_adv      thr  5435  evasion transfer   0.2%  (1600 images)
+[  3478s] certphash_ep2      -> certphash_adv      thr  5435  evasion transfer   0.0%  (1600 images)
+[  3481s] certphash_ep4      -> certphash_adv      thr  5435  evasion transfer   0.0%  (1600 images)
+[  3485s] certphash_ep8      -> certphash_adv      thr  5435  evasion transfer   0.0%  (1600 images)
+[  3488s] certphash_base     -> certphash_adv      thr  5435  evasion transfer   0.2%  (1600 images)
+[  3492s] certphash_adv      -> certphash_adv      thr  5435  evasion transfer   0.7%  (1600 images)
+[  3502s] dinohash           -> certphash          thr  4870  evasion transfer   0.0%  (1600 images)
+[  3511s] dinohash_untrained -> certphash          thr  4870  evasion transfer   0.0%  (1600 images)
+[  3515s] certphash          -> certphash          thr  4870  evasion transfer   0.3%  (1600 images)
+[  3518s] certphash_ep2      -> certphash          thr  4870  evasion transfer   0.0%  (1600 images)
+[  3522s] certphash_ep4      -> certphash          thr  4870  evasion transfer   0.0%  (1600 images)
+[  3526s] certphash_ep8      -> certphash          thr  4870  evasion transfer   0.0%  (1600 images)
+[  3529s] certphash_base     -> certphash          thr  4870  evasion transfer   0.0%  (1600 images)
+[  3533s] certphash_adv      -> certphash          thr  4870  evasion transfer   0.0%  (1600 images)
+[  3543s] dinohash           -> certphash_ep2      thr  3912  evasion transfer   0.0%  (1600 images)
+[  3552s] dinohash_untrained -> certphash_ep2      thr  3912  evasion transfer   0.0%  (1600 images)
+[  3556s] certphash          -> certphash_ep2      thr  3912  evasion transfer   0.2%  (1600 images)
+[  3559s] certphash_ep2      -> certphash_ep2      thr  3912  evasion transfer   1.7%  (1600 images)
+[  3563s] certphash_ep4      -> certphash_ep2      thr  3912  evasion transfer   0.8%  (1600 images)
+[  3567s] certphash_ep8      -> certphash_ep2      thr  3912  evasion transfer   0.0%  (1600 images)
+[  3570s] certphash_base     -> certphash_ep2      thr  3912  evasion transfer   0.3%  (1600 images)
+[  3574s] certphash_adv      -> certphash_ep2      thr  3912  evasion transfer   0.0%  (1600 images)
+[  3584s] dinohash           -> certphash_ep4      thr  3306  evasion transfer   0.0%  (1600 images)
+[  3593s] dinohash_untrained -> certphash_ep4      thr  3306  evasion transfer   0.0%  (1600 images)
+[  3597s] certphash          -> certphash_ep4      thr  3306  evasion transfer   0.0%  (1600 images)
+[  3601s] certphash_ep2      -> certphash_ep4      thr  3306  evasion transfer   0.5%  (1600 images)
+[  3604s] certphash_ep4      -> certphash_ep4      thr  3306  evasion transfer   0.8%  (1600 images)
+[  3608s] certphash_ep8      -> certphash_ep4      thr  3306  evasion transfer   0.0%  (1600 images)
+[  3611s] certphash_base     -> certphash_ep4      thr  3306  evasion transfer   0.2%  (1600 images)
+[  3615s] certphash_adv      -> certphash_ep4      thr  3306  evasion transfer   0.0%  (1600 images)
+[  3625s] dinohash           -> certphash_ep8      thr  2581  evasion transfer   0.0%  (1600 images)
+[  3634s] dinohash_untrained -> certphash_ep8      thr  2581  evasion transfer   0.0%  (1600 images)
+[  3638s] certphash          -> certphash_ep8      thr  2581  evasion transfer   0.0%  (1600 images)
+[  3641s] certphash_ep2      -> certphash_ep8      thr  2581  evasion transfer   0.0%  (1600 images)
+[  3645s] certphash_ep4      -> certphash_ep8      thr  2581  evasion transfer   0.0%  (1600 images)
+[  3649s] certphash_ep8      -> certphash_ep8      thr  2581  evasion transfer   0.0%  (1600 images)
+[  3653s] certphash_base     -> certphash_ep8      thr  2581  evasion transfer   0.0%  (1600 images)
+[  3656s] certphash_adv      -> certphash_ep8      thr  2581  evasion transfer   0.0%  (1600 images)
+[  3662s] dinohash           -> phash              thr    16  evasion transfer   0.0%  (1600 images)
+[  3668s] dinohash_untrained -> phash              thr    16  evasion transfer   0.0%  (1600 images)
+[  3670s] certphash          -> phash              thr    16  evasion transfer   0.0%  (1600 images)
+[  3671s] certphash_ep2      -> phash              thr    16  evasion transfer   0.0%  (1600 images)
+[  3672s] certphash_ep4      -> phash              thr    16  evasion transfer   0.0%  (1600 images)
+[  3673s] certphash_ep8      -> phash              thr    16  evasion transfer   0.0%  (1600 images)
+[  3674s] certphash_base     -> phash              thr    16  evasion transfer   0.0%  (1600 images)
+[  3676s] certphash_adv      -> phash              thr    16  evasion transfer   0.0%  (1600 images)
+[  3692s] dinohash           -> pdq                thr   100  evasion transfer   0.0%  (1600 images)
+[  3707s] dinohash_untrained -> pdq                thr   100  evasion transfer   0.0%  (1600 images)
+[  3710s] certphash          -> pdq                thr   100  evasion transfer   0.0%  (1600 images)
+[  3712s] certphash_ep2      -> pdq                thr   100  evasion transfer   0.0%  (1600 images)
+[  3715s] certphash_ep4      -> pdq                thr   100  evasion transfer   0.0%  (1600 images)
+[  3717s] certphash_ep8      -> pdq                thr   100  evasion transfer   0.0%  (1600 images)
+[  3720s] certphash_base     -> pdq                thr   100  evasion transfer   0.0%  (1600 images)
+[  3722s] certphash_adv      -> pdq                thr   100  evasion transfer   0.0%  (1600 images)
+# Transfer attack: source x target matrices
+
+Rows: the hash that was attacked (white-box). Columns: the hash the attacked image is re-hashed with. Cells: success % at the target's calibrated FPR 1e-3 threshold. Diagonal = white-box. `noise` = random ±ε sign noise of the same size (control).
+
+## Evasion, ε = 2/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **100.0** | 30.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 7.5 | **100.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-base | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-adv | 0.0 | 0.0 | 0.5 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε4 | 0.0 | 0.0 | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 |
+
+## Evasion, ε = 4/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **100.0** | 46.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 9.5 | **100.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-base | 1.0 | 1.0 | 0.5 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-adv | 1.0 | 1.0 | 0.5 | 0.0 | **0.5** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε1 | 2.0 | 1.0 | 0.5 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε2 | 1.5 | 1.0 | 0.5 | 0.0 | 0.0 | 0.0 | **1.0** | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε4 | 2.0 | 0.0 | 0.5 | 0.0 | 0.0 | 0.0 | 0.5 | **0.0** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 2.5 | 0.5 | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 |
+
+## Evasion, ε = 8/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **100.0** | 61.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 10.0 | **100.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-base | 17.0 | 7.0 | 1.0 | **15.0** | 0.5 | 0.0 | 1.0 | 0.5 | 0.0 | 0.0 | 0.0 |
+| C-adv | 15.5 | 10.5 | 3.0 | 0.0 | **1.5** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε1 | 21.5 | 6.5 | 3.5 | 0.0 | 0.5 | **1.0** | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε2 | 20.0 | 6.0 | 2.0 | 0.0 | 0.0 | 0.0 | **4.0** | 1.5 | 0.0 | 0.0 | 0.0 |
+| C-ε4 | 21.0 | 6.5 | 2.0 | 0.0 | 0.0 | 0.0 | 2.0 | **2.5** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 20.5 | 6.0 | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 |
+
+## Random-noise control (evasion), ε = 2/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-base | 0.0 | 0.5 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-adv | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 |
+
+## Random-noise control (evasion), ε = 4/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-base | 5.0 | 1.5 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-adv | 3.5 | 1.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε1 | 5.0 | 1.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε2 | 4.5 | 1.5 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε4 | 2.5 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 3.0 | 1.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 |
+
+## Random-noise control (evasion), ε = 8/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **0.0** | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-base | 26.0 | 9.0 | 0.5 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-adv | 27.5 | 8.0 | 1.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε1 | 30.5 | 9.5 | 1.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε2 | 29.0 | 9.0 | 1.0 | 0.0 | 0.0 | 0.0 | **0.5** | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε4 | 27.5 | 8.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 30.5 | 8.5 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 |
+
+## Collision, random target (pairs not matching before), ε = 8/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **80.5** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 0.0 | **100.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-base | 0.0 | 0.0 | 0.0 | **26.0** | 3.0 | 2.5 | 1.0 | 0.5 | 0.0 | 0.0 | 0.0 |
+| C-adv | 0.0 | 0.0 | 0.5 | 4.0 | **11.0** | 5.0 | 0.5 | 0.5 | 0.0 | 0.0 | 0.0 |
+| C-ε1 | 0.0 | 0.0 | 0.0 | 2.5 | 4.0 | **8.5** | 1.0 | 0.5 | 0.0 | 0.0 | 0.0 |
+| C-ε2 | 0.0 | 0.0 | 0.0 | 1.0 | 3.0 | 3.5 | **3.5** | 1.0 | 0.0 | 0.0 | 0.0 |
+| C-ε4 | 0.0 | 0.0 | 0.0 | 1.0 | 2.0 | 2.0 | 1.0 | **2.0** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 0.0 | 0.0 | 0.0 | 1.0 | 2.0 | 1.5 | 0.5 | 0.5 | **0.5** | 0.0 | 0.0 |
+
+## Collision, random target (pairs not matching before), ε = 16/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **97.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 0.0 | **100.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-base | 0.0 | 0.0 | 0.5 | **87.0** | 7.5 | 5.5 | 1.0 | 1.0 | 0.0 | 0.5 | 0.5 |
+| C-adv | 0.0 | 0.0 | 0.5 | 18.0 | **50.0** | 24.5 | 3.5 | 1.5 | 0.0 | 0.5 | 1.0 |
+| C-ε1 | 0.0 | 0.0 | 0.5 | 8.0 | 21.0 | **53.0** | 3.0 | 1.5 | 0.0 | 1.0 | 0.0 |
+| C-ε2 | 0.0 | 0.0 | 0.5 | 7.0 | 15.0 | 12.0 | **20.5** | 2.5 | 0.0 | 0.5 | 0.5 |
+| C-ε4 | 0.0 | 0.0 | 0.0 | 4.0 | 6.5 | 6.0 | 3.0 | **18.5** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 0.0 | 0.0 | 0.0 | 2.5 | 4.5 | 4.0 | 1.0 | 0.5 | **15.2** | 0.5 | 0.0 |
+
+## Diagonal check
+
+Re-hashing the saved PNGs with the source hash itself reproduces the white-box result for 7998 of 8000 images.
+Mismatches (2), e.g.: certphash_base evasion ε8 000000219440.jpg, certphash_ep4 collision ε16 000000060835.jpg
+
+[   118s] neuralhash         -> dinohash           thr    17  evasion transfer   1.0%  (1600 images)
+[   241s] neuralhash         -> dinohash_untrained thr    21  evasion transfer   0.2%  (1600 images)
+[   286s] neuralhash         -> neuralhash         thr    26  evasion transfer  37.3%  (1600 images)
+[   297s] neuralhash         -> certphash_base     thr  4936  evasion transfer   0.0%  (1600 images)
+[   306s] neuralhash         -> certphash_adv      thr  5435  evasion transfer   0.0%  (1600 images)
+[   315s] neuralhash         -> certphash          thr  4870  evasion transfer   0.0%  (1600 images)
+[   324s] neuralhash         -> certphash_ep2      thr  3912  evasion transfer   0.0%  (1600 images)
+[   333s] neuralhash         -> certphash_ep4      thr  3306  evasion transfer   0.0%  (1600 images)
+[   341s] neuralhash         -> certphash_ep8      thr  2581  evasion transfer   0.0%  (1600 images)
+[   348s] neuralhash         -> phash              thr    16  evasion transfer   0.0%  (1600 images)
+[   365s] neuralhash         -> pdq                thr   100  evasion transfer   0.0%  (1600 images)
+# Transfer attack: source x target matrices
+
+Rows: the hash that was attacked (white-box). Columns: the hash the attacked image is re-hashed with. Cells: success % at the target's calibrated FPR 1e-3 threshold. Diagonal = white-box. `noise` = random ±ε sign noise of the same size (control).
+
+## Evasion, ε = 2/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **100.0** | 30.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 7.5 | **100.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| NH | 0.0 | 0.0 | **0.5** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-base | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-adv | 0.0 | 0.0 | 0.5 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε4 | 0.0 | 0.0 | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 |
+
+## Evasion, ε = 4/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **100.0** | 46.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 9.5 | **100.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| NH | 0.5 | 0.0 | **18.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-base | 1.0 | 1.0 | 0.5 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-adv | 1.0 | 1.0 | 0.5 | 0.0 | **0.5** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε1 | 2.0 | 1.0 | 0.5 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε2 | 1.5 | 1.0 | 0.5 | 0.0 | 0.0 | 0.0 | **1.0** | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε4 | 2.0 | 0.0 | 0.5 | 0.0 | 0.0 | 0.0 | 0.5 | **0.0** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 2.5 | 0.5 | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 |
+
+## Evasion, ε = 8/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **100.0** | 61.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 10.0 | **100.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| NH | 2.5 | 0.5 | **93.5** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-base | 17.0 | 7.0 | 1.0 | **15.0** | 0.5 | 0.0 | 1.0 | 0.5 | 0.0 | 0.0 | 0.0 |
+| C-adv | 15.5 | 10.5 | 3.0 | 0.0 | **1.5** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε1 | 21.5 | 6.5 | 3.5 | 0.0 | 0.5 | **1.0** | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε2 | 20.0 | 6.0 | 2.0 | 0.0 | 0.0 | 0.0 | **4.0** | 1.5 | 0.0 | 0.0 | 0.0 |
+| C-ε4 | 21.0 | 6.5 | 2.0 | 0.0 | 0.0 | 0.0 | 2.0 | **2.5** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 20.5 | 6.0 | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 |
+
+## Random-noise control (evasion), ε = 2/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| NH | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-base | 0.0 | 0.5 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-adv | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε1 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε2 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε4 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 |
+
+## Random-noise control (evasion), ε = 4/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| NH | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-base | 5.0 | 1.5 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-adv | 3.5 | 1.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε1 | 5.0 | 1.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε2 | 4.5 | 1.5 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε4 | 2.5 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 3.0 | 1.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 |
+
+## Random-noise control (evasion), ε = 8/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **0.0** | 0.5 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| NH | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-base | 26.0 | 9.0 | 0.5 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-adv | 27.5 | 8.0 | 1.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε1 | 30.5 | 9.5 | 1.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε2 | 29.0 | 9.0 | 1.0 | 0.0 | 0.0 | 0.0 | **0.5** | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-ε4 | 27.5 | 8.0 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 30.5 | 8.5 | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | **0.0** | 0.0 | 0.0 |
+
+## Collision, random target (pairs not matching before), ε = 8/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **80.5** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 0.0 | **100.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| NH | 0.0 | 0.0 | **16.0** | 1.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| C-base | 0.0 | 0.0 | 0.0 | **26.0** | 3.0 | 2.5 | 1.0 | 0.5 | 0.0 | 0.0 | 0.0 |
+| C-adv | 0.0 | 0.0 | 0.5 | 4.0 | **11.0** | 5.0 | 0.5 | 0.5 | 0.0 | 0.0 | 0.0 |
+| C-ε1 | 0.0 | 0.0 | 0.0 | 2.5 | 4.0 | **8.5** | 1.0 | 0.5 | 0.0 | 0.0 | 0.0 |
+| C-ε2 | 0.0 | 0.0 | 0.0 | 1.0 | 3.0 | 3.5 | **3.5** | 1.0 | 0.0 | 0.0 | 0.0 |
+| C-ε4 | 0.0 | 0.0 | 0.0 | 1.0 | 2.0 | 2.0 | 1.0 | **2.0** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 0.0 | 0.0 | 0.0 | 1.0 | 2.0 | 1.5 | 0.5 | 0.5 | **0.5** | 0.0 | 0.0 |
+
+## Collision, random target (pairs not matching before), ε = 16/255
+
+| source \ target | Dino-T | Dino-U | NH | C-base | C-adv | C-ε1 | C-ε2 | C-ε4 | C-ε8 | pHash | PDQ |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Dino-T | **97.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| Dino-U | 0.0 | **100.0** | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 |
+| NH | 0.0 | 0.0 | **56.0** | 1.0 | 1.5 | 1.0 | 0.5 | 0.5 | 0.0 | 0.0 | 0.0 |
+| C-base | 0.0 | 0.0 | 0.5 | **87.0** | 7.5 | 5.5 | 1.0 | 1.0 | 0.0 | 0.5 | 0.5 |
+| C-adv | 0.0 | 0.0 | 0.5 | 18.0 | **50.0** | 24.5 | 3.5 | 1.5 | 0.0 | 0.5 | 1.0 |
+| C-ε1 | 0.0 | 0.0 | 0.5 | 8.0 | 21.0 | **53.0** | 3.0 | 1.5 | 0.0 | 1.0 | 0.0 |
+| C-ε2 | 0.0 | 0.0 | 0.5 | 7.0 | 15.0 | 12.0 | **20.5** | 2.5 | 0.0 | 0.5 | 0.5 |
+| C-ε4 | 0.0 | 0.0 | 0.0 | 4.0 | 6.5 | 6.0 | 3.0 | **18.5** | 0.0 | 0.0 | 0.0 |
+| C-ε8 | 0.0 | 0.0 | 0.0 | 2.5 | 4.5 | 4.0 | 1.0 | 0.5 | **15.2** | 0.5 | 0.0 |
+
+## Diagonal check
+
+Re-hashing the saved PNGs with the source hash itself reproduces the white-box result for 8998 of 9000 images.
+Mismatches (2), e.g.: certphash_base evasion ε8 000000219440.jpg, certphash_ep4 collision ε16 000000060835.jpg
+

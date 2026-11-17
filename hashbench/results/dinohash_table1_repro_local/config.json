@@ -1,0 +1,21 @@
+{
+  "list": "D:\\AKSHAY\\sem7\\btp\\perceptual_hashing\\hashbench\\data\\splits\\V200.txt",
+  "images": "D:\\AKSHAY\\sem7\\btp\\perceptual_hashing\\hashbench\\data\\coco\\val2017",
+  "out": "results\\dinohash_table1_repro_local",
+  "models": [
+    "neuralhash",
+    "neuralhash_as_committed"
+  ],
+  "eps": [
+    4,
+    8
+  ],
+  "steps": 100,
+  "batch": 10,
+  "limit": 50,
+  "max_side": 512,
+  "seed": 0,
+  "summary_only": false,
+  "device": "cpu",
+  "attack": "third_party/dinohash_apgd_c700888.py (authors' APGD @ c7008888b7, unmodified)"
+}

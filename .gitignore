@@ -17,3 +17,7 @@ apple_neuralhash/
 Thumbs.db
 desktop.ini
 ~$*
+
+# Transfer-attack PNGs (~600 MB, regenerable; see transfer_attack_results.md §6)
+hashbench/results/transfer_v200/images/
+hashbench/results/transfer_v200_neuralhash/images/

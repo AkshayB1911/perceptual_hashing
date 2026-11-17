@@ -1,6 +1,6 @@
 # Phase C (adversarial robustness): implementation progress
 
-*BTP: Perceptual Hashing. Status as of 2026-11-04. Phase C is defined in
+*BTP: Perceptual Hashing. Status as of 2026-11-17 (summary table, updates, §6.1, §8, §9); the rest of §1–§9 dates from 2026-11-04. Phase C is defined in
 `thesis_research_plan.md` §2; the benign results it builds on are in `benchmark_findings.md`.*
 
 ## Summary
@@ -8,18 +8,110 @@
 | Part | Status |
 |---|---|
 | Plan reordered (adversarial work first, mixed DinoHash head/backbone rerun deferred) | ✅ Done |
-| Attack module `hashbench/hashbench/adversarial.py` (PGD, APGD, evasion, collision) | ✅ Done, one known issue (§6.1) |
+| Attack module `hashbench/hashbench/adversarial.py` (PGD, APGD, evasion, collision) | ✅ Done; §6.1 issue fixed 2026-11-05 |
 | Unit and smoke tests `hashbench/tests/test_adversarial.py` | ✅ 13 pass |
 | Sweep script `hashbench/scripts/run_adversarial.py` (models × ε × mode, resumable) | ✅ Done |
 | Single-image sanity check | ✅ Done |
 | CPU timing pilot and ε pilot (10 images; 3 for DinoHash) | ✅ Done, **pilot only** |
-| Fix best-iterate selection (§6.1) | ❌ Not done; blocks the full run |
-| Kaggle package (code, models, images, thresholds, notebook) | ❌ Not built |
-| Full sweep on `V200` (200 images, ε = 1, 2, 4, 8 /255) | ❌ Not run |
-| Write-up of adversarial findings | ❌ Not done |
+| Fix best-iterate selection (§6.1) | ✅ Done (2026-11-05: selection by hash distance, APGD + small-step PGD ensemble, warm start across ε) |
+| Kaggle package (code, models, images, thresholds, notebook) | ✅ Built (`kaggle/`) |
+| Full sweep on `V200` (200 images, ε = 1, 2, 4, 8 /255) | ✅ Done: `results/adv_v200_kaggle` (DinoHash, CertPHash), `results/adv_v200_neuralhash` |
+| Write-up of adversarial findings | ✅ `adversarial_testing_report.md` (§4 partly superseded, see below) |
+| Reproduction of the DinoHash paper's Table 1 with the authors' own attack (50 images) | ✅ Done 2026-11-11: `dinohash_table1_reproduction.md` |
+| All adversarial tables in one file, incl. the CertPHash paper comparison | ✅ `adversarial_results_tables.md` |
+| Catalogue of the 12 further attacks (details, feasibility + novelty ranking, order) | ✅ Written 2026-11-16: `future_attacks.md`; #1 transfer done |
+| Transfer attack (#1): 9 sources × 11 targets incl. pHash / PDQ, V200, with random-noise control | ✅ Done 2026-11-17: `transfer_attack_results.md`, `results/transfer_v200*` |
 
 The ε tables in §5 come from a pilot on very few images. They show that the pipeline works
-and give early signals, but **they are not thesis results**.
+and give early signals, but **they are not thesis results**. Thesis numbers are in
+`adversarial_testing_report.md` and `dinohash_table1_reproduction.md`.
+
+### Update 2026-11-11: DinoHash Table 1 reproduction
+
+The authors' APGD was vendored unmodified and run on the first 50 `V200` images (bit accuracy %,
+ε = 4 / 8 /255):
+
+| Model | Paper | Ours |
+|---|---|---|
+| DinoHash trained | 72.2 / 64.8 | 68.9 / 56.1 |
+| DinoHash untrained | 0.3 / 0.0 | 0.0 / 0.0 |
+| NeuralHash (attacked correctly) | 0.1 / 0.0 | 75.6 / 58.4 |
+| NeuralHash, the authors' script logic | 0.1 / 0.0 | 0.0 / 0.0 |
+
+The DinoHash numbers reproduce; the NeuralHash number does not. The authors' committed
+`neuralhash_attack_results.py` attacks and scores DinoHash but compares the result with NeuralHash
+bits. Details, GitHub links and line numbers are in `dinohash_table1_reproduction.md`.
+
+Corrections to `adversarial_testing_report.md` §4:
+- the released ViT-S model **is** the paper's model (its head equals `PCA_96`), so the
+  "ViT-B vs ViT-S" explanation no longer applies;
+- the 50-image numbers replace the 5-image probe.
+
+### Update 2026-11-05: full `V200` white-box sweep (thesis numbers)
+
+This replaces the pilot tables in §5.3. All tables (incl. CertPHash at L1 1800, L1 moved,
+SSIM) are in `adversarial_results_tables.md`; discussion is in `adversarial_testing_report.md`.
+
+**Setup**
+
+| Item | Value |
+|---|---|
+| Images | `V200` (200 COCO val2017 images), n = 200 per cell |
+| Hashes | DinoHash trained / untrained, NeuralHash, CertPHash base / adv / ε1 / ε2 / ε4 / ε8 (9 models) |
+| Threat model | White-box, ℓ∞, ε in /255 on [0, 1] pixels |
+| Attack | `--method ensemble`: APGD and small-step PGD (step min(ε/10, 0.25/255)) from the same random start, the better result kept per image; 100 steps per ε; warm start from the previous ε |
+| Best iterate | Chosen by hash distance on the 8-bit rounded image (the §6.1 fix) |
+| Modes and budgets | Evasion ε = 1, 2, 4, 8; collision (random target i → i + n/2) and closest-target collision ε = 1, 2, 4, 8, 16, 32 |
+| Thresholds | Calibrated FPR 1e-3 (§4.1) |
+| Hardware and time | DinoHash + CertPHash on a Kaggle T4: about 49 s/img per DinoHash model, 0.8 s/img per CertPHash model, 5.7 GPU-h in total. NeuralHash on the laptop CPU: about 111 s/img, 6.2 h |
+| Monotonicity check | `monotonicity.csv`: **0 cases** where a larger ε did worse (the §6.1 problem is gone) |
+| Data | `hashbench/results/adv_v200_kaggle/`, `hashbench/results/adv_v200_neuralhash/`; plots in `results/adv_v200_plots/`, `results/benign_vs_adversarial.pdf` |
+
+**Evasion success (%)**
+
+| Hash | ε=1 | ε=2 | ε=4 | ε=8 |
+|---|---|---|---|---|
+| DinoHash untrained | 100 | 100 | 100 | 100 |
+| DinoHash trained | 97.5 | 100 | 100 | 100 |
+| NeuralHash | 0.5 | 0.5 | 18.0 | 94.5 |
+| CertPHash base | 0 | 0 | 0 | 11.5 |
+| CertPHash adv / ε1 / ε2 / ε4 | 0 | 0 | 0–1.0 | 1.0–3.5 |
+| CertPHash ε8 | 0 | 0 | 0 | 0 |
+
+**Bit accuracy under evasion (% bits unchanged)**
+
+| Hash | ε=1 | ε=2 | ε=4 | ε=8 |
+|---|---|---|---|---|
+| DinoHash untrained | 20.6 | 2.3 | 0.1 | 0.0 |
+| DinoHash trained | 45.6 | 22.3 | 10.3 | 3.7 |
+| NeuralHash | 94.4 | 88.9 | 78.4 | 59.2 |
+
+**Collision success (%), random target / closest target**
+
+| Hash | ε=2 | ε=8 | ε=32 |
+|---|---|---|---|
+| DinoHash untrained | 100 / 100 | 100 / 100 | 100 / 100 |
+| DinoHash trained | 92.0 / 97.5 | 99.5 / 100 | 100 / 100 |
+| NeuralHash | 0 / 63.5 | 16.5 / 93.5 | 89.5 / 98.0 |
+| CertPHash base | 1.0 / 33.0 | 25.5 / 100 | 100 / 100 |
+| CertPHash ε8 | 1.0 / 20.5 | 1.5 / 50.5 | 66.5 / 98.5 |
+
+**Main findings**
+1. **DinoHash (both versions) is the easiest to break**: evaded from ε = 1–2/255 and collided
+   almost always. The DinoHash paper's robustness holds only against its weaker attack
+   (`dinohash_table1_reproduction.md`).
+2. **NeuralHash** needs ε = 4–8/255 for evasion. The authors' BCE APGD did better on it at ε=4
+   (36% vs our 18%), so our NeuralHash numbers are probably a little too low; add APGD-BCE to
+   the ensemble.
+3. **CertPHash ε8 resists evasion best** (0% at ε=8 at the calibrated threshold), and the
+   CertPHash paper's Table 4 reproduces at L1 1800 (within about 10 points, same ranking).
+4. **Evasion robustness ≠ collision robustness:** closest-target collisions succeed on every
+   hash at large ε (CertPHash ε8: 50.5% at ε=8, 98.5% at ε=32).
+5. **The threshold matters a lot** for CertPHash: at L1 1800 evasion succeeds much more often
+   (e.g. base 99% at ε=8) than at the calibrated thresholds (L1 2581–5435).
+
+**Further attacks** (black-box, transfer, EOT, joint evasion, …) are catalogued and ranked in
+`future_attacks.md`.
 
 ---
 
@@ -246,7 +338,7 @@ At 100 steps this is about 15 s per image for each DinoHash model, so the full `
 (200 images × 4 ε × 2 modes) would take about 13 h on the laptop for the two DinoHash models.
 That is why the full run goes to a GPU.
 
-### 5.3 ε pilot (ℓ∞, APGD 100 steps, CPU)
+### 5.3 ε pilot (ℓ∞, APGD 100 steps, CPU) — superseded by the V200 sweep (see the 2026-11-05 update at the top)
 - **Images:** the first 10 images of `V200` for NeuralHash and CertPHash
   (`hashbench/results/adv_pilot_fast/`); the first 3 for each DinoHash model
   (`hashbench/results/adv_pilot_dino/`).
@@ -331,7 +423,12 @@ almost nothing evades. **The thesis has to report both thresholds.**
 
 ## 6. Known issues and limitations
 
-### 6.1 Best-iterate selection (must fix before the full run)
+### 6.1 Best-iterate selection ✅ fixed 2026-11-05
+
+*Fixed: the best iterate is now chosen by hash distance on the 8-bit image, APGD runs together
+with small-step PGD, and ε is warm-started. The `V200` sweep has 0 monotonicity violations. The
+text below is kept as a record of the problem.*
+
 Trained DinoHash, bits flipped per image (evasion):
 
 | Image | ε=1 | ε=2 | ε=4 | ε=8 |
@@ -422,6 +519,20 @@ no-collision at ℓ∞ 8/255, against 0.01% and 0% for adversarial training.
 
 ## 8. Next steps
 
+**Current list (2026-11-17).** Items 1–5 of the original list below are done (sweep additions:
+bit accuracy, both CertPHash thresholds and closest-target collisions are done; ℓ2 was dropped).
+
+1. ✅ Commit the new files and results (2026-11-17; transfer PNGs kept local, see §9).
+2. Update `adversarial_testing_report.md` §4 (drop ViT-B explanation, add the 50-image numbers,
+   soften the gradient-masking claim); fix the author line in `certphash.py`.
+3. Add the authors' APGD-BCE as a third ensemble member (NeuralHash numbers are likely too low).
+4. Build the next attacks in the order of `future_attacks.md`: transfer ✅ (2026-11-17), then NES
+   black-box, EOT, joint evasion, universal perturbation; test each on `V200`.
+5. A sharding / merge helper for parallel runs on the institute cluster.
+6. On the cluster: a 10-image pilot, then benign on 2,000 images and adversarial on 1,000 images.
+
+**Original list (2026-11-04), kept for reference:**
+
 1. **Fix best-iterate selection** (§6.1) and add the ε-monotonicity check. Rerun the
    DinoHash pilot on the same 3 images to confirm (about 15 min if the laptop stays awake).
 2. **Sweep additions:**
@@ -436,7 +547,7 @@ no-collision at ℓ∞ 8/255, against 0.01% and 0% for adversarial training.
    folder and run with `--device cuda`. Exclude Apple's NeuralHash files.
 4. **Full `V200` sweep:** DinoHash and CertPHash on Kaggle; NeuralHash locally.
 5. **Write-up:** adversarial findings into `benchmark_findings.md`.
-6. **Later in Phase C:** soft pHash/PDQ surrogates, black-box NES, transferability matrix.
+6. **Later in Phase C:** soft pHash/PDQ surrogates, black-box NES, transferability matrix (✅ 2026-11-17).
 
 ---
 
@@ -444,10 +555,16 @@ no-collision at ℓ∞ 8/255, against 0.01% and 0% for adversarial training.
 
 | File | Status |
 |---|---|
-| `hashbench/hashbench/adversarial.py` | New, not committed |
-| `hashbench/scripts/run_adversarial.py` | New, not committed |
-| `hashbench/tests/test_adversarial.py` | New, not committed |
-| `hashbench/results/adv_pilot_fast/` (config, raw, summary) | Pilot output, not committed |
-| `hashbench/results/adv_pilot_dino/` (config, raw, summary) | Pilot output, not committed |
-| `benchmark_findings.md` §7 | Edited (plan reorder), not committed |
-| `phaseC_implementation_progress.md` | This file, not committed |
+| `hashbench/hashbench/adversarial.py` | Committed (`0489873`) |
+| `hashbench/scripts/run_adversarial.py` | Committed (`0489873`) |
+| `hashbench/tests/test_adversarial.py` | Committed (`0489873`) |
+| `hashbench/results/adv_pilot_fast/`, `adv_pilot_dino/`, `adv_pilot_dino_fixed/` | Pilot output |
+| `hashbench/results/adv_v200_kaggle/`, `adv_v200_neuralhash/` | V200 sweep, committed (`0489873`) |
+| `hashbench/results/adv_v200_plots/`, `benign_vs_adversarial.pdf` | Plots, committed (`f1b6e1a`) |
+| `adversarial_testing_report.md`, `adversarial_results_tables.md` | Write-up and all tables, committed 2026-11-17 |
+| `dinohash_table1_reproduction.md`, `scripts/reproduce_dinohash_table1.py`, `scripts/third_party/`, `kaggle/table1/`, `results/dinohash_table1_repro_*` | Table 1 reproduction, committed 2026-11-17 |
+| `future_attacks.md` | Catalogue of further attacks, committed 2026-11-17 |
+| `scripts/generate_transfer_images.py`, `scripts/transfer_matrix.py`, `kaggle/transfer/` | Transfer attack code, committed 2026-11-17 |
+| `transfer_attack_results.md`, `results/transfer_v200_matrix/`, `results/transfer_v200*/generation.csv`, logs | Transfer results, committed 2026-11-17 |
+| `results/transfer_v200/images/`, `results/transfer_v200_neuralhash/images/` | 19,800 attacked/clean PNGs (about 600 MB), **kept local only** (git-ignored); regenerate with `transfer_attack_results.md` §6 |
+| `phaseC_implementation_progress.md` | This file, committed 2026-11-17 |

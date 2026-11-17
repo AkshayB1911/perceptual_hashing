@@ -1,0 +1,25 @@
+﻿neuralhash eps=4/255 [10/50] bitacc 75.8% (71s)
+neuralhash eps=4/255 [20/50] bitacc 72.7% (60s)
+neuralhash eps=4/255 [30/50] bitacc 75.8% (52s)
+neuralhash eps=4/255 [40/50] bitacc 74.9% (60s)
+neuralhash eps=4/255 [50/50] bitacc 78.6% (64s)
+neuralhash eps=8/255 [10/50] bitacc 57.4% (73s)
+neuralhash eps=8/255 [20/50] bitacc 54.5% (74s)
+neuralhash eps=8/255 [30/50] bitacc 60.9% (73s)
+neuralhash eps=8/255 [40/50] bitacc 57.0% (71s)
+neuralhash eps=8/255 [50/50] bitacc 62.3% (55s)
+neuralhash_as_committed eps=4/255 [10/50] bitacc 0.0% (224s)
+neuralhash_as_committed eps=4/255 [20/50] bitacc 0.0% (1616s)
+neuralhash_as_committed eps=4/255 [30/50] bitacc 0.0% (239s)
+neuralhash_as_committed eps=4/255 [40/50] bitacc 0.0% (206s)
+neuralhash_as_committed eps=4/255 [50/50] bitacc 0.0% (214s)
+neuralhash_as_committed eps=8/255 [10/50] bitacc 0.0% (223s)
+neuralhash_as_committed eps=8/255 [20/50] bitacc 0.0% (223s)
+neuralhash_as_committed eps=8/255 [30/50] bitacc 0.0% (227s)
+neuralhash_as_committed eps=8/255 [40/50] bitacc 0.0% (225s)
+neuralhash_as_committed eps=8/255 [50/50] bitacc 0.0% (224s)
+                  model  eps_255  n    bitacc  bitacc_8bit  bitacc_median  linf_255  paper
+             neuralhash        4 50 75.583333      75.5625      75.520834  4.000007    0.1
+             neuralhash        8 50 58.416667      58.3750      57.291669  8.000007    0.0
+neuralhash_as_committed        4 50  0.000000       0.0000       0.000000  4.000007    0.1
+neuralhash_as_committed        8 50  0.000000       0.0000       0.000000  8.000007    0.0
