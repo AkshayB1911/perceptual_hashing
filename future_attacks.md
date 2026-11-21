@@ -23,6 +23,9 @@ need a literature check (planned Nov 20 – Dec 5) before anything is claimed as
 | The DinoHash authors' APGD (Table 1 reproduction, 50 images) | ✅ | `dinohash_table1_reproduction.md` |
 | Benign transforms (23 families, 88 settings) | ✅ | `benchmark_findings.md` |
 | Transfer (#1): 9 sources × 11 targets, V200, with random-noise control | ✅ 2026-11-17 | `transfer_attack_results.md`, `results/transfer_v200_matrix/` |
+| NES black-box (#2): learned hashes on V200, 10k queries, evasion ε 8/4 + collision ε 16 | ✅ 2026-11-18, incl. pHash/PDQ (26-bit DinoHash check done: 41.5% vs NH 5.0% at ε8) | `nes_attack_results.md`, `results/nes_v200_*` |
+| NES in the Sun et al. 2026 setting (512×512, ℓ2 40/90/180, 1,500 queries, BER 0.2) | ✅ 2026-11-19: DinoHash 41.2%, NeuralHash 24.5%, CertPHash ≤ 2.5% (average over budgets) | `nes_sun_attack_results.md`, `results/nes_sun_v200_*` |
+| Sun et al. setting, 500-step variant (100 images) | ✅ 2026-11-21: NeuralHash 63/69/63% (ℓ2 40/90/180), DinoHash 84% (ℓ2 180) | `nes_sun_attack_results.md` §6, `results/nes_sun500_v100_*` |
 
 ### Terms used below
 
@@ -54,7 +57,7 @@ be new for perceptual hashes.
 | 5 | 11 | Spatial / semantic attack | 3 | 4 | **7** | ~1 week | Added 2026-11 |
 | 6 | 10 | Adaptive attack on DualShield | 2 | 5 | **7** | 1–2 weeks | Plan, Idea 5 |
 | 7 | 4 | Soft pHash / PDQ surrogates | 3 | 3–4 | **6.5** | pHash 2 days, PDQ ~1 week | Plan, Phase C |
-| 8 | 2 | NES black-box (score-based) | 4 | 2 | **6** | 3–5 days | Plan, Phase C |
+| 8 | 2 | NES black-box (score-based) ✅ done 2026-11-18 for the learned hashes (`nes_attack_results.md`) | 4 | 2 | **6** | 3–5 days | Plan, Phase C |
 | 9 | 3 | Hard-label black-box (HopSkipJump) | 3 | 3 | **6** | ~1 week | Added 2026-11 |
 | 10 | 6 | EOT (transform-surviving) | 4 | 2 | **6** | 3–5 days | Plan, Phase C |
 | 11 | 5 | ℓ2 budget | 5 | 1 | **6** | hours | Plan, Phase C |
@@ -134,7 +137,13 @@ into the existing code, how to measure it, cost, and risks.
   run.
 - **Risks:** low. Transfer between unrelated hashes will probably be weak; that is still a result.
 
-### #2 NES black-box attack (score-based) ⬜
+### #2 NES black-box attack (score-based) ✅ (all 11 hashes)
+
+*Implemented as `hashbench/hashbench/blackbox.py` + `scripts/run_nes.py` (a separate module, not `_nes` in
+`adversarial.py`). Settings used: 20 pairs, σ = 1.0·ε, 32×32 search space, 10k queries. Results:
+`nes_attack_results.md`. Outcome: DinoHash is the easiest to evade black-box (82% at ε=8), the
+opposite of Sun et al.'s ranking. Repeating Sun et al.'s own setting (literal and 500 steps) gives the
+same ranking as ours (`nes_sun_attack_results.md`).*
 
 - **Threat model:** the attacker can send images to a hashing service and see the **full hash**
   (bits or the 144-byte vector), but has no weights. A query budget (e.g. 1k / 5k / 10k queries

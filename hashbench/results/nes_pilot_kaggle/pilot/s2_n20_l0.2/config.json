@@ -1,0 +1,35 @@
+{
+  "list": "data/splits/V200.txt",
+  "limit": 6,
+  "n_images": 6,
+  "max_queries": 10000,
+  "pairs": 20,
+  "sigma_frac": 2.0,
+  "lr_frac": 0.2,
+  "momentum": 0.9,
+  "dim": 32,
+  "plateau": 5,
+  "min_lr_frac": 0.02,
+  "fpr": 0.001,
+  "max_side": 512,
+  "seed": 0,
+  "thresholds_from": [
+    "results/coco_run1",
+    "results/coco_run2"
+  ],
+  "hashes": [
+    "dinohash_untrained",
+    "dinohash",
+    "neuralhash",
+    "certphash"
+  ],
+  "settings": [
+    "evasion:8"
+  ],
+  "collision_targets": "image i -> image (i + n//2) mod n of the list",
+  "threat_model": "score-based: the attacker reads the discrete hash of each 8-bit query",
+  "device": "cuda",
+  "torch": "2.11.0+cu130",
+  "gpu": "Tesla T4",
+  "started": "2026-11-17 08:35:29"
+}

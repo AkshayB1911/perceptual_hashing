@@ -1,0 +1,87 @@
+[{"stream_name":"stdout","time":92.00079556,"data":"/usr/bin/python3 scripts/run_nes.py --list data/splits/V200.txt --limit 6 --out /kaggle/working/pilot/s0.5_n50_l0.2 --device cuda --batch-size 6 --hashes dinohash_untrained dinohash neuralhash certphash --settings evasion:8 --max-queries 10000 --sigma-frac 0.5 --pairs 50 --lr-frac 0.2\n"}
+,{"stream_name":"stdout","time":101.561876007,"data":"6 images, hashes ['dinohash_untrained', 'dinohash', 'neuralhash', 'certphash'], settings ['evasion:8'], budget 10000 queries, device cuda; 0 rows already done\n"}
+,{"stream_name":"stdout","time":170.480050542,"data":"[     69s] dinohash_untrained evasion   eps=8/255    6/6  success 5/6  median q 1112  10.6 s/img\n"}
+,{"stream_name":"stdout","time":273.253300699,"data":"[    172s] dinohash           evasion   eps=8/255    6/6  success 5/6  median q 1920  17.0 s/img\n"}
+,{"stream_name":"stdout","time":335.63202565,"data":"[    234s] neuralhash         evasion   eps=8/255    6/6  success 0/6  10.3 s/img\n"}
+,{"stream_name":"stdout","time":346.598624479,"data":"[    245s] certphash          evasion   eps=8/255    6/6  success 0/6  0.8 s/img\n"}
+,{"stream_name":"stdout","time":346.64230895,"data":"done in 245s\n"}
+,{"stream_name":"stdout","time":346.642334704,"data":"# NES black-box attack: summary\n"}
+,{"stream_name":"stdout","time":346.642341439,"data":"\n"}
+,{"stream_name":"stdout","time":346.642347024,"data":"Success (%) within each query budget at the calibrated FPR 1e-3 threshold. Collision rows exclude pairs that already matched before the attack.\n"}
+,{"stream_name":"stdout","time":346.642375138,"data":"\n"}
+,{"stream_name":"stdout","time":346.642383157,"data":"## evasion, eps = 8/255\n"}
+,{"stream_name":"stdout","time":346.642388506,"data":"\n"}
+,{"stream_name":"stdout","time":346.642393681,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":346.642400838,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":346.642406602,"data":"| certphash | 6 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.03 | 8.0 | 0.958 |\n"}
+,{"stream_name":"stdout","time":346.642411827,"data":"| dinohash | 6 | 33.3 | 50.0 | 66.7 | 83.3 | 1920 | 0.184 | 8.0 | 0.961 |\n"}
+,{"stream_name":"stdout","time":346.642417227,"data":"| dinohash_untrained | 6 | 16.7 | 83.3 | 83.3 | 83.3 | 1112 | 0.227 | 8.0 | 0.964 |\n"}
+,{"stream_name":"stdout","time":346.642422813,"data":"| neuralhash | 6 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.149 | 8.0 | 0.973 |\n"}
+,{"stream_name":"stdout","time":346.64242859,"data":"\n"}
+,{"stream_name":"stdout","time":352.290826468,"data":"/usr/bin/python3 scripts/run_nes.py --list data/splits/V200.txt --limit 6 --out /kaggle/working/pilot/s1_n50_l0.2 --device cuda --batch-size 6 --hashes dinohash_untrained dinohash neuralhash certphash --settings evasion:8 --max-queries 10000 --sigma-frac 1.0 --pairs 50 --lr-frac 0.2\n"}
+,{"stream_name":"stdout","time":354.574413974,"data":"6 images, hashes ['dinohash_untrained', 'dinohash', 'neuralhash', 'certphash'], settings ['evasion:8'], budget 10000 queries, device cuda; 0 rows already done\n"}
+,{"stream_name":"stdout","time":405.45511608,"data":"[     51s] dinohash_untrained evasion   eps=8/255    6/6  success 6/6  median q 1819  8.3 s/img\n"}
+,{"stream_name":"stdout","time":491.333052364,"data":"[    137s] dinohash           evasion   eps=8/255    6/6  success 5/6  median q 1112  14.2 s/img\n"}
+,{"stream_name":"stdout","time":549.231312733,"data":"[    195s] neuralhash         evasion   eps=8/255    6/6  success 1/6  median q 5960  9.6 s/img\n"}
+,{"stream_name":"stdout","time":555.252215057,"data":"[    201s] certphash          evasion   eps=8/255    6/6  success 0/6  0.8 s/img\n"}
+,{"stream_name":"stdout","time":555.280263216,"data":"done in 201s\n"}
+,{"stream_name":"stdout","time":555.280295449,"data":"# NES black-box attack: summary\n"}
+,{"stream_name":"stdout","time":555.280301242,"data":"\n"}
+,{"stream_name":"stdout","time":555.280304971,"data":"Success (%) within each query budget at the calibrated FPR 1e-3 threshold. Collision rows exclude pairs that already matched before the attack.\n"}
+,{"stream_name":"stdout","time":555.280309139,"data":"\n"}
+,{"stream_name":"stdout","time":555.280313201,"data":"## evasion, eps = 8/255\n"}
+,{"stream_name":"stdout","time":555.280316991,"data":"\n"}
+,{"stream_name":"stdout","time":555.28032079,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":555.280325703,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":555.280328972,"data":"| certphash | 6 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.031 | 8.0 | 0.958 |\n"}
+,{"stream_name":"stdout","time":555.28033258,"data":"| dinohash | 6 | 16.7 | 66.7 | 66.7 | 83.3 | 1112 | 0.182 | 8.0 | 0.962 |\n"}
+,{"stream_name":"stdout","time":555.280335961,"data":"| dinohash_untrained | 6 | 33.3 | 50.0 | 100.0 | 100.0 | 1819 | 0.233 | 8.0 | 0.964 |\n"}
+,{"stream_name":"stdout","time":555.28033932,"data":"| neuralhash | 6 | 0.0 | 0.0 | 0.0 | 16.7 | 5960 | 0.177 | 8.0 | 0.97 |\n"}
+,{"stream_name":"stdout","time":555.280342709,"data":"\n"}
+,{"stream_name":"stdout","time":556.21847685,"data":"/usr/bin/python3 scripts/run_nes.py --list data/splits/V200.txt --limit 6 --out /kaggle/working/pilot/s1_n20_l0.2 --device cuda --batch-size 6 --hashes dinohash_untrained dinohash neuralhash certphash --settings evasion:8 --max-queries 10000 --sigma-frac 1.0 --pairs 20 --lr-frac 0.2\n"}
+,{"stream_name":"stdout","time":558.49016863,"data":"6 images, hashes ['dinohash_untrained', 'dinohash', 'neuralhash', 'certphash'], settings ['evasion:8'], budget 10000 queries, device cuda; 0 rows already done\n"}
+,{"stream_name":"stdout","time":605.359802167,"data":"[     47s] dinohash_untrained evasion   eps=8/255    6/6  success 6/6  median q 1415  7.7 s/img\n"}
+,{"stream_name":"stdout","time":682.315175506,"data":"[    124s] dinohash           evasion   eps=8/255    6/6  success 5/6  median q 1108  12.8 s/img\n"}
+,{"stream_name":"stdout","time":741.835315689,"data":"[    183s] neuralhash         evasion   eps=8/255    6/6  success 1/6  median q 7586  9.9 s/img\n"}
+,{"stream_name":"stdout","time":748.288671025,"data":"[    190s] certphash          evasion   eps=8/255    6/6  success 0/6  0.9 s/img\n"}
+,{"stream_name":"stdout","time":748.314938228,"data":"done in 190s\n"}
+,{"stream_name":"stdout","time":748.314960403,"data":"# NES black-box attack: summary\n"}
+,{"stream_name":"stdout","time":748.314966365,"data":"\n"}
+,{"stream_name":"stdout","time":748.314971445,"data":"Success (%) within each query budget at the calibrated FPR 1e-3 threshold. Collision rows exclude pairs that already matched before the attack.\n"}
+,{"stream_name":"stdout","time":748.314977274,"data":"\n"}
+,{"stream_name":"stdout","time":748.314981965,"data":"## evasion, eps = 8/255\n"}
+,{"stream_name":"stdout","time":748.314987229,"data":"\n"}
+,{"stream_name":"stdout","time":748.314991474,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":748.314997329,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":748.315002074,"data":"| certphash | 6 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.03 | 8.0 | 0.964 |\n"}
+,{"stream_name":"stdout","time":748.315007476,"data":"| dinohash | 6 | 33.3 | 66.7 | 83.3 | 83.3 | 1108 | 0.186 | 8.0 | 0.964 |\n"}
+,{"stream_name":"stdout","time":748.315024064,"data":"| dinohash_untrained | 6 | 33.3 | 66.7 | 100.0 | 100.0 | 1415.5 | 0.229 | 8.0 | 0.965 |\n"}
+,{"stream_name":"stdout","time":748.315028848,"data":"| neuralhash | 6 | 0.0 | 0.0 | 0.0 | 16.7 | 7586 | 0.179 | 8.0 | 0.977 |\n"}
+,{"stream_name":"stdout","time":748.31503276,"data":"\n"}
+,{"stream_name":"stdout","time":749.229654167,"data":"/usr/bin/python3 scripts/run_nes.py --list data/splits/V200.txt --limit 6 --out /kaggle/working/pilot/s2_n20_l0.2 --device cuda --batch-size 6 --hashes dinohash_untrained dinohash neuralhash certphash --settings evasion:8 --max-queries 10000 --sigma-frac 2.0 --pairs 20 --lr-frac 0.2\n"}
+,{"stream_name":"stdout","time":751.483869768,"data":"6 images, hashes ['dinohash_untrained', 'dinohash', 'neuralhash', 'certphash'], settings ['evasion:8'], budget 10000 queries, device cuda; 0 rows already done\n"}
+,{"stream_name":"stdout","time":975.182189008,"data":"[    224s] dinohash_untrained evasion   eps=8/255    6/6  success 4/6  median q 7647  37.1 s/img\n"}
+,{"stream_name":"stdout","time":1162.659217171,"data":"[    411s] dinohash           evasion   eps=8/255    6/6  success 2/6  median q 1313  31.2 s/img\n"}
+,{"stream_name":"stdout","time":1224.574069299,"data":"[    473s] neuralhash         evasion   eps=8/255    6/6  success 0/6  10.3 s/img\n"}
+,{"stream_name":"stdout","time":1230.935964075,"data":"[    479s] certphash          evasion   eps=8/255    6/6  success 0/6  0.9 s/img\n"}
+,{"stream_name":"stdout","time":1230.962306302,"data":"done in 479s\n"}
+,{"stream_name":"stdout","time":1230.96232473,"data":"# NES black-box attack: summary\n"}
+,{"stream_name":"stdout","time":1230.962330046,"data":"\n"}
+,{"stream_name":"stdout","time":1230.962334542,"data":"Success (%) within each query budget at the calibrated FPR 1e-3 threshold. Collision rows exclude pairs that already matched before the attack.\n"}
+,{"stream_name":"stdout","time":1230.962339586,"data":"\n"}
+,{"stream_name":"stdout","time":1230.962344081,"data":"## evasion, eps = 8/255\n"}
+,{"stream_name":"stdout","time":1230.962348638,"data":"\n"}
+,{"stream_name":"stdout","time":1230.962374169,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":1230.962393199,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":1230.962399281,"data":"| certphash | 6 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.03 | 8.0 | 0.964 |\n"}
+,{"stream_name":"stdout","time":1230.962404671,"data":"| dinohash | 6 | 16.7 | 16.7 | 33.3 | 33.3 | 1313 | 0.165 | 8.0 | 0.969 |\n"}
+,{"stream_name":"stdout","time":1230.962409844,"data":"| dinohash_untrained | 6 | 0.0 | 0.0 | 0.0 | 66.7 | 7647.5 | 0.212 | 8.0 | 0.972 |\n"}
+,{"stream_name":"stdout","time":1230.962414793,"data":"| neuralhash | 6 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.181 | 8.0 | 0.979 |\n"}
+,{"stream_name":"stdout","time":1230.962419143,"data":"\n"}
+,{"stream_name":"stderr","time":1234.193820893,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1234.193860518,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1234.494671173,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1234.494700682,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1235.349305283,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1236.409321155,"data":"[NbConvertApp] Writing 283136 bytes to __results__.html\n"}
+]

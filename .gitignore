@@ -21,3 +21,7 @@ desktop.ini
 # Transfer-attack PNGs (~600 MB, regenerable; see transfer_attack_results.md §6)
 hashbench/results/transfer_v200/images/
 hashbench/results/transfer_v200_neuralhash/images/
+
+# offline pHash/PDQ NES package (built by offline/phash_pdq/build_zip.sh)
+phash_pdq_black_box_run.zip
+offline/phash_pdq/_stage/

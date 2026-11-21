@@ -1,6 +1,6 @@
 # Phase C (adversarial robustness): implementation progress
 
-*BTP: Perceptual Hashing. Status as of 2026-11-17 (summary table, updates, §6.1, §8, §9); the rest of §1–§9 dates from 2026-11-04. Phase C is defined in
+*BTP: Perceptual Hashing. Status as of 2026-11-22 (summary table, §8, §9); 2026-11-17 (updates, §6.1); the rest of §1–§9 dates from 2026-11-04. Phase C is defined in
 `thesis_research_plan.md` §2; the benign results it builds on are in `benchmark_findings.md`.*
 
 ## Summary
@@ -21,6 +21,12 @@
 | All adversarial tables in one file, incl. the CertPHash paper comparison | ✅ `adversarial_results_tables.md` |
 | Catalogue of the 12 further attacks (details, feasibility + novelty ranking, order) | ✅ Written 2026-11-16: `future_attacks.md`; #1 transfer done |
 | Transfer attack (#1): 9 sources × 11 targets incl. pHash / PDQ, V200, with random-noise control | ✅ Done 2026-11-17: `transfer_attack_results.md`, `results/transfer_v200*` |
+| NES black-box attack (#2): DinoHash ×2, NeuralHash, 6 CertPHash on V200 (Kaggle) | ✅ Done 2026-11-18: `nes_attack_results.md`, `results/nes_v200_*` |
+| NES like-for-like check: DinoHash trained at NeuralHash's 26-bit threshold | ✅ 2026-11-18: at 26 bits Dino-T 41.5% / 6.5% evasion ε8/ε4 vs NH 5.0 / 0.5 (`nes_attack_results.md` §5.3) |
+| NES in the Sun et al. 2026 setting: DinoHash ×2, NeuralHash, 6 CertPHash on V200 (Kaggle) | ✅ Done 2026-11-19: Dino-T 41.2%, Dino-U 54.7%, NH 24.5%, CertPHash ≤ 2.5% (`nes_sun_attack_results.md`, `results/nes_sun_v200_*`) |
+| Sun et al. NES, 500-step variant (100 images; NeuralHash all budgets, DinoHash ℓ2 180) | ✅ Done 2026-11-21: NH 63/69/63%, Dino-T 84% at ℓ2 180 (`nes_sun_attack_results.md` §6, `results/nes_sun500_v100_*`) |
+| NES on pHash + PDQ (CPU, separate Linux PC; package `offline/phash_pdq/`) | ✅ Done 2026-11-18: `results/nes_v200_classical/`, `nes_attack_results.md` §6 |
+| Conclusion of the black-box work | DinoHash is easier to evade than NeuralHash in every setting tried (white-box, our NES, Sun et al. literal, Sun et al. 500 steps). Sun et al.'s opposite ranking could not be reproduced; their perturbations are larger than their stated settings produce (`nes_sun_attack_results.md` §5–6) |
 
 The ε tables in §5 come from a pilot on very few images. They show that the pipeline works
 and give early signals, but **they are not thesis results**. Thesis numbers are in
@@ -519,17 +525,22 @@ no-collision at ℓ∞ 8/255, against 0.01% and 0% for adversarial training.
 
 ## 8. Next steps
 
-**Current list (2026-11-17).** Items 1–5 of the original list below are done (sweep additions:
+**Current list (2026-11-22).** Items 1–5 of the original list below are done (sweep additions:
 bit accuracy, both CertPHash thresholds and closest-target collisions are done; ℓ2 was dropped).
 
-1. ✅ Commit the new files and results (2026-11-17; transfer PNGs kept local, see §9).
+1. ✅ Commit the new files and results (2026-11-17; transfer PNGs kept local, see §9). NES and
+   Sun et al. code and results committed 2026-11-22.
 2. Update `adversarial_testing_report.md` §4 (drop ViT-B explanation, add the 50-image numbers,
    soften the gradient-masking claim); fix the author line in `certphash.py`.
 3. Add the authors' APGD-BCE as a third ensemble member (NeuralHash numbers are likely too low).
-4. Build the next attacks in the order of `future_attacks.md`: transfer ✅ (2026-11-17), then NES
-   black-box, EOT, joint evasion, universal perturbation; test each on `V200`.
+4. Build the next attacks in the order of `future_attacks.md`: transfer ✅ (2026-11-17), NES
+   black-box ✅ (2026-11-18, all 11 hashes + the 26-bit DinoHash check), Sun et al. setting ✅
+   (2026-11-19/21, literal + 500-step variant), then EOT,
+   joint evasion, universal perturbation; test each on `V200`.
 5. A sharding / merge helper for parallel runs on the institute cluster.
 6. On the cluster: a 10-image pilot, then benign on 2,000 images and adversarial on 1,000 images.
+7. Optional: the Sun et al. 500-step variant for DinoHash at ℓ2 40 and 90 (not run; expected to
+   repeat the ℓ2 180 result, `nes_sun_attack_results.md` §6.2).
 
 **Original list (2026-11-04), kept for reference:**
 
@@ -566,5 +577,8 @@ bit accuracy, both CertPHash thresholds and closest-target collisions are done; 
 | `future_attacks.md` | Catalogue of further attacks, committed 2026-11-17 |
 | `scripts/generate_transfer_images.py`, `scripts/transfer_matrix.py`, `kaggle/transfer/` | Transfer attack code, committed 2026-11-17 |
 | `transfer_attack_results.md`, `results/transfer_v200_matrix/`, `results/transfer_v200*/generation.csv`, logs | Transfer results, committed 2026-11-17 |
+| `hashbench/hashbench/blackbox.py`, `blackbox_classical.py`, `scripts/run_nes.py`, `scripts/run_nes_classical.py`, `tests/test_blackbox*.py`, `kaggle/nes/`, `offline/phash_pdq/` | NES attack code (Kaggle GPU runner and the offline pHash/PDQ CPU runner), committed 2026-11-22 |
+| `nes_attack_results.md`, `results/nes_v200_*`, `results/nes_pilot_kaggle/` | NES results, committed 2026-11-22 |
+| `hashbench/hashbench/blackbox_sun.py`, `scripts/run_nes_sun.py`, `tests/test_blackbox_sun.py`, `kaggle/nes_sun/`, `nes_sun_attack_results.md`, `results/nes_sun_v200_*`, `results/nes_sun500_v100_*` | Sun et al. 2026 NES replication (code + results), committed 2026-11-22 |
 | `results/transfer_v200/images/`, `results/transfer_v200_neuralhash/images/` | 19,800 attacked/clean PNGs (about 600 MB), **kept local only** (git-ignored); regenerate with `transfer_attack_results.md` §6 |
-| `phaseC_implementation_progress.md` | This file, committed 2026-11-17 |
+| `phaseC_implementation_progress.md` | This file, last updated 2026-11-22 |

@@ -1,0 +1,38 @@
+{
+  "list": "data/splits/V200.txt",
+  "limit": null,
+  "n_images": 200,
+  "max_queries": 10000,
+  "pairs": 20,
+  "sigma_frac": 1.0,
+  "lr_frac": 0.2,
+  "momentum": 0.9,
+  "dim": 32,
+  "plateau": 5,
+  "min_lr_frac": 0.02,
+  "fpr": 0.001,
+  "max_side": 512,
+  "seed": 0,
+  "thresholds_from": [
+    "results/coco_run1",
+    "results/coco_run2"
+  ],
+  "hashes": [
+    "phash",
+    "pdq"
+  ],
+  "settings": [
+    "evasion:8",
+    "collision:16",
+    "evasion:4"
+  ],
+  "collision_targets": "image i -> image (i + n//2) mod n of the list",
+  "threat_model": "score-based: the attacker reads the discrete hash of each 8-bit query",
+  "attacked_image": "whole image as loaded by the benchmark (max side 512), not a model input",
+  "runner": "run_nes_classical.py",
+  "device": "cpu",
+  "workers": 19,
+  "torch": "2.14.1+cpu",
+  "cpu_count": 20,
+  "started": "2026-11-17 23:39:12"
+}

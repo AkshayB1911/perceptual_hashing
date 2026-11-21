@@ -1,0 +1,36 @@
+{
+  "paper": "Sun et al. 2026, arXiv 2608.03101 (black-box NES setting)",
+  "list": "data/splits/V200.txt",
+  "limit": 100,
+  "n_images": 100,
+  "size": 512,
+  "max_queries": 32501,
+  "max_steps": 500,
+  "directions": 32,
+  "sigma_255": 4.0,
+  "step_255": 2.0,
+  "dim": 64,
+  "ber": 0.2,
+  "fpr": 0.001,
+  "seed": 2026,
+  "budgets": [
+    40.0,
+    90.0,
+    180.0
+  ],
+  "hashes": [
+    "neuralhash"
+  ],
+  "queries_per_step": 65,
+  "choices": {
+    "resize_512": "PIL bilinear",
+    "upsample": "bilinear 64->512, gray copied to RGB",
+    "update": "z += step * sign(g), then l2 projection (probes projected too)",
+    "queries": "8-bit rounded",
+    "cert_threshold": "FPR 0.001 L1 (no bits)"
+  },
+  "device": "cuda",
+  "torch": "2.11.0+cu130",
+  "gpu": "Tesla T4",
+  "started": "2026-11-19 18:53:14"
+}

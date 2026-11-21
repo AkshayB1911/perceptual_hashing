@@ -1,0 +1,76 @@
+[{"stream_name":"stdout","time":27.057716261,"data":"/usr/bin/python3 scripts/run_nes_sun.py --list data/splits/V200.txt --limit 100 --out /kaggle/working/hashbench/results/nes_sun500_v100_nh-all --device cuda --batch-size 8 --chunk 128 --max-steps 500 --max-queries 32501 --time-limit 11.29 --hashes neuralhash --budgets 40 90 180\n"}
+,{"stream_name":"stdout","time":36.338414428,"data":"resize self-check passed (GPU resize == Pillow)\n"}
+,{"stream_name":"stdout","time":36.338451123,"data":"100 images, hashes ['neuralhash'], l2 budgets [40.0, 90.0, 180.0], device cuda; 0 rows already done\n"}
+,{"stream_name":"stdout","time":280.76282696,"data":"[    244s] neuralhash         l2=40    8/100  success 5/8  (agree 8/8)  29.9 s/img\n"}
+,{"stream_name":"stdout","time":395.445663375,"data":"[    359s] neuralhash         l2=40   16/100  success 7/8  (agree 8/8)  14.3 s/img\n"}
+,{"stream_name":"stdout","time":536.501783606,"data":"[    500s] neuralhash         l2=40   24/100  success 7/8  (agree 8/8)  17.6 s/img\n"}
+,{"stream_name":"stdout","time":712.712514494,"data":"[    676s] neuralhash         l2=40   32/100  success 6/8  (agree 8/8)  22.0 s/img\n"}
+,{"stream_name":"stdout","time":1002.033727451,"data":"[    966s] neuralhash         l2=40   40/100  success 4/8  (agree 8/8)  36.1 s/img\n"}
+,{"stream_name":"stdout","time":1355.43047399,"data":"[   1319s] neuralhash         l2=40   48/100  success 3/8  (agree 8/8)  44.1 s/img\n"}
+,{"stream_name":"stdout","time":1725.055193072,"data":"[   1689s] neuralhash         l2=40   56/100  success 3/8  (agree 8/8)  46.2 s/img\n"}
+,{"stream_name":"stdout","time":2073.177067557,"data":"[   2037s] neuralhash         l2=40   64/100  success 4/8  (agree 8/8)  43.5 s/img\n"}
+,{"stream_name":"stdout","time":2312.183750785,"data":"[   2276s] neuralhash         l2=40   72/100  success 6/8  (agree 8/8)  29.8 s/img\n"}
+,{"stream_name":"stdout","time":2418.716688314,"data":"[   2382s] neuralhash         l2=40   80/100  success 7/8  (agree 8/8)  13.3 s/img\n"}
+,{"stream_name":"stdout","time":2721.752579978,"data":"[   2685s] neuralhash         l2=40   88/100  success 5/8  (agree 8/8)  37.8 s/img\n"}
+,{"stream_name":"stdout","time":3031.575599058,"data":"[   2995s] neuralhash         l2=40   96/100  success 4/8  (agree 8/8)  38.7 s/img\n"}
+,{"stream_name":"stdout","time":3181.360693327,"data":"[   3145s] neuralhash         l2=40  100/100  success 2/4  (agree 4/4)  37.4 s/img\n"}
+,{"stream_name":"stdout","time":3389.47490317,"data":"[   3353s] neuralhash         l2=90    8/100  success 6/8  (agree 8/8)  26.0 s/img\n"}
+,{"stream_name":"stdout","time":3493.343532394,"data":"[   3457s] neuralhash         l2=90   16/100  success 8/8  (agree 8/8)  13.0 s/img\n"}
+,{"stream_name":"stdout","time":3654.320581462,"data":"[   3618s] neuralhash         l2=90   24/100  success 6/8  (agree 8/8)  20.1 s/img\n"}
+,{"stream_name":"stdout","time":3886.658948222,"data":"[   3850s] neuralhash         l2=90   32/100  success 5/8  (agree 8/8)  29.0 s/img\n"}
+,{"stream_name":"stdout","time":4095.743917245,"data":"[   4059s] neuralhash         l2=90   40/100  success 6/8  (agree 8/8)  26.1 s/img\n"}
+,{"stream_name":"stdout","time":4408.579123374,"data":"[   4372s] neuralhash         l2=90   48/100  success 4/8  (agree 8/8)  39.1 s/img\n"}
+,{"stream_name":"stdout","time":4652.101719695,"data":"[   4616s] neuralhash         l2=90   56/100  success 5/8  (agree 8/8)  30.4 s/img\n"}
+,{"stream_name":"stdout","time":4878.811905917,"data":"[   4842s] neuralhash         l2=90   64/100  success 6/8  (agree 8/8)  28.3 s/img\n"}
+,{"stream_name":"stdout","time":5094.411629317,"data":"[   5058s] neuralhash         l2=90   72/100  success 6/8  (agree 8/8)  26.9 s/img\n"}
+,{"stream_name":"stdout","time":5162.973126137,"data":"[   5127s] neuralhash         l2=90   80/100  success 8/8  (agree 8/8)  8.5 s/img\n"}
+,{"stream_name":"stdout","time":5529.177637394,"data":"[   5493s] neuralhash         l2=90   88/100  success 3/8  (agree 8/8)  45.7 s/img\n"}
+,{"stream_name":"stdout","time":5855.805847077,"data":"[   5819s] neuralhash         l2=90   96/100  success 4/8  (agree 8/8)  40.8 s/img\n"}
+,{"stream_name":"stdout","time":6043.519840895,"data":"[   6007s] neuralhash         l2=90  100/100  success 2/4  (agree 4/4)  46.9 s/img\n"}
+,{"stream_name":"stdout","time":6294.568161152,"data":"[   6258s] neuralhash         l2=180    8/100  success 5/8  (agree 8/8)  31.4 s/img\n"}
+,{"stream_name":"stdout","time":6350.964902063,"data":"[   6315s] neuralhash         l2=180   16/100  success 8/8  (agree 8/8)  7.0 s/img\n"}
+,{"stream_name":"stdout","time":6512.50798465,"data":"[   6476s] neuralhash         l2=180   24/100  success 6/8  (agree 8/8)  20.2 s/img\n"}
+,{"stream_name":"stdout","time":6710.131093464,"data":"[   6674s] neuralhash         l2=180   32/100  success 6/8  (agree 8/8)  24.7 s/img\n"}
+,{"stream_name":"stdout","time":7003.648694697,"data":"[   6967s] neuralhash         l2=180   40/100  success 4/8  (agree 8/8)  36.7 s/img\n"}
+,{"stream_name":"stdout","time":7356.52937054,"data":"[   7320s] neuralhash         l2=180   48/100  success 3/8  (agree 8/8)  44.1 s/img\n"}
+,{"stream_name":"stdout","time":7658.606985613,"data":"[   7622s] neuralhash         l2=180   56/100  success 4/8  (agree 8/8)  37.7 s/img\n"}
+,{"stream_name":"stdout","time":7897.81278778,"data":"[   7861s] neuralhash         l2=180   64/100  success 6/8  (agree 8/8)  29.9 s/img\n"}
+,{"stream_name":"stdout","time":8187.787324074,"data":"[   8151s] neuralhash         l2=180   72/100  success 4/8  (agree 8/8)  36.2 s/img\n"}
+,{"stream_name":"stdout","time":8343.195117469,"data":"[   8307s] neuralhash         l2=180   80/100  success 6/8  (agree 8/8)  19.4 s/img\n"}
+,{"stream_name":"stdout","time":8641.302146445,"data":"[   8605s] neuralhash         l2=180   88/100  success 5/8  (agree 8/8)  37.2 s/img\n"}
+,{"stream_name":"stdout","time":8965.31101812,"data":"[   8929s] neuralhash         l2=180   96/100  success 4/8  (agree 8/8)  40.5 s/img\n"}
+,{"stream_name":"stdout","time":9111.300654531,"data":"[   9075s] neuralhash         l2=180  100/100  success 2/4  (agree 4/4)  36.5 s/img\n"}
+,{"stream_name":"stdout","time":9111.381317337,"data":"done in 9075s\n"}
+,{"stream_name":"stdout","time":9111.381362453,"data":"# NES black-box evasion, Sun et al. 2026 setting: summary\n"}
+,{"stream_name":"stdout","time":9111.381370142,"data":"\n"}
+,{"stream_name":"stdout","time":9111.381375869,"data":"ASR (%) = verified evasions (plain hasher on the returned 8-bit image). Success: BER \u003e 0.2 (\u003e= 20 of 96 bits) for DinoHash / NeuralHash; CertPHash: its FPR 1e-3 L1 threshold. 'mean' = the average over the three budgets (Sun et al. Table 1).\n"}
+,{"stream_name":"stdout","time":9111.381389014,"data":"\n"}
+,{"stream_name":"stdout","time":9111.381393753,"data":"| hash | l2 40 | l2 90 | l2 180 | mean |\n"}
+,{"stream_name":"stdout","time":9111.381398846,"data":"|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":9111.381403526,"data":"| neuralhash | 63.0 | 69.0 | 63.0 | 65.0 |\n"}
+,{"stream_name":"stdout","time":9111.381408321,"data":"\n"}
+,{"stream_name":"stdout","time":9111.381413045,"data":"| hash | l2 | n | ASR (95% CI) | attack-side ASR | agree % | median q | mean dist | l2 | l_inf ×255 | SSIM | s/img |\n"}
+,{"stream_name":"stdout","time":9111.381424387,"data":"|---|---|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":9111.381427769,"data":"| neuralhash | 40 | 100 | 63.0 (53.2-71.8) | 63.0 | 100.0 | 1821 | 17.1 | 24.0 | 33.9 | 0.926 | 31.4 |\n"}
+,{"stream_name":"stdout","time":9111.381431112,"data":"| neuralhash | 90 | 100 | 69.0 (59.4-77.2) | 69.0 | 100.0 | 2406 | 17.6 | 24.6 | 34.7 | 0.924 | 28.6 |\n"}
+,{"stream_name":"stdout","time":9111.381444561,"data":"| neuralhash | 180 | 100 | 63.0 (53.2-71.8) | 63.0 | 100.0 | 1886 | 17.2 | 24.2 | 34.1 | 0.926 | 30.7 |\n"}
+,{"stream_name":"stdout","time":9118.486995737,"data":"# NES black-box evasion, Sun et al. 2026 setting: summary\n"}
+,{"stream_name":"stdout","time":9118.487026289,"data":"\n"}
+,{"stream_name":"stdout","time":9118.487031337,"data":"ASR (%) = verified evasions (plain hasher on the returned 8-bit image). Success: BER \u003e 0.2 (\u003e= 20 of 96 bits) for DinoHash / NeuralHash; CertPHash: its FPR 1e-3 L1 threshold. 'mean' = the average over the three budgets (Sun et al. Table 1).\n"}
+,{"stream_name":"stdout","time":9118.487037835,"data":"\n"}
+,{"stream_name":"stdout","time":9118.487041257,"data":"| hash | l2 40 | l2 90 | l2 180 | mean |\n"}
+,{"stream_name":"stdout","time":9118.487044765,"data":"|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":9118.487048683,"data":"| neuralhash | 63.0 | 69.0 | 63.0 | 65.0 |\n"}
+,{"stream_name":"stdout","time":9118.487052186,"data":"\n"}
+,{"stream_name":"stdout","time":9118.487055748,"data":"| hash | l2 | n | ASR (95% CI) | attack-side ASR | agree % | median q | mean dist | l2 | l_inf ×255 | SSIM | s/img |\n"}
+,{"stream_name":"stdout","time":9118.487060211,"data":"|---|---|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":9118.487063726,"data":"| neuralhash | 40 | 100 | 63.0 (53.2-71.8) | 63.0 | 100.0 | 1821 | 17.1 | 24.0 | 33.9 | 0.926 | 31.4 |\n"}
+,{"stream_name":"stdout","time":9118.487067637,"data":"| neuralhash | 90 | 100 | 69.0 (59.4-77.2) | 69.0 | 100.0 | 2406 | 17.6 | 24.6 | 34.7 | 0.924 | 28.6 |\n"}
+,{"stream_name":"stdout","time":9118.487071699,"data":"| neuralhash | 180 | 100 | 63.0 (53.2-71.8) | 63.0 | 100.0 | 1886 | 17.2 | 24.2 | 34.1 | 0.926 | 30.7 |\n"}
+,{"stream_name":"stderr","time":9121.276658334,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":9121.276684544,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":9121.576345755,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":9121.576374779,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":9122.466070186,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":9123.491911925,"data":"[NbConvertApp] Writing 285261 bytes to __results__.html\n"}
+]

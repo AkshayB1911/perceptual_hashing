@@ -1,0 +1,7 @@
+hash,mode,eps_255,n,already_matched,median_queries,mean_norm_distance,mean_orig_norm_distance,mean_linf_255,mean_ssim,seconds_per_image
+pdq,collision,16.0,2,0,329.0,0.391,0.461,16.0,0.906,5.2
+phash,collision,16.0,2,0,,0.359,0.5,16.0,0.906,7.1
+pdq,evasion,4.0,2,0,,0.07,0.0,4.0,0.985,6.7
+phash,evasion,4.0,2,0,,0.078,0.0,3.0,0.992,6.7
+pdq,evasion,8.0,2,0,,0.148,0.0,8.0,0.959,8.4
+phash,evasion,8.0,2,0,,0.156,0.0,8.0,0.963,7.1

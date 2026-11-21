@@ -1,0 +1,9 @@
+# torch (CPU build) is installed first by run.sh from https://download.pytorch.org/whl/cpu
+numpy
+scipy
+pillow
+opencv-python-headless
+pandas
+matplotlib
+tqdm
+pytest

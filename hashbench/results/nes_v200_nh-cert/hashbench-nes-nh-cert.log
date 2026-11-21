@@ -1,0 +1,226 @@
+[{"stream_name":"stdout","time":25.396716018,"data":"/usr/bin/python3 scripts/run_nes.py --list data/splits/V200.txt --out /kaggle/working/hashbench/results/nes_v200_nh-cert --device cuda --batch-size 16 --time-limit 10.99 --hashes neuralhash --max-queries 10000 --pairs 20 --sigma-frac 1.0 --lr-frac 0.2 --dim 32 --settings evasion:8 collision:16 evasion:4\n"}
+,{"stream_name":"stdout","time":34.426364271,"data":"200 images, hashes ['neuralhash'], settings ['evasion:8', 'collision:16', 'evasion:4'], budget 10000 queries, device cuda; 0 rows already done\n"}
+,{"stream_name":"stdout","time":202.909668981,"data":"[    168s] neuralhash         evasion   eps=8/255   16/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":366.695482554,"data":"[    332s] neuralhash         evasion   eps=8/255   32/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":530.591521042,"data":"[    496s] neuralhash         evasion   eps=8/255   48/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":694.605209648,"data":"[    660s] neuralhash         evasion   eps=8/255   64/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":841.970117229,"data":"[    808s] neuralhash         evasion   eps=8/255   80/200  success 2/16  median q 2051  9.2 s/img\n"}
+,{"stream_name":"stdout","time":997.871301175,"data":"[    963s] neuralhash         evasion   eps=8/255   96/200  success 1/16  median q 2297  9.7 s/img\n"}
+,{"stream_name":"stdout","time":1150.940591966,"data":"[   1117s] neuralhash         evasion   eps=8/255  112/200  success 2/16  median q 4900  9.6 s/img\n"}
+,{"stream_name":"stdout","time":1313.669546314,"data":"[   1279s] neuralhash         evasion   eps=8/255  128/200  success 1/16  median q 9062  10.2 s/img\n"}
+,{"stream_name":"stdout","time":1470.63427916,"data":"[   1436s] neuralhash         evasion   eps=8/255  144/200  success 1/16  median q 3240  9.8 s/img\n"}
+,{"stream_name":"stdout","time":1625.057432071,"data":"[   1591s] neuralhash         evasion   eps=8/255  160/200  success 1/16  median q 739  9.6 s/img\n"}
+,{"stream_name":"stdout","time":1788.773273001,"data":"[   1754s] neuralhash         evasion   eps=8/255  176/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":1949.72962275,"data":"[   1915s] neuralhash         evasion   eps=8/255  192/200  success 2/16  median q 8488  10.1 s/img\n"}
+,{"stream_name":"stdout","time":2031.900309322,"data":"[   1997s] neuralhash         evasion   eps=8/255  200/200  success 0/8  10.3 s/img\n"}
+,{"stream_name":"stdout","time":2195.555126022,"data":"[   2161s] neuralhash         collision eps=16/255   16/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":2359.404396115,"data":"[   2325s] neuralhash         collision eps=16/255   32/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":2523.341734493,"data":"[   2489s] neuralhash         collision eps=16/255   48/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":2687.361263433,"data":"[   2653s] neuralhash         collision eps=16/255   64/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":2851.158318755,"data":"[   2817s] neuralhash         collision eps=16/255   80/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":3015.010556949,"data":"[   2981s] neuralhash         collision eps=16/255   96/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":3178.824407293,"data":"[   3144s] neuralhash         collision eps=16/255  112/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":3338.04561797,"data":"[   3304s] neuralhash         collision eps=16/255  128/200  success 1/16  median q 5495  9.9 s/img\n"}
+,{"stream_name":"stdout","time":3502.030612762,"data":"[   3468s] neuralhash         collision eps=16/255  144/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":3663.638213085,"data":"[   3629s] neuralhash         collision eps=16/255  160/200  success 1/16  median q 7873  10.1 s/img\n"}
+,{"stream_name":"stdout","time":3827.591063831,"data":"[   3793s] neuralhash         collision eps=16/255  176/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":3991.448408823,"data":"[   3957s] neuralhash         collision eps=16/255  192/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":4073.710839305,"data":"[   4039s] neuralhash         collision eps=16/255  200/200  success 0/8  10.3 s/img\n"}
+,{"stream_name":"stdout","time":4237.492207008,"data":"[   4203s] neuralhash         evasion   eps=4/255   16/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":4401.40875143,"data":"[   4367s] neuralhash         evasion   eps=4/255   32/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":4565.182580199,"data":"[   4531s] neuralhash         evasion   eps=4/255   48/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":4729.134633557,"data":"[   4695s] neuralhash         evasion   eps=4/255   64/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":4883.025599779,"data":"[   4849s] neuralhash         evasion   eps=4/255   80/200  success 1/16  median q 247  9.6 s/img\n"}
+,{"stream_name":"stdout","time":5046.972828254,"data":"[   5013s] neuralhash         evasion   eps=4/255   96/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":5210.894560899,"data":"[   5176s] neuralhash         evasion   eps=4/255  112/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":5374.710392674,"data":"[   5340s] neuralhash         evasion   eps=4/255  128/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":5538.566662283,"data":"[   5504s] neuralhash         evasion   eps=4/255  144/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":5702.584764739,"data":"[   5668s] neuralhash         evasion   eps=4/255  160/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":5866.337786567,"data":"[   5832s] neuralhash         evasion   eps=4/255  176/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":6030.240024118,"data":"[   5996s] neuralhash         evasion   eps=4/255  192/200  success 0/16  10.2 s/img\n"}
+,{"stream_name":"stdout","time":6112.413110487,"data":"[   6078s] neuralhash         evasion   eps=4/255  200/200  success 0/8  10.3 s/img\n"}
+,{"stream_name":"stdout","time":6112.465723082,"data":"done in 6078s\n"}
+,{"stream_name":"stdout","time":6112.465762124,"data":"# NES black-box attack: summary\n"}
+,{"stream_name":"stdout","time":6112.465767872,"data":"\n"}
+,{"stream_name":"stdout","time":6112.465772409,"data":"Success (%) within each query budget at the calibrated FPR 1e-3 threshold. Collision rows exclude pairs that already matched before the attack.\n"}
+,{"stream_name":"stdout","time":6112.465777187,"data":"\n"}
+,{"stream_name":"stdout","time":6112.465781516,"data":"## collision, eps = 16/255\n"}
+,{"stream_name":"stdout","time":6112.465785918,"data":"\n"}
+,{"stream_name":"stdout","time":6112.465790216,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":6112.465796296,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":6112.465801141,"data":"| neuralhash | 200 | 0.0 | 0.0 | 0.0 | 1.0 | 6684 | 0.409 | 15.44 | 0.948 |\n"}
+,{"stream_name":"stdout","time":6112.465805918,"data":"\n"}
+,{"stream_name":"stdout","time":6112.465810118,"data":"## evasion, eps = 4/255\n"}
+,{"stream_name":"stdout","time":6112.465814809,"data":"\n"}
+,{"stream_name":"stdout","time":6112.465819378,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":6112.465842725,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":6112.465846666,"data":"| neuralhash | 200 | 0.5 | 0.5 | 0.5 | 0.5 | 247 | 0.091 | 3.94 | 0.994 |\n"}
+,{"stream_name":"stdout","time":6112.46585036,"data":"\n"}
+,{"stream_name":"stdout","time":6112.465853678,"data":"## evasion, eps = 8/255\n"}
+,{"stream_name":"stdout","time":6112.465856841,"data":"\n"}
+,{"stream_name":"stdout","time":6112.465860116,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":6112.465863824,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":6112.465867738,"data":"| neuralhash | 200 | 1.0 | 1.0 | 3.0 | 5.0 | 3916.5 | 0.168 | 7.99 | 0.981 |\n"}
+,{"stream_name":"stdout","time":6112.465871725,"data":"\n"}
+,{"stream_name":"stdout","time":6116.543540548,"data":"/usr/bin/python3 scripts/run_nes.py --list data/splits/V200.txt --out /kaggle/working/hashbench/results/nes_v200_nh-cert --device cuda --batch-size 64 --time-limit 9.30 --hashes certphash certphash_ep2 certphash_ep4 certphash_ep8 certphash_base certphash_adv --max-queries 10000 --pairs 20 --sigma-frac 1.0 --lr-frac 0.2 --dim 32 --settings evasion:8 collision:16 evasion:4\n"}
+,{"stream_name":"stdout","time":6120.609028843,"data":"200 images, hashes ['certphash', 'certphash_ep2', 'certphash_ep4', 'certphash_ep8', 'certphash_base', 'certphash_adv'], settings ['evasion:8', 'collision:16', 'evasion:4'], budget 10000 queries, device cuda; 600 rows already done\n"}
+,{"stream_name":"stdout","time":6179.600553641,"data":"[     59s] certphash          evasion   eps=8/255   64/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6231.190579092,"data":"[    111s] certphash          evasion   eps=8/255  128/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6282.883051684,"data":"[    162s] certphash          evasion   eps=8/255  192/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6289.233526707,"data":"[    169s] certphash          evasion   eps=8/255  200/200  success 0/8  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6339.808211931,"data":"[    219s] certphash          collision eps=16/255   64/200  success 2/64  median q 1620  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6387.123892146,"data":"[    267s] certphash          collision eps=16/255  128/200  success 7/64  median q 2010  0.7 s/img\n"}
+,{"stream_name":"stdout","time":6436.673403756,"data":"[    316s] certphash          collision eps=16/255  192/200  success 3/64  median q 1026  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6442.536097733,"data":"[    322s] certphash          collision eps=16/255  200/200  success 1/8  median q 780  0.7 s/img\n"}
+,{"stream_name":"stdout","time":6494.271792721,"data":"[    374s] certphash          evasion   eps=4/255   64/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6546.096187559,"data":"[    425s] certphash          evasion   eps=4/255  128/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6597.837741684,"data":"[    477s] certphash          evasion   eps=4/255  192/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6604.142245326,"data":"[    484s] certphash          evasion   eps=4/255  200/200  success 0/8  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6655.730921089,"data":"[    535s] certphash_ep2      evasion   eps=8/255   64/200  success 1/64  median q 329  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6706.888728445,"data":"[    586s] certphash_ep2      evasion   eps=8/255  128/200  success 1/64  median q 206  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6758.211812436,"data":"[    638s] certphash_ep2      evasion   eps=8/255  192/200  success 1/64  median q 1231  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6764.54531356,"data":"[    644s] certphash_ep2      evasion   eps=8/255  200/200  success 0/8  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6816.014075119,"data":"[    695s] certphash_ep2      collision eps=16/255   64/200  success 1/64  median q 165  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6867.024094665,"data":"[    746s] certphash_ep2      collision eps=16/255  128/200  success 2/64  median q 2686  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6918.836747524,"data":"[    798s] certphash_ep2      collision eps=16/255  192/200  success 1/64  median q 8242  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6924.947577886,"data":"[    804s] certphash_ep2      collision eps=16/255  200/200  success 1/8  median q 5741  0.8 s/img\n"}
+,{"stream_name":"stdout","time":6976.760238242,"data":"[    856s] certphash_ep2      evasion   eps=4/255   64/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7028.682616227,"data":"[    908s] certphash_ep2      evasion   eps=4/255  128/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7080.714611257,"data":"[    960s] certphash_ep2      evasion   eps=4/255  192/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7087.06033701,"data":"[    966s] certphash_ep2      evasion   eps=4/255  200/200  success 0/8  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7139.119867898,"data":"[   1019s] certphash_ep4      evasion   eps=8/255   64/200  success 1/64  median q 7955  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7190.218526162,"data":"[   1070s] certphash_ep4      evasion   eps=8/255  128/200  success 1/64  median q 1354  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7241.991039869,"data":"[   1121s] certphash_ep4      evasion   eps=8/255  192/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7248.296211255,"data":"[   1128s] certphash_ep4      evasion   eps=8/255  200/200  success 0/8  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7299.569240271,"data":"[   1179s] certphash_ep4      collision eps=16/255   64/200  success 1/64  median q 657  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7350.816927982,"data":"[   1230s] certphash_ep4      collision eps=16/255  128/200  success 1/64  median q 124  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7402.572005778,"data":"[   1282s] certphash_ep4      collision eps=16/255  192/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7408.572581347,"data":"[   1288s] certphash_ep4      collision eps=16/255  200/200  success 1/8  median q 3814  0.7 s/img\n"}
+,{"stream_name":"stdout","time":7460.340541523,"data":"[   1340s] certphash_ep4      evasion   eps=4/255   64/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7512.230606863,"data":"[   1392s] certphash_ep4      evasion   eps=4/255  128/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7564.103999554,"data":"[   1443s] certphash_ep4      evasion   eps=4/255  192/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7570.418031469,"data":"[   1450s] certphash_ep4      evasion   eps=4/255  200/200  success 0/8  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7622.622778248,"data":"[   1502s] certphash_ep8      evasion   eps=8/255   64/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7674.50131004,"data":"[   1554s] certphash_ep8      evasion   eps=8/255  128/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7726.503258144,"data":"[   1606s] certphash_ep8      evasion   eps=8/255  192/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7732.840931283,"data":"[   1612s] certphash_ep8      evasion   eps=8/255  200/200  success 0/8  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7784.005477718,"data":"[   1663s] certphash_ep8      collision eps=16/255   64/200  success 1/64  median q 1  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7835.129451995,"data":"[   1715s] certphash_ep8      collision eps=16/255  128/200  success 1/64  median q 1  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7886.740081554,"data":"[   1766s] certphash_ep8      collision eps=16/255  192/200  success 1/64  median q 6069  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7893.065303386,"data":"[   1772s] certphash_ep8      collision eps=16/255  200/200  success 0/8  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7944.896515316,"data":"[   1824s] certphash_ep8      evasion   eps=4/255   64/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":7996.688652574,"data":"[   1876s] certphash_ep8      evasion   eps=4/255  128/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8048.477536975,"data":"[   1928s] certphash_ep8      evasion   eps=4/255  192/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8054.793777281,"data":"[   1934s] certphash_ep8      evasion   eps=4/255  200/200  success 0/8  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8108.013788331,"data":"[   1987s] certphash_base     evasion   eps=8/255   64/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8160.925778746,"data":"[   2040s] certphash_base     evasion   eps=8/255  128/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8213.856610649,"data":"[   2093s] certphash_base     evasion   eps=8/255  192/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8220.297558978,"data":"[   2100s] certphash_base     evasion   eps=8/255  200/200  success 0/8  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8271.276153095,"data":"[   2151s] certphash_base     collision eps=16/255   64/200  success 3/64  median q 944  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8319.887647256,"data":"[   2199s] certphash_base     collision eps=16/255  128/200  success 7/64  median q 3978  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8370.76896137,"data":"[   2250s] certphash_base     collision eps=16/255  192/200  success 4/64  median q 4306  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8376.560887599,"data":"[   2256s] certphash_base     collision eps=16/255  200/200  success 2/8  median q 4285  0.7 s/img\n"}
+,{"stream_name":"stdout","time":8429.428473922,"data":"[   2309s] certphash_base     evasion   eps=4/255   64/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8482.289468508,"data":"[   2362s] certphash_base     evasion   eps=4/255  128/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8535.167429519,"data":"[   2415s] certphash_base     evasion   eps=4/255  192/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8541.604432936,"data":"[   2421s] certphash_base     evasion   eps=4/255  200/200  success 0/8  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8594.885276467,"data":"[   2474s] certphash_adv      evasion   eps=8/255   64/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8647.380520334,"data":"[   2527s] certphash_adv      evasion   eps=8/255  128/200  success 1/64  median q 4388  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8700.317330082,"data":"[   2580s] certphash_adv      evasion   eps=8/255  192/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8706.757793874,"data":"[   2586s] certphash_adv      evasion   eps=8/255  200/200  success 0/8  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8756.518199307,"data":"[   2636s] certphash_adv      collision eps=16/255   64/200  success 7/64  median q 4757  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8803.512568475,"data":"[   2683s] certphash_adv      collision eps=16/255  128/200  success 10/64  median q 2666  0.7 s/img\n"}
+,{"stream_name":"stdout","time":8853.507953357,"data":"[   2733s] certphash_adv      collision eps=16/255  192/200  success 8/64  median q 5864  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8859.482218344,"data":"[   2739s] certphash_adv      collision eps=16/255  200/200  success 1/8  median q 657  0.7 s/img\n"}
+,{"stream_name":"stdout","time":8912.316358008,"data":"[   2792s] certphash_adv      evasion   eps=4/255   64/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":8965.159477269,"data":"[   2845s] certphash_adv      evasion   eps=4/255  128/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":9018.042775334,"data":"[   2897s] certphash_adv      evasion   eps=4/255  192/200  success 0/64  0.8 s/img\n"}
+,{"stream_name":"stdout","time":9024.477146874,"data":"[   2904s] certphash_adv      evasion   eps=4/255  200/200  success 0/8  0.8 s/img\n"}
+,{"stream_name":"stdout","time":9024.562053061,"data":"done in 2904s\n"}
+,{"stream_name":"stdout","time":9024.562086611,"data":"# NES black-box attack: summary\n"}
+,{"stream_name":"stdout","time":9024.562093039,"data":"\n"}
+,{"stream_name":"stdout","time":9024.562097957,"data":"Success (%) within each query budget at the calibrated FPR 1e-3 threshold. Collision rows exclude pairs that already matched before the attack.\n"}
+,{"stream_name":"stdout","time":9024.562103515,"data":"\n"}
+,{"stream_name":"stdout","time":9024.562108251,"data":"## collision, eps = 16/255\n"}
+,{"stream_name":"stdout","time":9024.562113331,"data":"\n"}
+,{"stream_name":"stdout","time":9024.562117901,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":9024.56212343,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":9024.562127686,"data":"| certphash | 200 | 3.0 | 3.5 | 5.5 | 6.5 | 1026 | 0.171 | 15.92 | 0.906 |\n"}
+,{"stream_name":"stdout","time":9024.562131963,"data":"| certphash_adv | 200 | 3.5 | 4.5 | 7.5 | 13.0 | 4080.5 | 0.182 | 15.94 | 0.904 |\n"}
+,{"stream_name":"stdout","time":9024.562136247,"data":"| certphash_base | 200 | 2.5 | 2.5 | 5.5 | 8.0 | 3732 | 0.178 | 15.87 | 0.906 |\n"}
+,{"stream_name":"stdout","time":9024.562140572,"data":"| certphash_ep2 | 200 | 1.0 | 1.0 | 1.0 | 2.5 | 5249 | 0.168 | 15.96 | 0.911 |\n"}
+,{"stream_name":"stdout","time":9024.562150732,"data":"| certphash_ep4 | 200 | 1.0 | 1.0 | 1.5 | 1.5 | 657 | 0.158 | 15.97 | 0.912 |\n"}
+,{"stream_name":"stdout","time":9024.562154012,"data":"| certphash_ep8 | 198 | 0.0 | 0.0 | 0.0 | 0.5 | 6069 | 0.124 | 16.0 | 0.914 |\n"}
+,{"stream_name":"stdout","time":9024.562156961,"data":"| neuralhash | 200 | 0.0 | 0.0 | 0.0 | 1.0 | 6684 | 0.409 | 15.44 | 0.948 |\n"}
+,{"stream_name":"stdout","time":9024.562159849,"data":"\n"}
+,{"stream_name":"stdout","time":9024.562162552,"data":"## evasion, eps = 4/255\n"}
+,{"stream_name":"stdout","time":9024.562165355,"data":"\n"}
+,{"stream_name":"stdout","time":9024.562168066,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":9024.562171334,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":9024.562174259,"data":"| certphash | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.014 | 4.0 | 0.991 |\n"}
+,{"stream_name":"stdout","time":9024.562177323,"data":"| certphash_adv | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.017 | 4.0 | 0.99 |\n"}
+,{"stream_name":"stdout","time":9024.562180141,"data":"| certphash_base | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.018 | 4.0 | 0.991 |\n"}
+,{"stream_name":"stdout","time":9024.562191625,"data":"| certphash_ep2 | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.016 | 4.0 | 0.992 |\n"}
+,{"stream_name":"stdout","time":9024.562194144,"data":"| certphash_ep4 | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.013 | 4.0 | 0.992 |\n"}
+,{"stream_name":"stdout","time":9024.562196406,"data":"| certphash_ep8 | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.008 | 4.0 | 0.993 |\n"}
+,{"stream_name":"stdout","time":9024.562198641,"data":"| neuralhash | 200 | 0.5 | 0.5 | 0.5 | 0.5 | 247 | 0.091 | 3.94 | 0.994 |\n"}
+,{"stream_name":"stdout","time":9024.56220089,"data":"\n"}
+,{"stream_name":"stdout","time":9024.562203069,"data":"## evasion, eps = 8/255\n"}
+,{"stream_name":"stdout","time":9024.562205241,"data":"\n"}
+,{"stream_name":"stdout","time":9024.562207329,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":9024.562209896,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":9024.562212124,"data":"| certphash | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.028 | 8.0 | 0.969 |\n"}
+,{"stream_name":"stdout","time":9024.562214357,"data":"| certphash_adv | 200 | 0.0 | 0.0 | 0.5 | 0.5 | 4388 | 0.033 | 8.0 | 0.967 |\n"}
+,{"stream_name":"stdout","time":9024.562216627,"data":"| certphash_base | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.036 | 8.0 | 0.967 |\n"}
+,{"stream_name":"stdout","time":9024.562220005,"data":"| certphash_ep2 | 200 | 1.0 | 1.5 | 1.5 | 1.5 | 329 | 0.03 | 8.0 | 0.972 |\n"}
+,{"stream_name":"stdout","time":9024.562222265,"data":"| certphash_ep4 | 200 | 0.0 | 0.5 | 0.5 | 1.0 | 4654.5 | 0.026 | 8.0 | 0.973 |\n"}
+,{"stream_name":"stdout","time":9024.56222454,"data":"| certphash_ep8 | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.016 | 8.0 | 0.974 |\n"}
+,{"stream_name":"stdout","time":9024.562226769,"data":"| neuralhash | 200 | 1.0 | 1.0 | 3.0 | 5.0 | 3916.5 | 0.168 | 7.99 | 0.981 |\n"}
+,{"stream_name":"stdout","time":9024.562229017,"data":"\n"}
+,{"stream_name":"stdout","time":9027.630612009,"data":"# NES black-box attack: summary\n"}
+,{"stream_name":"stdout","time":9027.630634682,"data":"\n"}
+,{"stream_name":"stdout","time":9027.630639729,"data":"Success (%) within each query budget at the calibrated FPR 1e-3 threshold. Collision rows exclude pairs that already matched before the attack.\n"}
+,{"stream_name":"stdout","time":9027.630643672,"data":"\n"}
+,{"stream_name":"stdout","time":9027.630646855,"data":"## collision, eps = 16/255\n"}
+,{"stream_name":"stdout","time":9027.630650127,"data":"\n"}
+,{"stream_name":"stdout","time":9027.630653394,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":9027.630658437,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":9027.630663545,"data":"| certphash | 200 | 3.0 | 3.5 | 5.5 | 6.5 | 1026 | 0.171 | 15.92 | 0.906 |\n"}
+,{"stream_name":"stdout","time":9027.630670607,"data":"| certphash_adv | 200 | 3.5 | 4.5 | 7.5 | 13.0 | 4080.5 | 0.182 | 15.94 | 0.904 |\n"}
+,{"stream_name":"stdout","time":9027.630673022,"data":"| certphash_base | 200 | 2.5 | 2.5 | 5.5 | 8.0 | 3732 | 0.178 | 15.87 | 0.906 |\n"}
+,{"stream_name":"stdout","time":9027.630675427,"data":"| certphash_ep2 | 200 | 1.0 | 1.0 | 1.0 | 2.5 | 5249 | 0.168 | 15.96 | 0.911 |\n"}
+,{"stream_name":"stdout","time":9027.63067787,"data":"| certphash_ep4 | 200 | 1.0 | 1.0 | 1.5 | 1.5 | 657 | 0.158 | 15.97 | 0.912 |\n"}
+,{"stream_name":"stdout","time":9027.63068022,"data":"| certphash_ep8 | 198 | 0.0 | 0.0 | 0.0 | 0.5 | 6069 | 0.124 | 16.0 | 0.914 |\n"}
+,{"stream_name":"stdout","time":9027.630682539,"data":"| neuralhash | 200 | 0.0 | 0.0 | 0.0 | 1.0 | 6684 | 0.409 | 15.44 | 0.948 |\n"}
+,{"stream_name":"stdout","time":9027.630716897,"data":"\n"}
+,{"stream_name":"stdout","time":9027.630724021,"data":"## evasion, eps = 4/255\n"}
+,{"stream_name":"stdout","time":9027.630728015,"data":"\n"}
+,{"stream_name":"stdout","time":9027.630731649,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":9027.630735565,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":9027.630738879,"data":"| certphash | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.014 | 4.0 | 0.991 |\n"}
+,{"stream_name":"stdout","time":9027.630742196,"data":"| certphash_adv | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.017 | 4.0 | 0.99 |\n"}
+,{"stream_name":"stdout","time":9027.63074558,"data":"| certphash_base | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.018 | 4.0 | 0.991 |\n"}
+,{"stream_name":"stdout","time":9027.630748922,"data":"| certphash_ep2 | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.016 | 4.0 | 0.992 |\n"}
+,{"stream_name":"stdout","time":9027.630752264,"data":"| certphash_ep4 | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.013 | 4.0 | 0.992 |\n"}
+,{"stream_name":"stdout","time":9027.630755544,"data":"| certphash_ep8 | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.008 | 4.0 | 0.993 |\n"}
+,{"stream_name":"stdout","time":9027.630758852,"data":"| neuralhash | 200 | 0.5 | 0.5 | 0.5 | 0.5 | 247 | 0.091 | 3.94 | 0.994 |\n"}
+,{"stream_name":"stdout","time":9027.630762237,"data":"\n"}
+,{"stream_name":"stdout","time":9027.63076536,"data":"## evasion, eps = 8/255\n"}
+,{"stream_name":"stdout","time":9027.630768552,"data":"\n"}
+,{"stream_name":"stdout","time":9027.630771709,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":9027.63077544,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":9027.630784392,"data":"| certphash | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.028 | 8.0 | 0.969 |\n"}
+,{"stream_name":"stdout","time":9027.630787027,"data":"| certphash_adv | 200 | 0.0 | 0.0 | 0.5 | 0.5 | 4388 | 0.033 | 8.0 | 0.967 |\n"}
+,{"stream_name":"stdout","time":9027.630789334,"data":"| certphash_base | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.036 | 8.0 | 0.967 |\n"}
+,{"stream_name":"stdout","time":9027.630793304,"data":"| certphash_ep2 | 200 | 1.0 | 1.5 | 1.5 | 1.5 | 329 | 0.03 | 8.0 | 0.972 |\n"}
+,{"stream_name":"stdout","time":9027.630796451,"data":"| certphash_ep4 | 200 | 0.0 | 0.5 | 0.5 | 1.0 | 4654.5 | 0.026 | 8.0 | 0.973 |\n"}
+,{"stream_name":"stdout","time":9027.630818431,"data":"| certphash_ep8 | 200 | 0.0 | 0.0 | 0.0 | 0.0 | nan | 0.016 | 8.0 | 0.974 |\n"}
+,{"stream_name":"stdout","time":9027.630826648,"data":"| neuralhash | 200 | 1.0 | 1.0 | 3.0 | 5.0 | 3916.5 | 0.168 | 7.99 | 0.981 |\n"}
+,{"stream_name":"stdout","time":9027.630830394,"data":"\n"}
+,{"stream_name":"stderr","time":9030.084391933,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":9030.084422258,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":9030.318292496,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":9030.318364888,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":9031.090838612,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":9031.969979364,"data":"[NbConvertApp] Writing 286161 bytes to __results__.html\n"}
+]

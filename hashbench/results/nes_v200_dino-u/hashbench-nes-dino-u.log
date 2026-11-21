@@ -1,0 +1,93 @@
+[{"stream_name":"stdout","time":28.538829047,"data":"/usr/bin/python3 scripts/run_nes.py --list data/splits/V200.txt --out /kaggle/working/hashbench/results/nes_v200_dino-u --device cuda --batch-size 16 --time-limit 10.99 --hashes dinohash_untrained --max-queries 10000 --pairs 20 --sigma-frac 1.0 --lr-frac 0.2 --dim 32 --settings evasion:8 collision:16 evasion:4\n"}
+,{"stream_name":"stdout","time":39.438789512,"data":"200 images, hashes ['dinohash_untrained'], settings ['evasion:8', 'collision:16', 'evasion:4'], budget 10000 queries, device cuda; 0 rows already done\n"}
+,{"stream_name":"stdout","time":236.410962781,"data":"[    197s] dinohash_untrained evasion   eps=8/255   16/200  success 15/16  median q 1682  12.0 s/img\n"}
+,{"stream_name":"stdout","time":539.555087316,"data":"[    500s] dinohash_untrained evasion   eps=8/255   32/200  success 15/16  median q 2174  18.9 s/img\n"}
+,{"stream_name":"stdout","time":788.299429196,"data":"[    749s] dinohash_untrained evasion   eps=8/255   48/200  success 14/16  median q 1333  15.5 s/img\n"}
+,{"stream_name":"stdout","time":1029.967910534,"data":"[    991s] dinohash_untrained evasion   eps=8/255   64/200  success 16/16  median q 2174  15.1 s/img\n"}
+,{"stream_name":"stdout","time":1265.927221169,"data":"[   1226s] dinohash_untrained evasion   eps=8/255   80/200  success 13/16  median q 493  14.7 s/img\n"}
+,{"stream_name":"stdout","time":1498.558873121,"data":"[   1459s] dinohash_untrained evasion   eps=8/255   96/200  success 13/16  median q 698  14.5 s/img\n"}
+,{"stream_name":"stdout","time":1687.450108497,"data":"[   1648s] dinohash_untrained evasion   eps=8/255  112/200  success 16/16  median q 1743  11.8 s/img\n"}
+,{"stream_name":"stdout","time":2017.350505092,"data":"[   1978s] dinohash_untrained evasion   eps=8/255  128/200  success 16/16  median q 3547  20.6 s/img\n"}
+,{"stream_name":"stdout","time":2426.088871449,"data":"[   2387s] dinohash_untrained evasion   eps=8/255  144/200  success 10/16  median q 1415  25.5 s/img\n"}
+,{"stream_name":"stdout","time":2663.117354916,"data":"[   2624s] dinohash_untrained evasion   eps=8/255  160/200  success 14/16  median q 964  14.8 s/img\n"}
+,{"stream_name":"stdout","time":2954.42237205,"data":"[   2915s] dinohash_untrained evasion   eps=8/255  176/200  success 14/16  median q 1866  18.2 s/img\n"}
+,{"stream_name":"stdout","time":3258.743273037,"data":"[   3219s] dinohash_untrained evasion   eps=8/255  192/200  success 12/16  median q 472  19.0 s/img\n"}
+,{"stream_name":"stdout","time":3400.592443188,"data":"[   3361s] dinohash_untrained evasion   eps=8/255  200/200  success 7/8  median q 2338  17.7 s/img\n"}
+,{"stream_name":"stdout","time":4213.970806793,"data":"[   4175s] dinohash_untrained collision eps=16/255   16/200  success 0/16  50.8 s/img\n"}
+,{"stream_name":"stdout","time":5027.61162999,"data":"[   4988s] dinohash_untrained collision eps=16/255   32/200  success 0/16  50.9 s/img\n"}
+,{"stream_name":"stdout","time":5841.228406291,"data":"[   5802s] dinohash_untrained collision eps=16/255   48/200  success 0/16  50.9 s/img\n"}
+,{"stream_name":"stdout","time":6653.792943512,"data":"[   6614s] dinohash_untrained collision eps=16/255   64/200  success 0/16  50.8 s/img\n"}
+,{"stream_name":"stdout","time":7466.080631316,"data":"[   7427s] dinohash_untrained collision eps=16/255   80/200  success 0/16  50.8 s/img\n"}
+,{"stream_name":"stdout","time":8272.242094038,"data":"[   8233s] dinohash_untrained collision eps=16/255   96/200  success 1/16  median q 8406  50.4 s/img\n"}
+,{"stream_name":"stdout","time":9083.805275862,"data":"[   9044s] dinohash_untrained collision eps=16/255  112/200  success 1/16  median q 9554  50.7 s/img\n"}
+,{"stream_name":"stdout","time":9897.975959185,"data":"[   9859s] dinohash_untrained collision eps=16/255  128/200  success 0/16  50.9 s/img\n"}
+,{"stream_name":"stdout","time":10711.515311003,"data":"[  10672s] dinohash_untrained collision eps=16/255  144/200  success 0/16  50.8 s/img\n"}
+,{"stream_name":"stdout","time":11524.725469439,"data":"[  11485s] dinohash_untrained collision eps=16/255  160/200  success 0/16  50.8 s/img\n"}
+,{"stream_name":"stdout","time":12337.47406001,"data":"[  12298s] dinohash_untrained collision eps=16/255  176/200  success 0/16  50.8 s/img\n"}
+,{"stream_name":"stdout","time":13150.80827504,"data":"[  13111s] dinohash_untrained collision eps=16/255  192/200  success 0/16  50.8 s/img\n"}
+,{"stream_name":"stdout","time":13544.254609096,"data":"[  13505s] dinohash_untrained collision eps=16/255  200/200  success 1/8  median q 6971  49.2 s/img\n"}
+,{"stream_name":"stdout","time":14082.095851337,"data":"[  14043s] dinohash_untrained evasion   eps=4/255   16/200  success 8/16  median q 3199  33.6 s/img\n"}
+,{"stream_name":"stdout","time":14632.843279786,"data":"[  14593s] dinohash_untrained evasion   eps=4/255   32/200  success 8/16  median q 3322  34.4 s/img\n"}
+,{"stream_name":"stdout","time":15207.891349581,"data":"[  15168s] dinohash_untrained evasion   eps=4/255   48/200  success 7/16  median q 2953  35.9 s/img\n"}
+,{"stream_name":"stdout","time":15902.190818723,"data":"[  15863s] dinohash_untrained evasion   eps=4/255   64/200  success 5/16  median q 5905  43.4 s/img\n"}
+,{"stream_name":"stdout","time":16322.810095998,"data":"[  16283s] dinohash_untrained evasion   eps=4/255   80/200  success 10/16  median q 1620  26.3 s/img\n"}
+,{"stream_name":"stdout","time":16899.200956714,"data":"[  16860s] dinohash_untrained evasion   eps=4/255   96/200  success 10/16  median q 4757  36.0 s/img\n"}
+,{"stream_name":"stdout","time":17455.947791124,"data":"[  17417s] dinohash_untrained evasion   eps=4/255  112/200  success 8/16  median q 1149  34.8 s/img\n"}
+,{"stream_name":"stdout","time":18155.63064779,"data":"[  18116s] dinohash_untrained evasion   eps=4/255  128/200  success 4/16  median q 4716  43.7 s/img\n"}
+,{"stream_name":"stdout","time":18828.170828344,"data":"[  18789s] dinohash_untrained evasion   eps=4/255  144/200  success 5/16  median q 4347  42.0 s/img\n"}
+,{"stream_name":"stdout","time":19297.102394065,"data":"[  19258s] dinohash_untrained evasion   eps=4/255  160/200  success 12/16  median q 4531  29.3 s/img\n"}
+,{"stream_name":"stdout","time":19907.130336624,"data":"[  19868s] dinohash_untrained evasion   eps=4/255  176/200  success 8/16  median q 5392  38.1 s/img\n"}
+,{"stream_name":"stdout","time":20498.906202034,"data":"[  20459s] dinohash_untrained evasion   eps=4/255  192/200  success 8/16  median q 4367  37.0 s/img\n"}
+,{"stream_name":"stdout","time":20837.795348671,"data":"[  20798s] dinohash_untrained evasion   eps=4/255  200/200  success 2/8  median q 3260  42.4 s/img\n"}
+,{"stream_name":"stdout","time":20837.87118491,"data":"done in 20798s\n"}
+,{"stream_name":"stdout","time":20837.871212529,"data":"# NES black-box attack: summary\n"}
+,{"stream_name":"stdout","time":20837.871217001,"data":"\n"}
+,{"stream_name":"stdout","time":20837.871220496,"data":"Success (%) within each query budget at the calibrated FPR 1e-3 threshold. Collision rows exclude pairs that already matched before the attack.\n"}
+,{"stream_name":"stdout","time":20837.871224165,"data":"\n"}
+,{"stream_name":"stdout","time":20837.871227425,"data":"## collision, eps = 16/255\n"}
+,{"stream_name":"stdout","time":20837.871230787,"data":"\n"}
+,{"stream_name":"stdout","time":20837.87124843,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":20837.871256767,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":20837.87126277,"data":"| dinohash_untrained | 200 | 0.0 | 0.0 | 0.0 | 1.5 | 8406 | 0.344 | 16.0 | 0.927 |\n"}
+,{"stream_name":"stdout","time":20837.871280874,"data":"\n"}
+,{"stream_name":"stdout","time":20837.871284762,"data":"## evasion, eps = 4/255\n"}
+,{"stream_name":"stdout","time":20837.871288528,"data":"\n"}
+,{"stream_name":"stdout","time":20837.871292166,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":20837.871296688,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":20837.871304542,"data":"| dinohash_untrained | 200 | 9.5 | 16.5 | 27.0 | 47.5 | 4060 | 0.199 | 4.0 | 0.992 |\n"}
+,{"stream_name":"stdout","time":20837.871307554,"data":"\n"}
+,{"stream_name":"stdout","time":20837.871310039,"data":"## evasion, eps = 8/255\n"}
+,{"stream_name":"stdout","time":20837.871312591,"data":"\n"}
+,{"stream_name":"stdout","time":20837.871315105,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":20837.871318125,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":20837.871321163,"data":"| dinohash_untrained | 200 | 40.0 | 50.5 | 77.0 | 87.5 | 1477 | 0.226 | 7.98 | 0.971 |\n"}
+,{"stream_name":"stdout","time":20837.871324041,"data":"\n"}
+,{"stream_name":"stdout","time":20844.961336239,"data":"# NES black-box attack: summary\n"}
+,{"stream_name":"stdout","time":20844.961363809,"data":"\n"}
+,{"stream_name":"stdout","time":20844.961368527,"data":"Success (%) within each query budget at the calibrated FPR 1e-3 threshold. Collision rows exclude pairs that already matched before the attack.\n"}
+,{"stream_name":"stdout","time":20844.961372623,"data":"\n"}
+,{"stream_name":"stdout","time":20844.961375979,"data":"## collision, eps = 16/255\n"}
+,{"stream_name":"stdout","time":20844.961379536,"data":"\n"}
+,{"stream_name":"stdout","time":20844.961382757,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":20844.961388115,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":20844.961391983,"data":"| dinohash_untrained | 200 | 0.0 | 0.0 | 0.0 | 1.5 | 8406 | 0.344 | 16.0 | 0.927 |\n"}
+,{"stream_name":"stdout","time":20844.961395693,"data":"\n"}
+,{"stream_name":"stdout","time":20844.961399044,"data":"## evasion, eps = 4/255\n"}
+,{"stream_name":"stdout","time":20844.961402698,"data":"\n"}
+,{"stream_name":"stdout","time":20844.961405976,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":20844.961410009,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":20844.961413671,"data":"| dinohash_untrained | 200 | 9.5 | 16.5 | 27.0 | 47.5 | 4060 | 0.199 | 4.0 | 0.992 |\n"}
+,{"stream_name":"stdout","time":20844.96141735,"data":"\n"}
+,{"stream_name":"stdout","time":20844.961420649,"data":"## evasion, eps = 8/255\n"}
+,{"stream_name":"stdout","time":20844.961424071,"data":"\n"}
+,{"stream_name":"stdout","time":20844.961427364,"data":"| hash | n | \u003c=1k | \u003c=2k | \u003c=5k | \u003c=10k | median queries | mean dist (norm) | l_inf ×255 | SSIM |\n"}
+,{"stream_name":"stdout","time":20844.961431336,"data":"|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":20844.961434762,"data":"| dinohash_untrained | 200 | 40.0 | 50.5 | 77.0 | 87.5 | 1477 | 0.226 | 7.98 | 0.971 |\n"}
+,{"stream_name":"stdout","time":20844.961438604,"data":"\n"}
+,{"stream_name":"stderr","time":20847.613310072,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":20847.613363782,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":20847.926427786,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":20847.926447469,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":20848.770863217,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":20849.826855999,"data":"[NbConvertApp] Writing 286160 bytes to __results__.html\n"}
+]

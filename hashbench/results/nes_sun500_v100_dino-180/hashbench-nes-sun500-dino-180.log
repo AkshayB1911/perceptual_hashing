@@ -1,0 +1,46 @@
+[{"stream_name":"stdout","time":22.126000996,"data":"/usr/bin/python3 scripts/run_nes_sun.py --list data/splits/V200.txt --limit 100 --out /kaggle/working/hashbench/results/nes_sun500_v100_dino-180 --device cuda --batch-size 8 --chunk 128 --max-steps 500 --max-queries 32501 --time-limit 11.29 --hashes dinohash --budgets 180\n"}
+,{"stream_name":"stdout","time":30.164145558,"data":"resize self-check passed (GPU resize == Pillow)\n"}
+,{"stream_name":"stdout","time":30.164177064,"data":"100 images, hashes ['dinohash'], l2 budgets [180.0], device cuda; 0 rows already done\n"}
+,{"stream_name":"stdout","time":108.774340111,"data":"[     79s] dinohash           l2=180    8/100  success 8/8  (agree 8/8)  9.3 s/img\n"}
+,{"stream_name":"stdout","time":490.240029832,"data":"[    460s] dinohash           l2=180   16/100  success 6/8  (agree 8/8)  47.7 s/img\n"}
+,{"stream_name":"stdout","time":745.07525828,"data":"[    715s] dinohash           l2=180   24/100  success 7/8  (agree 8/8)  31.8 s/img\n"}
+,{"stream_name":"stdout","time":1059.171424339,"data":"[   1029s] dinohash           l2=180   32/100  success 7/8  (agree 8/8)  39.2 s/img\n"}
+,{"stream_name":"stdout","time":1799.472438894,"data":"[   1769s] dinohash           l2=180   40/100  success 4/8  (agree 8/8)  92.5 s/img\n"}
+,{"stream_name":"stdout","time":2114.70095778,"data":"[   2085s] dinohash           l2=180   48/100  success 7/8  (agree 8/8)  39.4 s/img\n"}
+,{"stream_name":"stdout","time":2443.86679837,"data":"[   2414s] dinohash           l2=180   56/100  success 7/8  (agree 8/8)  41.1 s/img\n"}
+,{"stream_name":"stdout","time":2702.466955536,"data":"[   2672s] dinohash           l2=180   64/100  success 7/8  (agree 8/8)  32.3 s/img\n"}
+,{"stream_name":"stdout","time":2751.868629018,"data":"[   2722s] dinohash           l2=180   72/100  success 8/8  (agree 8/8)  6.2 s/img\n"}
+,{"stream_name":"stdout","time":2973.171891763,"data":"[   2943s] dinohash           l2=180   80/100  success 7/8  (agree 8/8)  27.6 s/img\n"}
+,{"stream_name":"stdout","time":3278.386524934,"data":"[   3248s] dinohash           l2=180   88/100  success 7/8  (agree 8/8)  38.1 s/img\n"}
+,{"stream_name":"stdout","time":3724.167538772,"data":"[   3694s] dinohash           l2=180   96/100  success 6/8  (agree 8/8)  55.7 s/img\n"}
+,{"stream_name":"stdout","time":3925.891047856,"data":"[   3896s] dinohash           l2=180  100/100  success 3/4  (agree 4/4)  50.4 s/img\n"}
+,{"stream_name":"stdout","time":3925.948094127,"data":"done in 3896s\n"}
+,{"stream_name":"stdout","time":3925.948117065,"data":"# NES black-box evasion, Sun et al. 2026 setting: summary\n"}
+,{"stream_name":"stdout","time":3925.948126406,"data":"\n"}
+,{"stream_name":"stdout","time":3925.948129627,"data":"ASR (%) = verified evasions (plain hasher on the returned 8-bit image). Success: BER \u003e 0.2 (\u003e= 20 of 96 bits) for DinoHash / NeuralHash; CertPHash: its FPR 1e-3 L1 threshold. 'mean' = the average over the three budgets (Sun et al. Table 1).\n"}
+,{"stream_name":"stdout","time":3925.94814612,"data":"\n"}
+,{"stream_name":"stdout","time":3925.94815098,"data":"| hash | l2 180 | mean |\n"}
+,{"stream_name":"stdout","time":3925.948155872,"data":"|---|---|---|\n"}
+,{"stream_name":"stdout","time":3925.948160488,"data":"| dinohash | 84.0 | 84.0 |\n"}
+,{"stream_name":"stdout","time":3925.948164481,"data":"\n"}
+,{"stream_name":"stdout","time":3925.948168441,"data":"| hash | l2 | n | ASR (95% CI) | attack-side ASR | agree % | median q | mean dist | l2 | l_inf ×255 | SSIM | s/img |\n"}
+,{"stream_name":"stdout","time":3925.94817347,"data":"|---|---|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":3925.94817806,"data":"| dinohash | 180 | 100 | 84.0 (75.6-89.9) | 84.0 | 100.0 | 1691 | 19.2 | 25.2 | 36.1 | 0.925 | 38.9 |\n"}
+,{"stream_name":"stdout","time":3931.41759394,"data":"# NES black-box evasion, Sun et al. 2026 setting: summary\n"}
+,{"stream_name":"stdout","time":3931.417620014,"data":"\n"}
+,{"stream_name":"stdout","time":3931.417623129,"data":"ASR (%) = verified evasions (plain hasher on the returned 8-bit image). Success: BER \u003e 0.2 (\u003e= 20 of 96 bits) for DinoHash / NeuralHash; CertPHash: its FPR 1e-3 L1 threshold. 'mean' = the average over the three budgets (Sun et al. Table 1).\n"}
+,{"stream_name":"stdout","time":3931.417627606,"data":"\n"}
+,{"stream_name":"stdout","time":3931.417629859,"data":"| hash | l2 180 | mean |\n"}
+,{"stream_name":"stdout","time":3931.417632108,"data":"|---|---|---|\n"}
+,{"stream_name":"stdout","time":3931.417634421,"data":"| dinohash | 84.0 | 84.0 |\n"}
+,{"stream_name":"stdout","time":3931.417636676,"data":"\n"}
+,{"stream_name":"stdout","time":3931.417638888,"data":"| hash | l2 | n | ASR (95% CI) | attack-side ASR | agree % | median q | mean dist | l2 | l_inf ×255 | SSIM | s/img |\n"}
+,{"stream_name":"stdout","time":3931.417641816,"data":"|---|---|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":3931.417644938,"data":"| dinohash | 180 | 100 | 84.0 (75.6-89.9) | 84.0 | 100.0 | 1691 | 19.2 | 25.2 | 36.1 | 0.925 | 38.9 |\n"}
+,{"stream_name":"stderr","time":3933.879766782,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3933.879810045,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3934.101631909,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3934.101657216,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3934.849517615,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3935.745467301,"data":"[NbConvertApp] Writing 285263 bytes to __results__.html\n"}
+]

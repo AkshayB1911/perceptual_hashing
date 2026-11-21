@@ -1,0 +1,627 @@
+[{"stream_name":"stdout","time":52.298538056,"data":"/usr/bin/python3 scripts/run_nes_sun.py --list data/splits/V200.txt --out /kaggle/working/hashbench/results/nes_sun_v200_nh-cert --device cuda --batch-size 8 --chunk 128 --time-limit 10.99 --hashes neuralhash\n"}
+,{"stream_name":"stdout","time":62.492448873,"data":"resize self-check passed (GPU resize == Pillow)\n"}
+,{"stream_name":"stdout","time":62.492486913,"data":"200 images, hashes ['neuralhash'], l2 budgets [40.0, 90.0, 180.0], device cuda; 0 rows already done\n"}
+,{"stream_name":"stdout","time":92.21143357,"data":"[     30s] neuralhash         l2=40    8/200  success 2/8  (agree 8/8)  3.0 s/img\n"}
+,{"stream_name":"stdout","time":115.911786523,"data":"[     53s] neuralhash         l2=40   16/200  success 3/8  (agree 8/8)  2.9 s/img\n"}
+,{"stream_name":"stdout","time":139.670557376,"data":"[     77s] neuralhash         l2=40   24/200  success 4/8  (agree 8/8)  2.9 s/img\n"}
+,{"stream_name":"stdout","time":166.790996882,"data":"[    104s] neuralhash         l2=40   32/200  success 0/8  (agree 8/8)  3.3 s/img\n"}
+,{"stream_name":"stdout","time":191.906657099,"data":"[    129s] neuralhash         l2=40   40/200  success 3/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":217.375039565,"data":"[    155s] neuralhash         l2=40   48/200  success 2/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":242.872379619,"data":"[    180s] neuralhash         l2=40   56/200  success 2/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":268.050181712,"data":"[    206s] neuralhash         l2=40   64/200  success 1/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":290.264722588,"data":"[    228s] neuralhash         l2=40   72/200  success 3/8  (agree 8/8)  2.7 s/img\n"}
+,{"stream_name":"stdout","time":311.587465902,"data":"[    249s] neuralhash         l2=40   80/200  success 3/8  (agree 8/8)  2.6 s/img\n"}
+,{"stream_name":"stdout","time":338.197539303,"data":"[    276s] neuralhash         l2=40   88/200  success 2/8  (agree 8/8)  3.3 s/img\n"}
+,{"stream_name":"stdout","time":363.29558275,"data":"[    301s] neuralhash         l2=40   96/200  success 2/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":388.809570317,"data":"[    326s] neuralhash         l2=40  104/200  success 1/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":410.189065877,"data":"[    348s] neuralhash         l2=40  112/200  success 3/8  (agree 8/8)  2.6 s/img\n"}
+,{"stream_name":"stdout","time":436.895580408,"data":"[    374s] neuralhash         l2=40  120/200  success 0/8  (agree 8/8)  3.3 s/img\n"}
+,{"stream_name":"stdout","time":462.187311477,"data":"[    400s] neuralhash         l2=40  128/200  success 1/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":487.66200869,"data":"[    425s] neuralhash         l2=40  136/200  success 2/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":511.804209767,"data":"[    449s] neuralhash         l2=40  144/200  success 2/8  (agree 8/8)  3.0 s/img\n"}
+,{"stream_name":"stdout","time":536.360812327,"data":"[    474s] neuralhash         l2=40  152/200  success 2/8  (agree 8/8)  3.0 s/img\n"}
+,{"stream_name":"stdout","time":557.765309148,"data":"[    495s] neuralhash         l2=40  160/200  success 4/8  (agree 8/8)  2.6 s/img\n"}
+,{"stream_name":"stdout","time":583.204635871,"data":"[    521s] neuralhash         l2=40  168/200  success 2/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":607.779388839,"data":"[    545s] neuralhash         l2=40  176/200  success 2/8  (agree 8/8)  3.0 s/img\n"}
+,{"stream_name":"stdout","time":632.612795403,"data":"[    570s] neuralhash         l2=40  184/200  success 2/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":657.591171299,"data":"[    595s] neuralhash         l2=40  192/200  success 2/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":682.153667275,"data":"[    620s] neuralhash         l2=40  200/200  success 2/8  (agree 8/8)  3.0 s/img\n"}
+,{"stream_name":"stdout","time":706.270522004,"data":"[    644s] neuralhash         l2=90    8/200  success 3/8  (agree 8/8)  3.0 s/img\n"}
+,{"stream_name":"stdout","time":730.411258418,"data":"[    668s] neuralhash         l2=90   16/200  success 2/8  (agree 8/8)  3.0 s/img\n"}
+,{"stream_name":"stdout","time":754.155210595,"data":"[    692s] neuralhash         l2=90   24/200  success 3/8  (agree 8/8)  2.9 s/img\n"}
+,{"stream_name":"stdout","time":778.916010703,"data":"[    716s] neuralhash         l2=90   32/200  success 2/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":803.493384941,"data":"[    741s] neuralhash         l2=90   40/200  success 2/8  (agree 8/8)  3.0 s/img\n"}
+,{"stream_name":"stdout","time":830.105152071,"data":"[    768s] neuralhash         l2=90   48/200  success 1/8  (agree 8/8)  3.3 s/img\n"}
+,{"stream_name":"stdout","time":856.433735443,"data":"[    794s] neuralhash         l2=90   56/200  success 1/8  (agree 8/8)  3.3 s/img\n"}
+,{"stream_name":"stdout","time":881.300756759,"data":"[    819s] neuralhash         l2=90   64/200  success 1/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":904.174634751,"data":"[    842s] neuralhash         l2=90   72/200  success 2/8  (agree 8/8)  2.8 s/img\n"}
+,{"stream_name":"stdout","time":925.615468312,"data":"[    863s] neuralhash         l2=90   80/200  success 4/8  (agree 8/8)  2.7 s/img\n"}
+,{"stream_name":"stdout","time":951.772791095,"data":"[    889s] neuralhash         l2=90   88/200  success 2/8  (agree 8/8)  3.2 s/img\n"}
+,{"stream_name":"stdout","time":977.650092856,"data":"[    915s] neuralhash         l2=90   96/200  success 1/8  (agree 8/8)  3.2 s/img\n"}
+,{"stream_name":"stdout","time":1003.06231475,"data":"[    941s] neuralhash         l2=90  104/200  success 1/8  (agree 8/8)  3.2 s/img\n"}
+,{"stream_name":"stdout","time":1025.051033149,"data":"[    963s] neuralhash         l2=90  112/200  success 3/8  (agree 8/8)  2.7 s/img\n"}
+,{"stream_name":"stdout","time":1051.629011156,"data":"[    989s] neuralhash         l2=90  120/200  success 0/8  (agree 8/8)  3.3 s/img\n"}
+,{"stream_name":"stdout","time":1076.489193527,"data":"[   1014s] neuralhash         l2=90  128/200  success 2/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":1101.364273747,"data":"[   1039s] neuralhash         l2=90  136/200  success 2/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":1125.237917395,"data":"[   1063s] neuralhash         l2=90  144/200  success 2/8  (agree 8/8)  3.0 s/img\n"}
+,{"stream_name":"stdout","time":1150.703489118,"data":"[   1088s] neuralhash         l2=90  152/200  success 2/8  (agree 8/8)  3.2 s/img\n"}
+,{"stream_name":"stdout","time":1171.173729515,"data":"[   1109s] neuralhash         l2=90  160/200  success 4/8  (agree 8/8)  2.5 s/img\n"}
+,{"stream_name":"stdout","time":1196.210663374,"data":"[   1134s] neuralhash         l2=90  168/200  success 2/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":1221.253215262,"data":"[   1159s] neuralhash         l2=90  176/200  success 1/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":1245.908044936,"data":"[   1183s] neuralhash         l2=90  184/200  success 2/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":1270.704785377,"data":"[   1208s] neuralhash         l2=90  192/200  success 1/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":1295.05266252,"data":"[   1233s] neuralhash         l2=90  200/200  success 2/8  (agree 8/8)  3.0 s/img\n"}
+,{"stream_name":"stdout","time":1320.94747062,"data":"[   1258s] neuralhash         l2=180    8/200  success 1/8  (agree 8/8)  3.2 s/img\n"}
+,{"stream_name":"stdout","time":1344.737095739,"data":"[   1282s] neuralhash         l2=180   16/200  success 3/8  (agree 8/8)  2.9 s/img\n"}
+,{"stream_name":"stdout","time":1367.986393541,"data":"[   1305s] neuralhash         l2=180   24/200  success 3/8  (agree 8/8)  2.9 s/img\n"}
+,{"stream_name":"stdout","time":1394.40067073,"data":"[   1332s] neuralhash         l2=180   32/200  success 1/8  (agree 8/8)  3.3 s/img\n"}
+,{"stream_name":"stdout","time":1419.544475792,"data":"[   1357s] neuralhash         l2=180   40/200  success 2/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":1445.420095492,"data":"[   1383s] neuralhash         l2=180   48/200  success 2/8  (agree 8/8)  3.2 s/img\n"}
+,{"stream_name":"stdout","time":1470.870122147,"data":"[   1408s] neuralhash         l2=180   56/200  success 2/8  (agree 8/8)  3.2 s/img\n"}
+,{"stream_name":"stdout","time":1495.842745021,"data":"[   1433s] neuralhash         l2=180   64/200  success 1/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":1519.141978519,"data":"[   1457s] neuralhash         l2=180   72/200  success 2/8  (agree 8/8)  2.9 s/img\n"}
+,{"stream_name":"stdout","time":1540.991419197,"data":"[   1478s] neuralhash         l2=180   80/200  success 4/8  (agree 8/8)  2.7 s/img\n"}
+,{"stream_name":"stdout","time":1567.579576012,"data":"[   1505s] neuralhash         l2=180   88/200  success 0/8  (agree 8/8)  3.3 s/img\n"}
+,{"stream_name":"stdout","time":1593.460981515,"data":"[   1531s] neuralhash         l2=180   96/200  success 1/8  (agree 8/8)  3.2 s/img\n"}
+,{"stream_name":"stdout","time":1618.599713344,"data":"[   1556s] neuralhash         l2=180  104/200  success 1/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":1640.442129107,"data":"[   1578s] neuralhash         l2=180  112/200  success 3/8  (agree 8/8)  2.7 s/img\n"}
+,{"stream_name":"stdout","time":1667.009025865,"data":"[   1605s] neuralhash         l2=180  120/200  success 1/8  (agree 8/8)  3.3 s/img\n"}
+,{"stream_name":"stdout","time":1692.566737679,"data":"[   1630s] neuralhash         l2=180  128/200  success 2/8  (agree 8/8)  3.2 s/img\n"}
+,{"stream_name":"stdout","time":1717.995687478,"data":"[   1656s] neuralhash         l2=180  136/200  success 2/8  (agree 8/8)  3.2 s/img\n"}
+,{"stream_name":"stdout","time":1741.69953694,"data":"[   1679s] neuralhash         l2=180  144/200  success 2/8  (agree 8/8)  2.9 s/img\n"}
+,{"stream_name":"stdout","time":1766.703054654,"data":"[   1704s] neuralhash         l2=180  152/200  success 1/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":1788.7176913,"data":"[   1726s] neuralhash         l2=180  160/200  success 4/8  (agree 8/8)  2.7 s/img\n"}
+,{"stream_name":"stdout","time":1814.193113906,"data":"[   1752s] neuralhash         l2=180  168/200  success 2/8  (agree 8/8)  3.2 s/img\n"}
+,{"stream_name":"stdout","time":1839.08451542,"data":"[   1777s] neuralhash         l2=180  176/200  success 2/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":1864.081564803,"data":"[   1802s] neuralhash         l2=180  184/200  success 2/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":1889.278972357,"data":"[   1827s] neuralhash         l2=180  192/200  success 1/8  (agree 8/8)  3.1 s/img\n"}
+,{"stream_name":"stdout","time":1913.761689262,"data":"[   1851s] neuralhash         l2=180  200/200  success 2/8  (agree 8/8)  3.0 s/img\n"}
+,{"stream_name":"stdout","time":1913.834678818,"data":"done in 1851s\n"}
+,{"stream_name":"stdout","time":1913.834705998,"data":"# NES black-box evasion, Sun et al. 2026 setting: summary\n"}
+,{"stream_name":"stdout","time":1913.834717926,"data":"\n"}
+,{"stream_name":"stdout","time":1913.83472149,"data":"ASR (%) = verified evasions (plain hasher on the returned 8-bit image). Success: BER \u003e 0.2 (\u003e= 20 of 96 bits) for DinoHash / NeuralHash; CertPHash: its FPR 1e-3 L1 threshold. 'mean' = the average over the three budgets (Sun et al. Table 1).\n"}
+,{"stream_name":"stdout","time":1913.834738022,"data":"\n"}
+,{"stream_name":"stdout","time":1913.834740651,"data":"| hash | l2 40 | l2 90 | l2 180 | mean |\n"}
+,{"stream_name":"stdout","time":1913.834743123,"data":"|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":1913.834745692,"data":"| neuralhash | 26.0 | 24.0 | 23.5 | 24.5 |\n"}
+,{"stream_name":"stdout","time":1913.834748115,"data":"\n"}
+,{"stream_name":"stdout","time":1913.834750616,"data":"| hash | l2 | n | ASR (95% CI) | attack-side ASR | agree % | median q | mean dist | l2 | l_inf ×255 | SSIM | s/img |\n"}
+,{"stream_name":"stdout","time":1913.834754127,"data":"|---|---|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":1913.834756614,"data":"| neuralhash | 40 | 200 | 26.0 (20.4-32.5) | 26.0 | 100.0 | 1073.5 | 13.5 | 17.6 | 23.2 | 0.957 | 3.0 |\n"}
+,{"stream_name":"stdout","time":1913.834759168,"data":"| neuralhash | 90 | 200 | 24.0 (18.6-30.4) | 24.0 | 100.0 | 1041 | 13.5 | 17.7 | 23.5 | 0.958 | 3.0 |\n"}
+,{"stream_name":"stdout","time":1913.834761671,"data":"| neuralhash | 180 | 200 | 23.5 (18.2-29.8) | 23.5 | 100.0 | 1171 | 13.5 | 17.8 | 23.7 | 0.957 | 3.1 |\n"}
+,{"stream_name":"stdout","time":1918.998451089,"data":"/usr/bin/python3 scripts/run_nes_sun.py --list data/splits/V200.txt --out /kaggle/working/hashbench/results/nes_sun_v200_nh-cert --device cuda --batch-size 8 --chunk 128 --time-limit 10.47 --hashes certphash certphash_ep2 certphash_ep4 certphash_ep8 certphash_base certphash_adv\n"}
+,{"stream_name":"stdout","time":1923.354630691,"data":"resize self-check passed (GPU resize == Pillow)\n"}
+,{"stream_name":"stdout","time":1923.354672068,"data":"200 images, hashes ['certphash', 'certphash_ep2', 'certphash_ep4', 'certphash_ep8', 'certphash_base', 'certphash_adv'], l2 budgets [40.0, 90.0, 180.0], device cuda; 600 rows already done\n"}
+,{"stream_name":"stdout","time":1934.524636519,"data":"[     11s] certphash          l2=40    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1937.950237282,"data":"[     15s] certphash          l2=40   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1941.400139707,"data":"[     18s] certphash          l2=40   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1944.861638144,"data":"[     22s] certphash          l2=40   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1948.338276563,"data":"[     25s] certphash          l2=40   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1951.833356623,"data":"[     28s] certphash          l2=40   48/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1955.341010226,"data":"[     32s] certphash          l2=40   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1958.854063364,"data":"[     35s] certphash          l2=40   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1962.392610193,"data":"[     39s] certphash          l2=40   72/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1965.93482287,"data":"[     43s] certphash          l2=40   80/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1969.470806401,"data":"[     46s] certphash          l2=40   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1972.987556837,"data":"[     50s] certphash          l2=40   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1976.485419026,"data":"[     53s] certphash          l2=40  104/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1979.963933876,"data":"[     57s] certphash          l2=40  112/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1983.425013856,"data":"[     60s] certphash          l2=40  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1986.877892549,"data":"[     64s] certphash          l2=40  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1990.327732664,"data":"[     67s] certphash          l2=40  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1993.768255422,"data":"[     70s] certphash          l2=40  144/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":1997.208671071,"data":"[     74s] certphash          l2=40  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2000.642155532,"data":"[     77s] certphash          l2=40  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2004.078588847,"data":"[     81s] certphash          l2=40  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2007.511012294,"data":"[     84s] certphash          l2=40  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2010.939762879,"data":"[     88s] certphash          l2=40  184/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2014.369689829,"data":"[     91s] certphash          l2=40  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2017.806484861,"data":"[     94s] certphash          l2=40  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2021.216956723,"data":"[     98s] certphash          l2=90    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2024.628127399,"data":"[    101s] certphash          l2=90   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2028.049529756,"data":"[    105s] certphash          l2=90   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2031.479244375,"data":"[    108s] certphash          l2=90   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2034.914176497,"data":"[    112s] certphash          l2=90   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2038.355011856,"data":"[    115s] certphash          l2=90   48/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2041.796010151,"data":"[    118s] certphash          l2=90   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2045.230282221,"data":"[    122s] certphash          l2=90   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2048.676420488,"data":"[    125s] certphash          l2=90   72/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2052.114683507,"data":"[    129s] certphash          l2=90   80/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2055.551076246,"data":"[    132s] certphash          l2=90   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2058.991257233,"data":"[    136s] certphash          l2=90   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2062.422249211,"data":"[    139s] certphash          l2=90  104/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2065.849837766,"data":"[    142s] certphash          l2=90  112/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2069.279549621,"data":"[    146s] certphash          l2=90  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2072.709976703,"data":"[    149s] certphash          l2=90  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2076.130841933,"data":"[    153s] certphash          l2=90  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2079.554908163,"data":"[    156s] certphash          l2=90  144/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2082.981083712,"data":"[    160s] certphash          l2=90  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2086.403014309,"data":"[    163s] certphash          l2=90  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2089.825032355,"data":"[    166s] certphash          l2=90  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2093.245722563,"data":"[    170s] certphash          l2=90  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2096.663698549,"data":"[    173s] certphash          l2=90  184/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2100.084196154,"data":"[    177s] certphash          l2=90  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2103.500874929,"data":"[    180s] certphash          l2=90  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2106.918857642,"data":"[    184s] certphash          l2=180    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2110.339560507,"data":"[    187s] certphash          l2=180   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2113.763134971,"data":"[    190s] certphash          l2=180   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2117.185400614,"data":"[    194s] certphash          l2=180   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2120.601579247,"data":"[    197s] certphash          l2=180   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2124.025525442,"data":"[    201s] certphash          l2=180   48/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2127.449758035,"data":"[    204s] certphash          l2=180   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2130.873357796,"data":"[    208s] certphash          l2=180   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2134.297759643,"data":"[    211s] certphash          l2=180   72/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2137.719491918,"data":"[    214s] certphash          l2=180   80/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2141.153987418,"data":"[    218s] certphash          l2=180   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2144.574063008,"data":"[    221s] certphash          l2=180   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2147.996651231,"data":"[    225s] certphash          l2=180  104/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2151.416160453,"data":"[    228s] certphash          l2=180  112/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2154.839895959,"data":"[    231s] certphash          l2=180  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2158.265047766,"data":"[    235s] certphash          l2=180  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2161.697297218,"data":"[    238s] certphash          l2=180  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2165.128963318,"data":"[    242s] certphash          l2=180  144/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2168.562995766,"data":"[    245s] certphash          l2=180  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2171.997286443,"data":"[    249s] certphash          l2=180  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2175.433928039,"data":"[    252s] certphash          l2=180  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2178.864523218,"data":"[    256s] certphash          l2=180  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2182.295219072,"data":"[    259s] certphash          l2=180  184/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2185.725315142,"data":"[    262s] certphash          l2=180  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2189.157513619,"data":"[    266s] certphash          l2=180  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2193.100723585,"data":"[    270s] certphash_ep2      l2=40    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2196.553851072,"data":"[    273s] certphash_ep2      l2=40   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2200.011452131,"data":"[    277s] certphash_ep2      l2=40   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2203.467717298,"data":"[    280s] certphash_ep2      l2=40   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2206.925504305,"data":"[    284s] certphash_ep2      l2=40   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2210.079537273,"data":"[    287s] certphash_ep2      l2=40   48/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2213.533711032,"data":"[    290s] certphash_ep2      l2=40   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2216.977210217,"data":"[    294s] certphash_ep2      l2=40   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2220.42409026,"data":"[    297s] certphash_ep2      l2=40   72/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2223.711510952,"data":"[    300s] certphash_ep2      l2=40   80/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2227.160785486,"data":"[    304s] certphash_ep2      l2=40   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2230.612713773,"data":"[    307s] certphash_ep2      l2=40   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2233.785288289,"data":"[    310s] certphash_ep2      l2=40  104/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2237.077898274,"data":"[    314s] certphash_ep2      l2=40  112/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2240.525456933,"data":"[    317s] certphash_ep2      l2=40  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2243.974683294,"data":"[    321s] certphash_ep2      l2=40  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2247.423783219,"data":"[    324s] certphash_ep2      l2=40  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2250.873063936,"data":"[    328s] certphash_ep2      l2=40  144/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2254.328491604,"data":"[    331s] certphash_ep2      l2=40  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2257.776202241,"data":"[    334s] certphash_ep2      l2=40  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2261.228686545,"data":"[    338s] certphash_ep2      l2=40  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2264.679314765,"data":"[    341s] certphash_ep2      l2=40  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2267.844973299,"data":"[    344s] certphash_ep2      l2=40  184/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2271.302933282,"data":"[    348s] certphash_ep2      l2=40  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2274.763222881,"data":"[    351s] certphash_ep2      l2=40  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2278.183053211,"data":"[    355s] certphash_ep2      l2=90    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2281.603746679,"data":"[    358s] certphash_ep2      l2=90   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2285.027987239,"data":"[    362s] certphash_ep2      l2=90   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2288.454875913,"data":"[    365s] certphash_ep2      l2=90   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2291.877270834,"data":"[    369s] certphash_ep2      l2=90   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2295.027216675,"data":"[    372s] certphash_ep2      l2=90   48/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2298.452511927,"data":"[    375s] certphash_ep2      l2=90   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2301.872231815,"data":"[    379s] certphash_ep2      l2=90   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2305.296042859,"data":"[    382s] certphash_ep2      l2=90   72/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2308.573118762,"data":"[    385s] certphash_ep2      l2=90   80/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2311.997046674,"data":"[    389s] certphash_ep2      l2=90   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2315.423013572,"data":"[    392s] certphash_ep2      l2=90   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2318.547241059,"data":"[    395s] certphash_ep2      l2=90  104/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2321.793014089,"data":"[    398s] certphash_ep2      l2=90  112/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2325.219952052,"data":"[    402s] certphash_ep2      l2=90  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2328.644753975,"data":"[    405s] certphash_ep2      l2=90  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2332.069884125,"data":"[    409s] certphash_ep2      l2=90  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2335.49281828,"data":"[    412s] certphash_ep2      l2=90  144/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2338.921719259,"data":"[    416s] certphash_ep2      l2=90  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2342.349068611,"data":"[    419s] certphash_ep2      l2=90  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2345.774318971,"data":"[    422s] certphash_ep2      l2=90  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2349.202889502,"data":"[    426s] certphash_ep2      l2=90  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2352.348496284,"data":"[    429s] certphash_ep2      l2=90  184/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2355.77095529,"data":"[    432s] certphash_ep2      l2=90  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2359.199720569,"data":"[    436s] certphash_ep2      l2=90  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2362.624908278,"data":"[    439s] certphash_ep2      l2=180    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2366.049828306,"data":"[    443s] certphash_ep2      l2=180   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2369.476213506,"data":"[    446s] certphash_ep2      l2=180   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2372.902135259,"data":"[    450s] certphash_ep2      l2=180   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2376.327436374,"data":"[    453s] certphash_ep2      l2=180   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2379.434671825,"data":"[    456s] certphash_ep2      l2=180   48/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2382.858704733,"data":"[    460s] certphash_ep2      l2=180   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2386.281930618,"data":"[    463s] certphash_ep2      l2=180   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2389.708768197,"data":"[    466s] certphash_ep2      l2=180   72/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2393.028983754,"data":"[    470s] certphash_ep2      l2=180   80/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2396.452670356,"data":"[    473s] certphash_ep2      l2=180   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2399.875168414,"data":"[    477s] certphash_ep2      l2=180   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2403.015639929,"data":"[    480s] certphash_ep2      l2=180  104/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2406.243429392,"data":"[    483s] certphash_ep2      l2=180  112/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2409.664262172,"data":"[    486s] certphash_ep2      l2=180  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2413.089748769,"data":"[    490s] certphash_ep2      l2=180  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2416.512219113,"data":"[    493s] certphash_ep2      l2=180  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2419.929872572,"data":"[    497s] certphash_ep2      l2=180  144/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2423.3524502,"data":"[    500s] certphash_ep2      l2=180  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2426.773602228,"data":"[    503s] certphash_ep2      l2=180  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2430.201832335,"data":"[    507s] certphash_ep2      l2=180  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2433.625230916,"data":"[    510s] certphash_ep2      l2=180  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2436.780807313,"data":"[    513s] certphash_ep2      l2=180  184/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2440.202186017,"data":"[    517s] certphash_ep2      l2=180  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2443.62535783,"data":"[    520s] certphash_ep2      l2=180  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2447.542475349,"data":"[    524s] certphash_ep4      l2=40    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2450.988766745,"data":"[    528s] certphash_ep4      l2=40   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2454.443049205,"data":"[    531s] certphash_ep4      l2=40   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2457.891495565,"data":"[    535s] certphash_ep4      l2=40   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2461.341305677,"data":"[    538s] certphash_ep4      l2=40   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2464.527930255,"data":"[    541s] certphash_ep4      l2=40   48/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2467.977441103,"data":"[    545s] certphash_ep4      l2=40   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2471.419804818,"data":"[    548s] certphash_ep4      l2=40   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2474.861826695,"data":"[    552s] certphash_ep4      l2=40   72/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2478.309715907,"data":"[    555s] certphash_ep4      l2=40   80/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2481.757592983,"data":"[    558s] certphash_ep4      l2=40   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2485.210508233,"data":"[    562s] certphash_ep4      l2=40   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2488.414574939,"data":"[    565s] certphash_ep4      l2=40  104/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2491.868609862,"data":"[    569s] certphash_ep4      l2=40  112/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2495.317916728,"data":"[    572s] certphash_ep4      l2=40  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2498.76616459,"data":"[    575s] certphash_ep4      l2=40  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2502.218477488,"data":"[    579s] certphash_ep4      l2=40  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2505.491415474,"data":"[    582s] certphash_ep4      l2=40  144/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2508.943456866,"data":"[    586s] certphash_ep4      l2=40  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2512.389438377,"data":"[    589s] certphash_ep4      l2=40  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2515.840695596,"data":"[    592s] certphash_ep4      l2=40  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2519.293190458,"data":"[    596s] certphash_ep4      l2=40  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2522.550644081,"data":"[    599s] certphash_ep4      l2=40  184/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2525.99999879,"data":"[    603s] certphash_ep4      l2=40  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2529.453627421,"data":"[    606s] certphash_ep4      l2=40  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2532.876805728,"data":"[    610s] certphash_ep4      l2=90    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2536.296289203,"data":"[    613s] certphash_ep4      l2=90   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2539.732447108,"data":"[    616s] certphash_ep4      l2=90   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2543.167149279,"data":"[    620s] certphash_ep4      l2=90   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2546.593503104,"data":"[    623s] certphash_ep4      l2=90   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2549.753765664,"data":"[    626s] certphash_ep4      l2=90   48/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2553.181951421,"data":"[    630s] certphash_ep4      l2=90   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2556.603844089,"data":"[    633s] certphash_ep4      l2=90   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2560.022178435,"data":"[    637s] certphash_ep4      l2=90   72/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2563.443641227,"data":"[    640s] certphash_ep4      l2=90   80/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2566.866566308,"data":"[    644s] certphash_ep4      l2=90   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2570.291905512,"data":"[    647s] certphash_ep4      l2=90   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2573.452739046,"data":"[    650s] certphash_ep4      l2=90  104/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2576.879451604,"data":"[    654s] certphash_ep4      l2=90  112/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2580.306191049,"data":"[    657s] certphash_ep4      l2=90  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2583.735659876,"data":"[    660s] certphash_ep4      l2=90  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2587.162548082,"data":"[    664s] certphash_ep4      l2=90  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2590.402925885,"data":"[    667s] certphash_ep4      l2=90  144/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2593.84225158,"data":"[    670s] certphash_ep4      l2=90  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2597.274315782,"data":"[    674s] certphash_ep4      l2=90  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2600.714828685,"data":"[    677s] certphash_ep4      l2=90  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2604.161595539,"data":"[    681s] certphash_ep4      l2=90  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2607.399859353,"data":"[    684s] certphash_ep4      l2=90  184/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2610.831397036,"data":"[    687s] certphash_ep4      l2=90  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2614.263642723,"data":"[    691s] certphash_ep4      l2=90  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2617.693063914,"data":"[    694s] certphash_ep4      l2=180    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2621.144605981,"data":"[    698s] certphash_ep4      l2=180   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2624.566134578,"data":"[    701s] certphash_ep4      l2=180   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2627.992167139,"data":"[    705s] certphash_ep4      l2=180   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2631.416530621,"data":"[    708s] certphash_ep4      l2=180   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2634.561601185,"data":"[    711s] certphash_ep4      l2=180   48/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2637.983754228,"data":"[    715s] certphash_ep4      l2=180   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2641.401982022,"data":"[    718s] certphash_ep4      l2=180   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2644.822716108,"data":"[    721s] certphash_ep4      l2=180   72/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2648.243450964,"data":"[    725s] certphash_ep4      l2=180   80/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2651.671276988,"data":"[    728s] certphash_ep4      l2=180   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2655.09933434,"data":"[    732s] certphash_ep4      l2=180   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2658.296191264,"data":"[    735s] certphash_ep4      l2=180  104/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2661.721224352,"data":"[    738s] certphash_ep4      l2=180  112/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2665.144407458,"data":"[    742s] certphash_ep4      l2=180  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2668.570177875,"data":"[    745s] certphash_ep4      l2=180  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2671.995881388,"data":"[    749s] certphash_ep4      l2=180  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2675.243854277,"data":"[    752s] certphash_ep4      l2=180  144/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2678.678527308,"data":"[    755s] certphash_ep4      l2=180  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2682.105258913,"data":"[    759s] certphash_ep4      l2=180  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2685.53144319,"data":"[    762s] certphash_ep4      l2=180  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2688.951523398,"data":"[    766s] certphash_ep4      l2=180  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2692.176275589,"data":"[    769s] certphash_ep4      l2=180  184/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2695.595500609,"data":"[    772s] certphash_ep4      l2=180  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2699.015386559,"data":"[    776s] certphash_ep4      l2=180  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2702.790130423,"data":"[    779s] certphash_ep8      l2=40    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2706.232474402,"data":"[    783s] certphash_ep8      l2=40   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2709.679140598,"data":"[    786s] certphash_ep8      l2=40   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2713.128364882,"data":"[    790s] certphash_ep8      l2=40   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2716.576834455,"data":"[    793s] certphash_ep8      l2=40   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2720.021929691,"data":"[    797s] certphash_ep8      l2=40   48/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2723.471941498,"data":"[    800s] certphash_ep8      l2=40   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2726.917074077,"data":"[    804s] certphash_ep8      l2=40   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2730.357300162,"data":"[    807s] certphash_ep8      l2=40   72/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2733.800642812,"data":"[    810s] certphash_ep8      l2=40   80/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2737.243268991,"data":"[    814s] certphash_ep8      l2=40   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2740.68888093,"data":"[    817s] certphash_ep8      l2=40   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2744.132500375,"data":"[    821s] certphash_ep8      l2=40  104/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2747.581508499,"data":"[    824s] certphash_ep8      l2=40  112/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2751.046075915,"data":"[    828s] certphash_ep8      l2=40  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2754.498747819,"data":"[    831s] certphash_ep8      l2=40  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2757.944191563,"data":"[    835s] certphash_ep8      l2=40  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2761.387056653,"data":"[    838s] certphash_ep8      l2=40  144/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2764.836565957,"data":"[    841s] certphash_ep8      l2=40  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2768.282993691,"data":"[    845s] certphash_ep8      l2=40  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2771.733156324,"data":"[    848s] certphash_ep8      l2=40  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2775.189739021,"data":"[    852s] certphash_ep8      l2=40  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2778.633024577,"data":"[    855s] certphash_ep8      l2=40  184/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2782.083224973,"data":"[    859s] certphash_ep8      l2=40  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2785.527063427,"data":"[    862s] certphash_ep8      l2=40  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2788.945360021,"data":"[    866s] certphash_ep8      l2=90    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2792.358950557,"data":"[    869s] certphash_ep8      l2=90   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2795.775497457,"data":"[    872s] certphash_ep8      l2=90   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2799.199002363,"data":"[    876s] certphash_ep8      l2=90   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2802.620278064,"data":"[    879s] certphash_ep8      l2=90   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2806.04500406,"data":"[    883s] certphash_ep8      l2=90   48/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2809.468274649,"data":"[    886s] certphash_ep8      l2=90   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2812.889602748,"data":"[    890s] certphash_ep8      l2=90   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2816.305287561,"data":"[    893s] certphash_ep8      l2=90   72/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2819.724852908,"data":"[    896s] certphash_ep8      l2=90   80/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2823.143535856,"data":"[    900s] certphash_ep8      l2=90   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2826.564215375,"data":"[    903s] certphash_ep8      l2=90   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2829.98076057,"data":"[    907s] certphash_ep8      l2=90  104/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2833.397729199,"data":"[    910s] certphash_ep8      l2=90  112/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2836.82064552,"data":"[    913s] certphash_ep8      l2=90  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2840.247287568,"data":"[    917s] certphash_ep8      l2=90  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2843.672755054,"data":"[    920s] certphash_ep8      l2=90  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2847.09493349,"data":"[    924s] certphash_ep8      l2=90  144/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2850.524018582,"data":"[    927s] certphash_ep8      l2=90  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2853.954954897,"data":"[    931s] certphash_ep8      l2=90  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2857.384970331,"data":"[    934s] certphash_ep8      l2=90  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2860.812698121,"data":"[    937s] certphash_ep8      l2=90  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2864.23302603,"data":"[    941s] certphash_ep8      l2=90  184/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2867.657388443,"data":"[    944s] certphash_ep8      l2=90  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2871.124057657,"data":"[    948s] certphash_ep8      l2=90  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2874.54444393,"data":"[    951s] certphash_ep8      l2=180    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2877.958163601,"data":"[    955s] certphash_ep8      l2=180   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2881.383308711,"data":"[    958s] certphash_ep8      l2=180   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2884.808992213,"data":"[    961s] certphash_ep8      l2=180   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2888.231056874,"data":"[    965s] certphash_ep8      l2=180   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2891.661561377,"data":"[    968s] certphash_ep8      l2=180   48/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2895.090965407,"data":"[    972s] certphash_ep8      l2=180   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2898.517824789,"data":"[    975s] certphash_ep8      l2=180   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2901.944989134,"data":"[    979s] certphash_ep8      l2=180   72/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2905.368566061,"data":"[    982s] certphash_ep8      l2=180   80/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2908.793647757,"data":"[    985s] certphash_ep8      l2=180   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2912.219318746,"data":"[    989s] certphash_ep8      l2=180   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2915.640936982,"data":"[    992s] certphash_ep8      l2=180  104/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2919.059571501,"data":"[    996s] certphash_ep8      l2=180  112/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2922.474085646,"data":"[    999s] certphash_ep8      l2=180  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2925.895244799,"data":"[   1003s] certphash_ep8      l2=180  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2929.320262951,"data":"[   1006s] certphash_ep8      l2=180  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2932.742409149,"data":"[   1009s] certphash_ep8      l2=180  144/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2936.171416193,"data":"[   1013s] certphash_ep8      l2=180  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2939.586084521,"data":"[   1016s] certphash_ep8      l2=180  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2943.010883951,"data":"[   1020s] certphash_ep8      l2=180  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2946.429234251,"data":"[   1023s] certphash_ep8      l2=180  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2949.843457211,"data":"[   1026s] certphash_ep8      l2=180  184/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2953.260570966,"data":"[   1030s] certphash_ep8      l2=180  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2956.675307933,"data":"[   1033s] certphash_ep8      l2=180  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2960.418693067,"data":"[   1037s] certphash_base     l2=40    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2963.868142448,"data":"[   1041s] certphash_base     l2=40   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2967.325726545,"data":"[   1044s] certphash_base     l2=40   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2970.791962947,"data":"[   1047s] certphash_base     l2=40   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2974.244928029,"data":"[   1051s] certphash_base     l2=40   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2977.701810648,"data":"[   1054s] certphash_base     l2=40   48/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2981.170576956,"data":"[   1058s] certphash_base     l2=40   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2984.619093231,"data":"[   1061s] certphash_base     l2=40   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2988.071583988,"data":"[   1065s] certphash_base     l2=40   72/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2991.526359426,"data":"[   1068s] certphash_base     l2=40   80/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2994.98107521,"data":"[   1072s] certphash_base     l2=40   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":2998.439780202,"data":"[   1075s] certphash_base     l2=40   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3001.8947528099998,"data":"[   1079s] certphash_base     l2=40  104/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3005.358924196,"data":"[   1082s] certphash_base     l2=40  112/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3008.823926579,"data":"[   1085s] certphash_base     l2=40  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3012.296935459,"data":"[   1089s] certphash_base     l2=40  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3015.754811095,"data":"[   1092s] certphash_base     l2=40  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3019.216663563,"data":"[   1096s] certphash_base     l2=40  144/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3022.685075912,"data":"[   1099s] certphash_base     l2=40  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3026.146261922,"data":"[   1103s] certphash_base     l2=40  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3029.608209435,"data":"[   1106s] certphash_base     l2=40  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3033.073177026,"data":"[   1110s] certphash_base     l2=40  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3036.532574503,"data":"[   1113s] certphash_base     l2=40  184/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3039.996614112,"data":"[   1117s] certphash_base     l2=40  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3043.459918594,"data":"[   1120s] certphash_base     l2=40  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3046.892999734,"data":"[   1124s] certphash_base     l2=90    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3050.32124118,"data":"[   1127s] certphash_base     l2=90   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3053.757930556,"data":"[   1130s] certphash_base     l2=90   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3057.191299848,"data":"[   1134s] certphash_base     l2=90   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3060.62048891,"data":"[   1137s] certphash_base     l2=90   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3064.052634366,"data":"[   1141s] certphash_base     l2=90   48/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3067.489153291,"data":"[   1144s] certphash_base     l2=90   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3070.91652674,"data":"[   1148s] certphash_base     l2=90   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3074.34472638,"data":"[   1151s] certphash_base     l2=90   72/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3077.77643664,"data":"[   1154s] certphash_base     l2=90   80/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3081.212139898,"data":"[   1158s] certphash_base     l2=90   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3084.648379357,"data":"[   1161s] certphash_base     l2=90   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3088.077816333,"data":"[   1165s] certphash_base     l2=90  104/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3091.506606612,"data":"[   1168s] certphash_base     l2=90  112/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3094.935633285,"data":"[   1172s] certphash_base     l2=90  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3098.367442781,"data":"[   1175s] certphash_base     l2=90  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3101.799456265,"data":"[   1178s] certphash_base     l2=90  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3105.230229132,"data":"[   1182s] certphash_base     l2=90  144/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3108.661418899,"data":"[   1185s] certphash_base     l2=90  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3112.090630265,"data":"[   1189s] certphash_base     l2=90  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3115.522797075,"data":"[   1192s] certphash_base     l2=90  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3118.954928872,"data":"[   1196s] certphash_base     l2=90  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3122.381777348,"data":"[   1199s] certphash_base     l2=90  184/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3125.810463524,"data":"[   1202s] certphash_base     l2=90  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3129.237254349,"data":"[   1206s] certphash_base     l2=90  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3132.667249688,"data":"[   1209s] certphash_base     l2=180    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3136.095702976,"data":"[   1213s] certphash_base     l2=180   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3139.526437629,"data":"[   1216s] certphash_base     l2=180   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3142.956971612,"data":"[   1220s] certphash_base     l2=180   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3146.386827003,"data":"[   1223s] certphash_base     l2=180   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3149.820439502,"data":"[   1226s] certphash_base     l2=180   48/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3153.25954608,"data":"[   1230s] certphash_base     l2=180   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3156.691654466,"data":"[   1233s] certphash_base     l2=180   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3160.121657601,"data":"[   1237s] certphash_base     l2=180   72/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3163.554987293,"data":"[   1240s] certphash_base     l2=180   80/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3166.989477647,"data":"[   1244s] certphash_base     l2=180   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3170.423227422,"data":"[   1247s] certphash_base     l2=180   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3173.854026868,"data":"[   1250s] certphash_base     l2=180  104/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3177.283062865,"data":"[   1254s] certphash_base     l2=180  112/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3180.717516662,"data":"[   1257s] certphash_base     l2=180  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3184.162727371,"data":"[   1261s] certphash_base     l2=180  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3187.595877233,"data":"[   1264s] certphash_base     l2=180  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3191.043923121,"data":"[   1268s] certphash_base     l2=180  144/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3194.485395241,"data":"[   1271s] certphash_base     l2=180  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3197.915419355,"data":"[   1275s] certphash_base     l2=180  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3201.343003808,"data":"[   1278s] certphash_base     l2=180  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3204.774156302,"data":"[   1281s] certphash_base     l2=180  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3208.202032554,"data":"[   1285s] certphash_base     l2=180  184/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3211.634381903,"data":"[   1288s] certphash_base     l2=180  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3215.0645608,"data":"[   1292s] certphash_base     l2=180  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3218.812820681,"data":"[   1295s] certphash_adv      l2=40    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3222.268129255,"data":"[   1299s] certphash_adv      l2=40   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3225.726724201,"data":"[   1302s] certphash_adv      l2=40   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3229.189165413,"data":"[   1306s] certphash_adv      l2=40   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3232.651756356,"data":"[   1309s] certphash_adv      l2=40   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3236.11423903,"data":"[   1313s] certphash_adv      l2=40   48/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3239.572198258,"data":"[   1316s] certphash_adv      l2=40   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3243.031258442,"data":"[   1320s] certphash_adv      l2=40   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3246.366222833,"data":"[   1323s] certphash_adv      l2=40   72/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3249.825034529,"data":"[   1326s] certphash_adv      l2=40   80/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3253.288844084,"data":"[   1330s] certphash_adv      l2=40   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3256.75109,"data":"[   1333s] certphash_adv      l2=40   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3260.20407953,"data":"[   1337s] certphash_adv      l2=40  104/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3263.664536237,"data":"[   1340s] certphash_adv      l2=40  112/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3267.124754942,"data":"[   1344s] certphash_adv      l2=40  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3270.580973514,"data":"[   1347s] certphash_adv      l2=40  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3274.038895576,"data":"[   1351s] certphash_adv      l2=40  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3277.499861688,"data":"[   1354s] certphash_adv      l2=40  144/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3280.958017782,"data":"[   1358s] certphash_adv      l2=40  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3284.41607365,"data":"[   1361s] certphash_adv      l2=40  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3287.87264573,"data":"[   1365s] certphash_adv      l2=40  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3291.331648703,"data":"[   1368s] certphash_adv      l2=40  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3294.790344729,"data":"[   1371s] certphash_adv      l2=40  184/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3298.250253791,"data":"[   1375s] certphash_adv      l2=40  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3301.711311182,"data":"[   1378s] certphash_adv      l2=40  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3305.14070051,"data":"[   1382s] certphash_adv      l2=90    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3308.568095973,"data":"[   1385s] certphash_adv      l2=90   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3312.00156213,"data":"[   1389s] certphash_adv      l2=90   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3315.433124515,"data":"[   1392s] certphash_adv      l2=90   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3318.865456902,"data":"[   1396s] certphash_adv      l2=90   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3322.308537205,"data":"[   1399s] certphash_adv      l2=90   48/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3325.737568135,"data":"[   1402s] certphash_adv      l2=90   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3329.165390537,"data":"[   1406s] certphash_adv      l2=90   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3332.467174279,"data":"[   1409s] certphash_adv      l2=90   72/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3335.897732076,"data":"[   1413s] certphash_adv      l2=90   80/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3339.324072342,"data":"[   1416s] certphash_adv      l2=90   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3342.757877081,"data":"[   1419s] certphash_adv      l2=90   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3346.184255485,"data":"[   1423s] certphash_adv      l2=90  104/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3349.611692062,"data":"[   1426s] certphash_adv      l2=90  112/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3353.042883791,"data":"[   1430s] certphash_adv      l2=90  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3356.476284949,"data":"[   1433s] certphash_adv      l2=90  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3359.908141306,"data":"[   1437s] certphash_adv      l2=90  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3363.336075488,"data":"[   1440s] certphash_adv      l2=90  144/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3366.768041173,"data":"[   1443s] certphash_adv      l2=90  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3370.192408334,"data":"[   1447s] certphash_adv      l2=90  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3373.636157314,"data":"[   1450s] certphash_adv      l2=90  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3377.068596003,"data":"[   1454s] certphash_adv      l2=90  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3380.498185391,"data":"[   1457s] certphash_adv      l2=90  184/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3383.92759813,"data":"[   1461s] certphash_adv      l2=90  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3387.361278134,"data":"[   1464s] certphash_adv      l2=90  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3390.798884862,"data":"[   1467s] certphash_adv      l2=180    8/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3394.225847235,"data":"[   1471s] certphash_adv      l2=180   16/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3397.657478278,"data":"[   1474s] certphash_adv      l2=180   24/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3401.115156611,"data":"[   1478s] certphash_adv      l2=180   32/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3404.554548029,"data":"[   1481s] certphash_adv      l2=180   40/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3407.987959966,"data":"[   1485s] certphash_adv      l2=180   48/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3411.42228555,"data":"[   1488s] certphash_adv      l2=180   56/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3414.853284019,"data":"[   1491s] certphash_adv      l2=180   64/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3418.129530569,"data":"[   1495s] certphash_adv      l2=180   72/200  success 1/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3421.560984009,"data":"[   1498s] certphash_adv      l2=180   80/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3424.994234973,"data":"[   1502s] certphash_adv      l2=180   88/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3428.430534438,"data":"[   1505s] certphash_adv      l2=180   96/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3431.861663597,"data":"[   1509s] certphash_adv      l2=180  104/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3435.295527084,"data":"[   1512s] certphash_adv      l2=180  112/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3438.728909801,"data":"[   1515s] certphash_adv      l2=180  120/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3442.162444751,"data":"[   1519s] certphash_adv      l2=180  128/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3445.597962219,"data":"[   1522s] certphash_adv      l2=180  136/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3449.041862854,"data":"[   1526s] certphash_adv      l2=180  144/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3452.489254687,"data":"[   1529s] certphash_adv      l2=180  152/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3455.918952791,"data":"[   1533s] certphash_adv      l2=180  160/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3459.347627847,"data":"[   1536s] certphash_adv      l2=180  168/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3462.773636628,"data":"[   1539s] certphash_adv      l2=180  176/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3466.206981985,"data":"[   1543s] certphash_adv      l2=180  184/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3469.639396481,"data":"[   1546s] certphash_adv      l2=180  192/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3473.074570073,"data":"[   1550s] certphash_adv      l2=180  200/200  success 0/8  (agree 8/8)  0.4 s/img\n"}
+,{"stream_name":"stdout","time":3473.135528962,"data":"done in 1550s\n"}
+,{"stream_name":"stdout","time":3473.135557901,"data":"# NES black-box evasion, Sun et al. 2026 setting: summary\n"}
+,{"stream_name":"stdout","time":3473.135575218,"data":"\n"}
+,{"stream_name":"stdout","time":3473.135580779,"data":"ASR (%) = verified evasions (plain hasher on the returned 8-bit image). Success: BER \u003e 0.2 (\u003e= 20 of 96 bits) for DinoHash / NeuralHash; CertPHash: its FPR 1e-3 L1 threshold. 'mean' = the average over the three budgets (Sun et al. Table 1).\n"}
+,{"stream_name":"stdout","time":3473.135591721,"data":"\n"}
+,{"stream_name":"stdout","time":3473.135594089,"data":"| hash | l2 40 | l2 90 | l2 180 | mean |\n"}
+,{"stream_name":"stdout","time":3473.135596686,"data":"|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":3473.135599051,"data":"| certphash | 0.0 | 0.0 | 0.0 | 0.0 |\n"}
+,{"stream_name":"stdout","time":3473.135601426,"data":"| certphash_adv | 0.5 | 0.5 | 0.5 | 0.5 |\n"}
+,{"stream_name":"stdout","time":3473.135603961,"data":"| certphash_base | 0.0 | 0.0 | 0.0 | 0.0 |\n"}
+,{"stream_name":"stdout","time":3473.135606334,"data":"| certphash_ep2 | 2.5 | 2.5 | 2.5 | 2.5 |\n"}
+,{"stream_name":"stdout","time":3473.13560873,"data":"| certphash_ep4 | 2.5 | 2.0 | 2.0 | 2.2 |\n"}
+,{"stream_name":"stdout","time":3473.135611066,"data":"| certphash_ep8 | 0.0 | 0.0 | 0.0 | 0.0 |\n"}
+,{"stream_name":"stdout","time":3473.13561338,"data":"| neuralhash | 26.0 | 24.0 | 23.5 | 24.5 |\n"}
+,{"stream_name":"stdout","time":3473.135615804,"data":"\n"}
+,{"stream_name":"stdout","time":3473.135618132,"data":"| hash | l2 | n | ASR (95% CI) | attack-side ASR | agree % | median q | mean dist | l2 | l_inf ×255 | SSIM | s/img |\n"}
+,{"stream_name":"stdout","time":3473.135621322,"data":"|---|---|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":3473.135623753,"data":"| certphash | 40 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 951.5 | 24.6 | 33.5 | 0.937 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.135626266,"data":"| certphash | 90 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 956.7 | 24.6 | 33.3 | 0.937 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.135628713,"data":"| certphash | 180 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 953.7 | 24.6 | 33.3 | 0.937 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.1356312,"data":"| certphash_adv | 40 | 200 | 0.5 (0.1-2.8) | 0.5 | 100.0 | 1041 | 1109.1 | 24.7 | 33.1 | 0.935 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.135633635,"data":"| certphash_adv | 90 | 200 | 0.5 (0.1-2.8) | 0.5 | 100.0 | 1041 | 1119.6 | 24.7 | 32.9 | 0.935 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.135636066,"data":"| certphash_adv | 180 | 200 | 0.5 (0.1-2.8) | 0.5 | 100.0 | 911 | 1108.5 | 24.7 | 33.6 | 0.936 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.135648183,"data":"| certphash_base | 40 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 1292.7 | 24.5 | 33.7 | 0.936 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.135650804,"data":"| certphash_base | 90 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 1289.6 | 24.5 | 33.8 | 0.936 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.135653326,"data":"| certphash_base | 180 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 1280.8 | 24.4 | 33.8 | 0.936 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.135655805,"data":"| certphash_ep2 | 40 | 200 | 2.5 (1.1-5.7) | 2.5 | 100.0 | 456 | 1103.8 | 24.0 | 33.3 | 0.939 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.13565824,"data":"| certphash_ep2 | 90 | 200 | 2.5 (1.1-5.7) | 2.5 | 100.0 | 456 | 1075.7 | 24.0 | 33.3 | 0.939 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.135661637,"data":"| certphash_ep2 | 180 | 200 | 2.5 (1.1-5.7) | 2.5 | 100.0 | 521 | 1077.6 | 24.0 | 33.3 | 0.939 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.13566426,"data":"| certphash_ep4 | 40 | 200 | 2.5 (1.1-5.7) | 2.5 | 100.0 | 781 | 1020.3 | 23.8 | 34.0 | 0.939 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.135666714,"data":"| certphash_ep4 | 90 | 200 | 2.0 (0.8-5.0) | 2.0 | 100.0 | 651 | 1021.3 | 23.8 | 33.9 | 0.939 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.135669328,"data":"| certphash_ep4 | 180 | 200 | 2.0 (0.8-5.0) | 2.0 | 100.0 | 716 | 1021.6 | 23.8 | 33.9 | 0.939 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.135671858,"data":"| certphash_ep8 | 40 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 567.8 | 24.1 | 34.3 | 0.938 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.135674292,"data":"| certphash_ep8 | 90 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 563.3 | 24.0 | 34.4 | 0.938 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.135676734,"data":"| certphash_ep8 | 180 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 561.1 | 24.1 | 34.0 | 0.938 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3473.135679253,"data":"| neuralhash | 40 | 200 | 26.0 (20.4-32.5) | 26.0 | 100.0 | 1073.5 | 13.5 | 17.6 | 23.2 | 0.957 | 3.0 |\n"}
+,{"stream_name":"stdout","time":3473.135681742,"data":"| neuralhash | 90 | 200 | 24.0 (18.6-30.4) | 24.0 | 100.0 | 1041 | 13.5 | 17.7 | 23.5 | 0.958 | 3.0 |\n"}
+,{"stream_name":"stdout","time":3473.135684195,"data":"| neuralhash | 180 | 200 | 23.5 (18.2-29.8) | 23.5 | 100.0 | 1171 | 13.5 | 17.8 | 23.7 | 0.957 | 3.1 |\n"}
+,{"stream_name":"stdout","time":3476.670448049,"data":"# NES black-box evasion, Sun et al. 2026 setting: summary\n"}
+,{"stream_name":"stdout","time":3476.670474761,"data":"\n"}
+,{"stream_name":"stdout","time":3476.670479032,"data":"ASR (%) = verified evasions (plain hasher on the returned 8-bit image). Success: BER \u003e 0.2 (\u003e= 20 of 96 bits) for DinoHash / NeuralHash; CertPHash: its FPR 1e-3 L1 threshold. 'mean' = the average over the three budgets (Sun et al. Table 1).\n"}
+,{"stream_name":"stdout","time":3476.670484362,"data":"\n"}
+,{"stream_name":"stdout","time":3476.670487719,"data":"| hash | l2 40 | l2 90 | l2 180 | mean |\n"}
+,{"stream_name":"stdout","time":3476.670491433,"data":"|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":3476.670500119,"data":"| certphash | 0.0 | 0.0 | 0.0 | 0.0 |\n"}
+,{"stream_name":"stdout","time":3476.670503168,"data":"| certphash_adv | 0.5 | 0.5 | 0.5 | 0.5 |\n"}
+,{"stream_name":"stdout","time":3476.670505537,"data":"| certphash_base | 0.0 | 0.0 | 0.0 | 0.0 |\n"}
+,{"stream_name":"stdout","time":3476.670507938,"data":"| certphash_ep2 | 2.5 | 2.5 | 2.5 | 2.5 |\n"}
+,{"stream_name":"stdout","time":3476.670510275,"data":"| certphash_ep4 | 2.5 | 2.0 | 2.0 | 2.2 |\n"}
+,{"stream_name":"stdout","time":3476.670512634,"data":"| certphash_ep8 | 0.0 | 0.0 | 0.0 | 0.0 |\n"}
+,{"stream_name":"stdout","time":3476.670527048,"data":"| neuralhash | 26.0 | 24.0 | 23.5 | 24.5 |\n"}
+,{"stream_name":"stdout","time":3476.670529668,"data":"\n"}
+,{"stream_name":"stdout","time":3476.670532032,"data":"| hash | l2 | n | ASR (95% CI) | attack-side ASR | agree % | median q | mean dist | l2 | l_inf ×255 | SSIM | s/img |\n"}
+,{"stream_name":"stdout","time":3476.670535194,"data":"|---|---|---|---|---|---|---|---|---|---|---|---|\n"}
+,{"stream_name":"stdout","time":3476.670537629,"data":"| certphash | 40 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 951.5 | 24.6 | 33.5 | 0.937 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.67054016,"data":"| certphash | 90 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 956.7 | 24.6 | 33.3 | 0.937 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670542644,"data":"| certphash | 180 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 953.7 | 24.6 | 33.3 | 0.937 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670545116,"data":"| certphash_adv | 40 | 200 | 0.5 (0.1-2.8) | 0.5 | 100.0 | 1041 | 1109.1 | 24.7 | 33.1 | 0.935 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670547599,"data":"| certphash_adv | 90 | 200 | 0.5 (0.1-2.8) | 0.5 | 100.0 | 1041 | 1119.6 | 24.7 | 32.9 | 0.935 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670550158,"data":"| certphash_adv | 180 | 200 | 0.5 (0.1-2.8) | 0.5 | 100.0 | 911 | 1108.5 | 24.7 | 33.6 | 0.936 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670552645,"data":"| certphash_base | 40 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 1292.7 | 24.5 | 33.7 | 0.936 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670555113,"data":"| certphash_base | 90 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 1289.6 | 24.5 | 33.8 | 0.936 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670557594,"data":"| certphash_base | 180 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 1280.8 | 24.4 | 33.8 | 0.936 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670560252,"data":"| certphash_ep2 | 40 | 200 | 2.5 (1.1-5.7) | 2.5 | 100.0 | 456 | 1103.8 | 24.0 | 33.3 | 0.939 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670562718,"data":"| certphash_ep2 | 90 | 200 | 2.5 (1.1-5.7) | 2.5 | 100.0 | 456 | 1075.7 | 24.0 | 33.3 | 0.939 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670565261,"data":"| certphash_ep2 | 180 | 200 | 2.5 (1.1-5.7) | 2.5 | 100.0 | 521 | 1077.6 | 24.0 | 33.3 | 0.939 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.67056879,"data":"| certphash_ep4 | 40 | 200 | 2.5 (1.1-5.7) | 2.5 | 100.0 | 781 | 1020.3 | 23.8 | 34.0 | 0.939 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670571365,"data":"| certphash_ep4 | 90 | 200 | 2.0 (0.8-5.0) | 2.0 | 100.0 | 651 | 1021.3 | 23.8 | 33.9 | 0.939 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670573846,"data":"| certphash_ep4 | 180 | 200 | 2.0 (0.8-5.0) | 2.0 | 100.0 | 716 | 1021.6 | 23.8 | 33.9 | 0.939 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670576389,"data":"| certphash_ep8 | 40 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 567.8 | 24.1 | 34.3 | 0.938 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670578846,"data":"| certphash_ep8 | 90 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 563.3 | 24.0 | 34.4 | 0.938 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670581329,"data":"| certphash_ep8 | 180 | 200 | 0.0 (0.0-1.9) | 0.0 | 100.0 | nan | 561.1 | 24.1 | 34.0 | 0.938 | 0.4 |\n"}
+,{"stream_name":"stdout","time":3476.670583798,"data":"| neuralhash | 40 | 200 | 26.0 (20.4-32.5) | 26.0 | 100.0 | 1073.5 | 13.5 | 17.6 | 23.2 | 0.957 | 3.0 |\n"}
+,{"stream_name":"stdout","time":3476.670586262,"data":"| neuralhash | 90 | 200 | 24.0 (18.6-30.4) | 24.0 | 100.0 | 1041 | 13.5 | 17.7 | 23.5 | 0.958 | 3.0 |\n"}
+,{"stream_name":"stdout","time":3476.670588748,"data":"| neuralhash | 180 | 200 | 23.5 (18.2-29.8) | 23.5 | 100.0 | 1171 | 13.5 | 17.8 | 23.7 | 0.957 | 3.1 |\n"}
+,{"stream_name":"stderr","time":3479.51730652,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3479.517333725,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3479.796732394,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3479.796766776,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3480.676499846,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3481.763671917,"data":"[NbConvertApp] Writing 284781 bytes to __results__.html\n"}
+]
